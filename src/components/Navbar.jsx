@@ -95,7 +95,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background shadow-lg p-5 md:hidden flex flex-col gap-4">
+        <div className="absolute top-full left-0 right-0 bg-background shadow-lg p-5 md:hidden flex flex-col gap-4 h-screen">
           {navbar.links.map((link, index) => (
             <a
               key={index}
@@ -106,9 +106,6 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
               {link.label}
             </a>
           ))}
-          <button className="text-primary hover:text-primary-accent transition-colors">
-            Consultation
-          </button>
           <div className="border-t border-primary/20 pt-4">
             <div className="flex flex-col gap-2">
               {locales.map((loc) => (
