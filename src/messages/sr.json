@@ -60,12 +60,144 @@
     ]
   },
   "home": {
-    "title": "Um loszulegen, bearbeiten Sie die Datei page.js.",
-    "description": "Suchen Sie nach einem Startpunkt oder weiteren Anweisungen? Gehen Sie zu",
-    "templates": "Vorlagen",
-    "learning": "Lernen",
-    "center": "zentrum.",
-    "deploy": "Jetzt bereitstellen",
-    "documentation": "Dokumentation"
+    "hero": {
+      "title": "Digitalni QA/QC alati. Napravljeni za tešku industriju.",
+      "description": "Automatizacija sastavljanja MDR-a, praćenja zavarivanja i konzistentnosti dokumenata. Transformišemo složene inženjerske podatke u jasne, proverive evidencije imovine.",
+      "cta": "Istražite naše digitalno rešenje"
+    },
+    "services_section": {
+      "title": "Automatizacija industrijske usaglašenosti"
+    },
+    "services": [
+      {
+        "title": "Automatizovano sastavljanje MDR-a",
+        "description": "Analiziranje, validiranje i sastavljanje svakog sertifikata, mape zavarivanja i izveštaja o testiranju u jedan paket dokumenata spreman za reviziju, garantujući predaju bez grešaka."
+      },
+      {
+        "title": "Digitalno praćenje zavarivanja",
+        "description": "Živa matrica praćenja koja povezuje kvalifikacije zvarača, WPS, brojeve toplote i rezultate NDT-a preko svakog spoja, navoja i sklopa."
+      },
+      {
+        "title": "Automatizacija usaglašenosti",
+        "description": "Kontinuirana provera protiv DNV, EN, ASME i specifikacija klijenta, sa zastavama izuzetaka podignutim čim se podaci odmaknu od specifikacije."
+      }
+    ],
+    "engineering_section": {
+      "title": "Napravljeno od inženjera koji su sami potpisivali dokumentaciju.",
+      "description": "BW Digit je hibridna praksa. Naši inženjeri zavarivanja, materijala i QA definišu logiku verifikacije. Naš softverski tim pretvara tu logiku u determinističku platformu koja rukuje volumenom, konzistentnošću i tragom revizije koji nijedan tabelarni program ne može.",
+      "points": [
+        "Pravila verifikacije napisana od inspektora kvalifikovanih za kod",
+        "Deterministički cevovodi — svaka provera je reproducibilna",
+        "Implementirano pored vaše QA/QC organizacije, ne iznad nje"
+      ]
+    },
+    "steps": [
+      {
+        "title": "Unos podataka sa terena",
+        "description": "Dnevnici zvarača, MTR-ovi, NDT izveštaji i evidencije inspekcije se unose sa lokacije, laboratorije i sistema dobavljača."
+      },
+      {
+        "title": "Automatizovani motor verifikacije",
+        "description": "Pravila napravljena od metalurga i QA inženjera unakrsno proveravaju svaki zapis protiv specifikacija projekta i kodova."
+      },
+      {
+        "title": "Dostave spremne za reviziju",
+        "description": "Strukturirani, hiperlinkovani MDR i matrica praćenja se izdaju klijentu, telu za sertifikaciju i operateru u satima, ne nedeljama."
+      }
+    ],
+    "heritage_section": {
+      "title": "Operativno iskustvo kodirano u softver",
+      "description": "Svaki modul je zasnovan na godinama rada na projektima pri isporuci složenih zavarovanih sredstava u zahtevnim regulatornim okruženjima."
+    },
+    "heritage": [
+      {
+        "title": "Offshore vetrostrukture",
+        "description": "Monopile sa debelim zidovima, prelazni deo i izrada jaketa — potpuno praćenje zavarivanja protiv DNV-ST-0126 i pravila klase projekta."
+      },
+      {
+        "title": "Cevovodi visokog pritiska",
+        "description": "Transmisione linije preko zemlje sa potpunim mapiranjem kvalifikacija zvarača, brojeva toplote, hidrotesta i UT sertifikacije."
+      },
+      {
+        "title": "Teška čelična izrada",
+        "description": "Navoji, posude pritiska i veliki zavarovani sklopovi — verifikacija pokrivenosti WPS/PQR i evidencije dimenzionalne inspekcije."
+      },
+      {
+        "title": "Petrohemijske pogone",
+        "description": "Procesne cevovode, kolone i reaktori sastavljeni u hiperlinkovane MDR pakete usklađene sa EN, ASME i standardima operatera."
+      }
+    ],
+    "platform_section": {
+      "title": "Jedna kontrolna površina za industrijsku dokumentaciju",
+      "description": "Jedna platforma koja konsoliduje sastavljanje MDR-a, praćenje zavarivanja i verifikaciju usaglašenosti preko svakog projekta, izvođača i lokacije."
+    },
+    "platform": [
+      {
+        "title": "Automatizovana verifikacija MDR-a",
+        "description": "Analiza i validacija vođena specifikacijom svakog dokumenta u evidenciji proizvodnih podataka — izdata kao strukturirana, hiperlinkovana dostava."
+      },
+      {
+        "title": "Matrica praćenja zavarivanja",
+        "description": "Živo mapiranje spoj-po-spoj WPS-a, zvarača, brojeva toplote i rezultata NDT-a, spremno za reviziju klijenta i tela za sertifikaciju."
+      },
+      {
+        "title": "Motor inteligencije usaglašenosti",
+        "description": "Kontinuirano praćenje protiv DNV, EN, ASME i specifikacija projekta, otkrivanje izuzetaka pre nego što stignu do predaje."
+      }
+    ],
+    "outcomes_section": {
+      "title": "Rezultati koje operateri i EPC-ovi mere"
+    },
+    "outcomes": [
+      {
+        "percentage": "70%",
+        "title": "Brža predaja projekta",
+        "description": "Kompresovanje sastavljanja MDR-a i konačne revizije iz nedelja u dane kroz automatizovanu verifikaciju i sastavljanje."
+      },
+      {
+        "percentage": "0",
+        "title": "Neuspehi revizijskih podataka",
+        "description": "Svaki sertifikat, mapa zavarivanja i izveštaj o testiranju se proverava protiv specifikacije projekta pre nego što uđe u dosije."
+      },
+      {
+        "percentage": "100%",
+        "title": "Pokrivenost praćenja",
+        "description": "Povezivanje na nivou spoja od kvalifikacije zvarača kroz rezultat NDT-a do evidencije as-built preko cele imovine."
+      }
+    ],
+    "studies_section": {
+      "title": "Dokazano u složenim okruženjima",
+      "description": "Izabrane implementacije u offshore, cevovodnim i petrohemijskim projektima u Evropi."
+    },
+    "studies": [
+      {
+        "tagline": "Podrška za offshore vetar",
+        "title": "Offshore vetrovna mreža Severnog mora",
+        "description": "Implementirano za automatizaciju praćenja i validacije hiljada izveštaja o testiranju materijala (MTR) i evidencijskih knjiga nedestruktivnog testiranja (NDT) za čelične strukture sa debelim zidovima. Uspešno unakrsno referencirano 100% podataka o praćenju zavarivanja protiv strogih pomorskih zahteva."
+      },
+      {
+        "tagline": "Podrška za cevovodnu infrastrukturu",
+        "title": "Evropski cevovod visokog pritiska za transmisiju",
+        "description": "Korišćeno za upravljanje automatizovanih provera konzistentnosti preko segmenata cevovoda dužih nekoliko kilometara. Digitalno mapirane kvalifikacije zvarača, brojevi toplote i ultrazvučni test (UT) sertifikati za izgradnju nepromenjivog, spremnog za reviziju as-built paketa."
+      },
+      {
+        "tagline": "Podrška za procesnu i pogonsku infrastrukturu",
+        "title": "Projekat ekspanzije srednjeevropske petrohemije",
+        "description": "Integrisano u workflow kvaliteta za ubrzanje konačne revizije dokumentacije. Sistem je analizirao i verifikovao usaglašenost za obimne cevovodne navoje i posude pritiska, skraćujući vreme sastavljanja konačnog paketa predaje za preko 60%."
+      }
+    ],
+    "contact_section": {
+      "title": "Implementirajte BW Digit na svom projektu",
+      "description": "Zatražite tehničku demonstraciju ili diskutujte zahteve za automatizaciju industrijskih podataka sa našim timom.",
+      "email_label": "info@bwdigit.com",
+      "linkedin_label": "info@bwdigit.com"
+    },
+    "contact_form": {
+      "name_label": "Ime",
+      "company_label": "Kompanija",
+      "email_label": "Poslovna e-pošta",
+      "message_label": "Poruka",
+      "submit": "Pošalji"
+    }
   }
 }

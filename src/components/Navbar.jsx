@@ -89,7 +89,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
               <button
                 key={loc}
                 onClick={() => handleLanguageChange(loc)}
-                className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 ${
+                className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
                   loc === locale ? "font-semibold" : ""
                 }`}
               >

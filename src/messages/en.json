@@ -1,30 +1,30 @@
 {
   "navbar": {
-    "links" : [
-        {
-          "label": "Home",
-          "href": "/"
-        },
-        {
-           "label" : "Portfolio",
-           "href": "/#portfolio"
-        },
-        {
-           "label" : "About Us",
-           "href": "/#about"
-        },
-        {
-           "label" : "Blog",
-           "href": "/#blog"
-        },
-        {
-           "label" : "FAQ",
-           "href": "/#faq"
-        },
-        {
-           "label" : "Contact",
-           "href": "/#contact"
-        }
+    "links": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Portfolio",
+        "href": "/#portfolio"
+      },
+      {
+        "label": "About Us",
+        "href": "/#about"
+      },
+      {
+        "label": "Blog",
+        "href": "/#blog"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      },
+      {
+        "label": "Contact",
+        "href": "/#contact"
+      }
     ],
     "services": [
       {
@@ -60,12 +60,144 @@
     ]
   },
   "home": {
-    "title": "To get started, edit the page.js file.",
-    "description": "Looking for a starting point or more instructions? Head over to",
-    "templates": "Templates",
-    "learning": "Learning",
-    "center": "center.",
-    "deploy": "Deploy Now",
-    "documentation": "Documentation"
+    "hero": {
+      "title": "Digital QA/QC Tools. Built for Heavy Industry.",
+      "description": "Automating MDR compilation, weld traceability, and document consistency. We transform complex engineering data into clear, auditable asset records.",
+      "cta": "Explore Our Digital Solution"
+    },
+    "services_section": {
+      "title": "Automating Industrial Compliance"
+    },
+    "services": [
+      {
+        "title": "Automated MDR Compilation",
+        "description": "Parse, validate and assemble every certificate, weld map and test report into a single audit-ready documentation pack, guaranteeing zero-error handovers."
+      },
+      {
+        "title": "Digital Weld Tracking",
+        "description": "A live traceability matrix linking welder qualifications, WPS, heat numbers and NDT results across every joint, spool and assembly."
+      },
+      {
+        "title": "Compliance Automation",
+        "description": "Continuous verification against DNV, EN, ASME and client specifications, with exception flags raised the moment data drifts from spec."
+      }
+    ],
+    "engineering_section": {
+      "title": "Built by engineers who have signed off the documentation themselves.",
+      "description": "BW Digit is a hybrid practice. Our welding, materials and QA engineers define the verification logic. Our software team turns that logic into a deterministic platform that handles the volume, consistency and audit trail no spreadsheet can.",
+      "points": [
+        "Verification rules authored by code-qualified inspectors",
+        "Deterministic pipelines — every check is reproducible",
+        "Deployed alongside your QA/QC organization, not above it"
+      ]
+    },
+    "steps": [
+      {
+        "title": "Field Data Input",
+        "description": "Welder logs, MTRs, NDT reports and inspection records ingested from site, lab and supplier systems."
+      },
+      {
+        "title": "Automated Verification Engine",
+        "description": "Rules built by metallurgists and QA engineers cross-check every record against project specifications and codes."
+      },
+      {
+        "title": "Audit-Ready Deliverables",
+        "description": "A structured, hyperlinked MDR and traceability matrix issued to client, certifying body and operator in hours, not weeks."
+      }
+    ],
+    "heritage_section": {
+      "title": "Operational experience encoded into software",
+      "description": "Every module is grounded in years of project work delivering complex welded assets into demanding regulatory environments."
+    },
+    "heritage": [
+      {
+        "title": "Offshore Wind Structures",
+        "description": "Heavy-wall monopile, transition piece and jacket fabrication — full weld traceability against DNV-ST-0126 and project class rules."
+      },
+      {
+        "title": "High-Pressure Pipelines",
+        "description": "Cross-country transmission lines with full mapping of welder qualifications, heat numbers, hydrotest and UT certification."
+      },
+      {
+        "title": "Heavy Steel Fabrication",
+        "description": "Spools, pressure vessels and large welded assemblies — verification of WPS/PQR coverage and dimensional inspection records."
+      },
+      {
+        "title": "Petrochemical Plants",
+        "description": "Process piping, columns and reactors compiled into hyperlinked MDR packs aligned with EN, ASME and operator standards."
+      }
+    ],
+    "platform_section": {
+      "title": "One control surface for industrial documentation",
+      "description": "A single platform consolidating MDR compilation, weld traceability and compliance verification across every project, contractor and site."
+    },
+    "platform": [
+      {
+        "title": "Automated MDR Verification",
+        "description": "Spec-driven parsing and validation of every document in the manufacturing data record — issued as a structured, hyperlinked deliverable."
+      },
+      {
+        "title": "Weld Traceability Matrix",
+        "description": "Live joint-by-joint mapping of WPS, welder, heat numbers and NDT results, ready for client and certifying body audit."
+      },
+      {
+        "title": "Compliance Intelligence Engine",
+        "description": "Continuous monitoring against DNV, EN, ASME and project specifications, surfacing exceptions before they reach handover."
+      }
+    ],
+    "outcomes_section": {
+      "title": "Outcomes operators and EPCs measure"
+    },
+    "outcomes": [
+      {
+        "percentage": "70%",
+        "title": "Faster Project Handover",
+        "description": "Compress MDR compilation and final review from weeks to days through automated verification and assembly."
+      },
+      {
+        "percentage": "0",
+        "title": "Audit Data Failures",
+        "description": "Every certificate, weld map and test report is checked against project specification before it enters the dossier."
+      },
+      {
+        "percentage": "100%",
+        "title": "Traceability Coverage",
+        "description": "Joint-level linkage from welder qualification through NDT result to as-built record across the entire asset."
+      }
+    ],
+    "studies_section": {
+      "title": "Proven in Complex Environments",
+      "description": "Selected deployments across offshore, pipeline and petrochemical projects in Europe."
+    },
+    "studies": [
+      {
+        "tagline": "Offshore Wind Support",
+        "title": "North Sea Offshore Wind Grid",
+        "description": "Deployed to automate the tracking and validation of thousands of material test reports (MTR) and non-destructive testing (NDT) logs for heavy-wall steel structures. Successfully cross-referenced 100% of weld tracking data against strict maritime requirements."
+      },
+      {
+        "tagline": "Pipeline Infrastructure Support",
+        "title": "European High-Pressure Transmission Pipeline",
+        "description": "Used to manage automated consistency checks across multi-kilometer pipeline segments. Digitally mapped welder qualifications, heat numbers, and ultrasonic test (UT) certificates to build an unalterable, audit-ready As-Built package."
+      },
+      {
+        "tagline": "Process & Plant Infrastructure Support",
+        "title": "Central European Petrochemical Expansion Project",
+        "description": "Integrated into the quality workflow to accelerate the final documentation review. The system parsed and verified compliance for extensive piping spools and pressure vessels, cutting final handover package compilation time by over 60%."
+      }
+    ],
+    "contact_section": {
+      "title": "Deploy BW Digit on Your Project",
+      "description": "Request a technical demonstration or discuss industrial data automation requirements with our team.",
+      "email_label": "info@bwdigit.com",
+      "linkedin_label": "info@bwdigit.com"
+    },
+    "contact_form": {
+      "name_label": "Name",
+      "company_label": "Company",
+      "email_label": "Corporate Email",
+      "message_label": "Message",
+      "submit": "Submit"
+    }
   }
 }

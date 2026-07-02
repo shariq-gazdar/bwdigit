@@ -60,12 +60,144 @@
     ]
   },
   "home": {
-    "title": "Um loszulegen, bearbeiten Sie die Datei page.js.",
-    "description": "Suchen Sie nach einem Startpunkt oder weiteren Anweisungen? Gehen Sie zu",
-    "templates": "Vorlagen",
-    "learning": "Lernen",
-    "center": "zentrum.",
-    "deploy": "Jetzt bereitstellen",
-    "documentation": "Dokumentation"
+    "hero": {
+      "title": "Digitale QA/QC-Tools. Entwickelt für die Schwerindustrie.",
+      "description": "Automatisierung der MDR-Zusammenstellung, Schweißnahtverfolgbarkeit und Dokumentenkonsistenz. Wir verwandeln komplexe technische Daten in klare, prüfbare Anlagenunterlagen.",
+      "cta": "Unsere digitale Lösung erkunden"
+    },
+    "services_section": {
+      "title": "Automatisierung der industriellen Konformität"
+    },
+    "services": [
+      {
+        "title": "Automatisierte MDR-Zusammenstellung",
+        "description": "Analysieren, validieren und zusammenstellen aller Zertifikate, Schweißpläne und Prüfberichte in einem einzigen prüffertigen Dokumentationspaket mit garantierter fehlerfreier Übergabe."
+      },
+      {
+        "title": "Digitale Schweißnahtverfolgung",
+        "description": "Eine Live-Verfolgungsmatrix, die Schweißerqualifikationen, WPS, Chargennummern und ZfP-Ergebnisse über jede Verbindung, Spule und Baugruppe verknüpft."
+      },
+      {
+        "title": "Konformitätsautomatisierung",
+        "description": "Kontinuierliche Überprüfung gegen DNV, EN, ASME und Kundenspezifikationen mit Ausnahme-Flags, sobald Daten von der Spezifikation abweichen."
+      }
+    ],
+    "engineering_section": {
+      "title": "Entwickelt von Ingenieuren, die die Dokumentation selbst abgezeichnet haben.",
+      "description": "BW Digit ist eine hybride Praxis. Unsere Schweiß-, Werkstoff- und QA-Ingenieure definieren die Verifikationslogik. Unser Software-Team verwandelt diese Logik in eine deterministische Plattform, die Volumen, Konsistenz und Audit-Trail bewältigt, wie es kein Tabellenkalkulationsprogramm kann.",
+      "points": [
+        "Verifikationsregeln erstellt von code-qualifizierten Prüfern",
+        "Deterministische Pipelines — jede Prüfung ist reproduzierbar",
+        "Eingesetzt neben Ihrer QA/QC-Organisation, nicht darüber"
+      ]
+    },
+    "steps": [
+      {
+        "title": "Felddateneingabe",
+        "description": "Schweißerprotokolle, MTRs, ZfP-Berichte und Inspektionsaufzeichnungen werden von Baustelle, Labor und Lieferantensystemen erfasst."
+      },
+      {
+        "title": "Automatisierte Verifikations-Engine",
+        "description": "Von Metallurgen und QA-Ingenieuren erstellte Regeln kreuzprüfen jeden Datensatz gegen Projektspezifikationen und Normen."
+      },
+      {
+        "title": "Prüffertige Lieferungen",
+        "description": "Eine strukturierte, verlinkte MDR und Verfolgungsmatrix wird an Kunde, Zertifizierungsstelle und Betreiber in Stunden statt Wochen ausgehändigt."
+      }
+    ],
+    "heritage_section": {
+      "title": "Betriebserfahrung in Software kodiert",
+      "description": "Jedes Modell basiert auf Jahren der Projektarbeit bei der Lieferung komplexer geschweißter Anlagen in anspruchsvollen regulatorischen Umgebungen."
+    },
+    "heritage": [
+      {
+        "title": "Offshore-Windstrukturen",
+        "description": "Monopile mit dicken Wänden, Übergangsstück und Jacket-Fertigung — vollständige Schweißnahtverfolgbarkeit gegen DNV-ST-0126 und Projektklassenregeln."
+      },
+      {
+        "title": "Hochdruck-Pipelines",
+        "description": "Länderübergreifende Übertragungsleitungen mit vollständiger Abbildung von Schweißerqualifikationen, Chargennummern, Hydrauliktest und UT-Zertifizierung."
+      },
+      {
+        "title": "Schwere Stahlfertigung",
+        "description": "Spulen, Druckbehälter und große geschweißte Baugruppen — Verifizierung der WPS/PQR-Abdeckung und dimensionale Inspektionsaufzeichnungen."
+      },
+      {
+        "title": "Petrochemische Anlagen",
+        "description": "Rohrleitungen, Kolonnen und Reaktoren werden in verlinkte MDR-Pakete zusammengefasst, die auf EN, ASME und Betreiberstandards ausgerichtet sind."
+      }
+    ],
+    "platform_section": {
+      "title": "Eine Steuerfläche für industrielle Dokumentation",
+      "description": "Eine einzige Plattform, die MDR-Zusammenstellung, Schweißnahtverfolgbarkeit und Konformitätsverifizierung über jedes Projekt, jeden Auftragnehmer und jeden Standort konsolidiert."
+    },
+    "platform": [
+      {
+        "title": "Automatisierte MDR-Verifizierung",
+        "description": "Spezifikationsgesteuerte Analyse und Validierung jedes Dokuments im Fertigungsdatensatz — ausgegeben als strukturiertes, verlinktes Lieferobjekt."
+      },
+      {
+        "title": "Schweißnahtverfolgungsmatrix",
+        "description": "Live-Verbindung-für-Verbindung-Abbildung von WPS, Schweißer, Chargennummern und ZfP-Ergebnissen, bereit für Kunden- und Zertifizierungsstellen-Audit."
+      },
+      {
+        "title": "Konformitäts-Intelligence-Engine",
+        "description": "Kontinuierliche Überwachung gegen DNV, EN, ASME und Projektspezifikationen mit Aufdeckung von Ausnahmen vor der Übergabe."
+      }
+    ],
+    "outcomes_section": {
+      "title": "Ergebnisse, die Betreiber und EPCs messen"
+    },
+    "outcomes": [
+      {
+        "percentage": "70%",
+        "title": "Schnellere Projektübergabe",
+        "description": "Komprimierung der MDR-Zusammenstellung und Endprüfung von Wochen auf Tage durch automatisierte Verifizierung und Zusammenstellung."
+      },
+      {
+        "percentage": "0",
+        "title": "Audit-Datenfehler",
+        "description": "Jedes Zertifikat, jeder Schweißplan und jeder Prüfbericht wird gegen Projektspezifikation geprüft, bevor er in das Dossier eingeht."
+      },
+      {
+        "percentage": "100%",
+        "title": "Verfolgbarkeitsabdeckung",
+        "description": "Verbindungsebene-Verknüpfung von Schweißerqualifikation durch ZfP-Ergebnis zum As-Built-Datensatz über die gesamte Anlage."
+      }
+    ],
+    "studies_section": {
+      "title": "Bewährt in komplexen Umgebungen",
+      "description": "Ausgewählte Einsätze in Offshore-, Pipeline- und Petrochemieprojekten in Europa."
+    },
+    "studies": [
+      {
+        "tagline": "Offshore-Wind-Unterstützung",
+        "title": "Nordsee-Offshore-Windnetz",
+        "description": "Eingesetzt zur Automatisierung der Verfolgung und Validierung von tausenden von Werkstoffprüfberichten (MTR) und zerstörungsfreien Prüfungsprotokollen (ZfP) für Stahlstrukturen mit dicken Wänden. Erfolgreich 100% der Schweißverfolgungsdaten gegen strenge maritime Anforderungen kreuzreferenziert."
+      },
+      {
+        "tagline": "Pipeline-Infrastruktur-Unterstützung",
+        "title": "Europäische Hochdruck-Übertragungs-Pipeline",
+        "description": "Verwendet zur Verwaltung automatisierter Konsistenzprüfungen über mehrere Kilometer lange Pipelinesegmente. Digital abgebildete Schweißerqualifikationen, Chargennummern und Ultraschalltest- (UT) Zertifikate zur Erstellung eines unveränderlichen, prüffertigen As-Built-Pakets."
+      },
+      {
+        "tagline": "Prozess- und Anlageninfrastruktur-Unterstützung",
+        "title": "Mitteleuropäisches Petrochemie-Erweiterungsprojekt",
+        "description": "In den Qualitätsworkflow integriert, um die abschließende Dokumentenprüfung zu beschleunigen. Das System analysierte und verifizierte die Konformität für umfangreiche Rohrleitungsspulen und Druckbehälter und verkürzte die Zusammenstellungszeit des endgültigen Übergabepakets um über 60%."
+      }
+    ],
+    "contact_section": {
+      "title": "BW Digit in Ihrem Projekt einsetzen",
+      "description": "Fordern Sie eine technische Demonstration an oder diskutieren Sie Anforderungen zur Automatisierung industrieller Daten mit unserem Team.",
+      "email_label": "info@bwdigit.com",
+      "linkedin_label": "info@bwdigit.com"
+    },
+    "contact_form": {
+      "name_label": "Name",
+      "company_label": "Unternehmen",
+      "email_label": "Geschäftliche E-Mail",
+      "message_label": "Nachricht",
+      "submit": "Absenden"
+    }
   }
 }

@@ -17,15 +17,11 @@ export default async function Home({ params }) {
         {/* Left */}
         <div className="flex flex-col gap-y-5 mx-10 ">
           <h1 className="hero-gradient text-6xl font-heading">
-            Digital QA/QC Tools. Built for Heavy Industry.
+            {t.hero.title}
           </h1>
-          <p className="text-primary">
-            Automating MDR compilation, weld traceability, and document
-            consistency. We transform complex engineering data into clear,
-            auditable asset records.
-          </p>
+          <p className="text-primary">{t.hero.description}</p>
           <div className="mt-5">
-            <CtaButton>Explore Our Digital Solution</CtaButton>
+            <CtaButton>{t.hero.cta}</CtaButton>
           </div>
         </div>
         {/* Right */}
@@ -43,11 +39,11 @@ export default async function Home({ params }) {
       </section>
       {/* Core Digital Services */}
       <section className="flex flex-col items-center my-20">
-        <h1 className="main-heading">Automating Industrial Compliance</h1>
+        <h1 className="main-heading">{t.services_section.title}</h1>
         {/* Service Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretch gap-x-5">
-          {services.map((service, index) => {
-            const Icon = service.Icon;
+          {t.services.map((service, index) => {
+            const Icon = services[index].Icon;
             return (
               <div
                 key={index}
@@ -56,7 +52,7 @@ export default async function Home({ params }) {
                 <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
                   <Icon />
                 </div>
-                <h1 className="text-lg font-heading">{service.heading}</h1>
+                <h1 className="text-lg font-heading">{service.title}</h1>
                 <p className="font-body text-base">{service.description}</p>
               </div>
             );
@@ -67,20 +63,11 @@ export default async function Home({ params }) {
       <section className="grid grid-cols-1 lg:grid-cols-2 my-20 mx-10 items-center justify-between gap-x-5">
         {/* Left */}
         <div className="flex flex-col gap-y-4">
-          <h1 className="main-heading">
-            Built by engineers who have signed off the documentation themselves.
-          </h1>
+          <h1 className="main-heading">{t.engineering_section.title}</h1>
           <p className="text-primary/90 ">
-            BW Digit is a hybrid practice. Our welding, materials and QA
-            engineers define the verification logic. Our software team turns
-            that logic into a deterministic platform that handles the volume,
-            consistency and audit trail no spreadsheet can.
+            {t.engineering_section.description}
           </p>
-          {[
-            "Verification rules authored by code-qualified inspectors ",
-            "Deterministic pipelines — every check is reproducible",
-            "Deployed alongside your QA/QC organization, not above it",
-          ].map((point, index) => (
+          {t.engineering_section.points.map((point, index) => (
             <div key={index} className="flex gap-x-1 ">
               <Check className="text-primary-accent" />
               <p className="text-primary/70">{point}</p>
@@ -93,7 +80,7 @@ export default async function Home({ params }) {
           <div className="absolute left-[1.4rem] top-6 bottom-6 w-px bg-gradient-to-b from-primary-accent via-primary-accent/40 to-transparent"></div>
 
           <ol className="space-y-6">
-            {steps.map((step, index) => (
+            {t.steps.map((step, index) => (
               <li key={index} className="relative pl-14">
                 {/* Step Number */}
                 <div className="absolute left-0 top-5 grid w-11 h-11 place-items-center rounded-full border border-primary-accent/40 bg-card text-sm font-semibold text-primary-accent z-10">
@@ -104,7 +91,7 @@ export default async function Home({ params }) {
                 <div className="bg-[#11161c] rounded-2xl border border-primary-accent/10 p-5">
                   <div className="flex items-start justify-between gap-4">
                     <h3 className="text-lg font-heading text-primary">
-                      {step.heading}
+                      {step.title}
                     </h3>
 
                     <Check className="w-4 h-4 text-primary-accent shrink-0 mt-1" />
@@ -121,17 +108,13 @@ export default async function Home({ params }) {
       </section>
       {/* Engineering Heritage */}
       <section className="flex flex-col items-center my-20 gap-y-5">
-        <h1 className="main-heading text-center">
-          Operational experience encoded into <br /> software
-        </h1>
+        <h1 className="main-heading text-center">{t.heritage_section.title}</h1>
         <p className="text-primary/70 text-center">
-          Every module is grounded in years of project work delivering complex
-          <br />
-          welded assets into demanding regulatory environments.
+          {t.heritage_section.description}
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4 mx-10 mt-5">
-          {heritage.map((h, index) => {
-            const Icon = h.icon;
+          {t.heritage.map((h, index) => {
+            const Icon = heritage[index].icon;
             return (
               <div
                 className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all "
@@ -142,7 +125,7 @@ export default async function Home({ params }) {
                 </div>
                 <div className="flex flex-col">
                   <h3 className="text-lg font-heading text-primary">
-                    {h.heading}
+                    {h.title}
                   </h3>
                   <p className="mt-2 text-primary/70 leading-relaxed">
                     {h.description}
@@ -155,16 +138,11 @@ export default async function Home({ params }) {
       </section>
       {/* The Platform */}
       <section className="flex flex-col items-center my-20 gap-y-5">
-        <h1 className="main-heading text-center">
-          One control surface for industrial documentation
-        </h1>
-        <p className="text-primary/70">
-          A single platform consolidating MDR compilation, weld traceability and
-          compliance verification across every project, contractor and site.
-        </p>
+        <h1 className="main-heading text-center">{t.platform_section.title}</h1>
+        <p className="text-primary/70">{t.platform_section.description}</p>
         <Image src="/dashboard.png" alt="Platform" width={950} height={800} />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-10">
-          {platfrom.map((p, index) => {
+          {t.platform.map((p, index) => {
             return (
               <div
                 className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all "
@@ -172,7 +150,7 @@ export default async function Home({ params }) {
               >
                 <div className="flex flex-col">
                   <h3 className="text-lg font-heading text-primary">
-                    {p.heading}
+                    {p.title}
                   </h3>
                   <p className="mt-2 text-base text-primary/70 leading-relaxed">
                     {p.description}
@@ -185,10 +163,10 @@ export default async function Home({ params }) {
       </section>
       {/* Bussines Value */}
       <section className="flex flex-col items-center my-20 gap-y-5">
-        <h1 className="main-heading">Outcomes operators and EPCs measure</h1>
+        <h1 className="main-heading">{t.outcomes_section.title}</h1>
         <div className="grid grid-cols-3 gap-x-5 mx-10">
-          {outcomes.map((outcome, index) => {
-            const Icon = outcome.icon;
+          {t.outcomes.map((outcome, index) => {
+            const Icon = outcomes[index].icon;
             return (
               <div
                 key={index}
@@ -201,7 +179,7 @@ export default async function Home({ params }) {
                   {outcome.percentage}
                 </h1>
                 <h1 className="text-lg font-semibold font-heading">
-                  {outcome.heading}
+                  {outcome.title}
                 </h1>
                 <p className="font-body text-base">{outcome.description}</p>
               </div>
@@ -211,23 +189,20 @@ export default async function Home({ params }) {
       </section>
       {/* Case Study */}
       <section className="flex flex-col items-center my-20 gap-y-5">
-        <h1 className="main-heading">Proven in Complex Environments</h1>
-        <p className="text-primary/70">
-          Selected deployments across offshore, pipeline and petrochemical
-          projects in Europe.
-        </p>
+        <h1 className="main-heading">{t.studies_section.title}</h1>
+        <p className="text-primary/70">{t.studies_section.description}</p>
         <div className="grid grid-cols-3 gap-x-5 mx-10">
-          {studies.map((study, index) => {
+          {t.studies.map((study, index) => {
             return (
               <div
                 key={index}
-                className={`text-primary bg-${study.hoverColor}/5 p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl border-card border-[0.5px]   transition-all`}
+                className={`text-primary bg-${studies[index].hoverColor}/5 p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl border-card border-[0.5px]   transition-all`}
               >
                 <h3 className="text-sm font-heading text-primary-accent">
-                  {study.heading}
+                  {study.tagline}
                 </h3>
                 <h1 className="text-lg font-semibold font-heading">
-                  {study.heading}
+                  {study.title}
                 </h1>
                 <p className="font-body text-base">{study.description}</p>
               </div>
@@ -239,14 +214,11 @@ export default async function Home({ params }) {
       <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10">
         {/* Left */}
         <div className="flex flex-col gap-y-5 pt-12">
-          <h1 className="main-heading">Deploy BW Digit on Your Project</h1>
-          <p className="text-primary/70">
-            Request a technical demonstration or discuss industrial data
-            automation requirements with our team.
-          </p>
+          <h1 className="main-heading">{t.contact_section.title}</h1>
+          <p className="text-primary/70">{t.contact_section.description}</p>
           <div className="flex items-center gap-2">
             <Mail className="text-primary-accent" />
-            <p className="text-primary/70">info@bwdigit.com</p>
+            <p className="text-primary/70">{t.contact_section.email_label}</p>
           </div>
           <div className="flex items-center gap-2">
             <svg
@@ -266,7 +238,9 @@ export default async function Home({ params }) {
               <rect width="4" height="12" x="2" y="9"></rect>
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
-            <p className="text-primary/70">info@bwdigit.com</p>
+            <p className="text-primary/70">
+              {t.contact_section.linkedin_label}
+            </p>
           </div>
         </div>
         {/* Right */}
@@ -275,7 +249,7 @@ export default async function Home({ params }) {
             htmlFor="name"
             className="flex flex-col text-primary/80 uppercase text-sm"
           >
-            Name
+            {t.contact_form.name_label}
             <input
               type="text"
               id="name"
@@ -286,7 +260,7 @@ export default async function Home({ params }) {
             htmlFor="company"
             className="flex flex-col text-primary/80 uppercase text-sm"
           >
-            Company
+            {t.contact_form.company_label}
             <input
               type="text"
               id="company"
@@ -297,7 +271,7 @@ export default async function Home({ params }) {
             htmlFor="cemail"
             className="flex flex-col text-primary/80 uppercase text-sm"
           >
-            Corporate Email
+            {t.contact_form.email_label}
             <input
               type="text"
               id="cemail"
@@ -308,7 +282,7 @@ export default async function Home({ params }) {
             htmlFor="message"
             className="flex flex-col text-primary/80 uppercase text-sm"
           >
-            Message
+            {t.contact_form.message_label}
             <textarea
               name="message"
               id="message"
@@ -316,7 +290,7 @@ export default async function Home({ params }) {
             ></textarea>
           </label>
           <button type="submit">
-            <CtaButton>Submit</CtaButton>
+            <CtaButton>{t.contact_form.submit}</CtaButton>
           </button>
         </div>
       </section>
