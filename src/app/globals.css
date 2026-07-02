@@ -39,3 +39,7 @@ body
 {
   @apply text-primary font-heading text-3xl font-bold;
 }
+html
+{
+  scroll-behavior: smooth;
+}

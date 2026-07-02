@@ -4,14 +4,14 @@ import { ChevronDown, Globe, Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { locales } from "@/i18n/config";
+import CtaButton from "./CtaButton";
 
 const Navbar = ({ messages, locale, defaultLocale }) => {
-  const [openService, setOpenService] = useState(false);
   const [openLang, setOpenLang] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-  const navbar = messages?.navbar || { links: [], services: [] };
+  const navbar = messages?.navbar || { links: [] };
 
   const handleLanguageChange = (newLocale) => {
     const currentPath = pathname.replace(`/${locale}`, "");
@@ -39,47 +39,29 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
       />
 
       {/* Desktop Links */}
-      <div className="hidden md:flex flex-row gap-x-5">
+      <div className="hidden md:flex flex-row gap-x-5 items-center">
         {navbar.links.map((link, index) => (
-          <a key={index} className="text-primary" href={link.href}>
+          <a
+            key={index}
+            className="text-primary hover:text-primary-accent transition-colors"
+            href={link.href}
+          >
             {link.label}
           </a>
         ))}
-        <div
-          className="relative"
-          onMouseEnter={() => setOpenService(true)}
-          onMouseLeave={() => setOpenService(false)}
-        >
-          <button className="flex flex-row items-start">
-            Services
-            <ChevronDown />
-          </button>
-          {openService && (
-            <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg p-4">
-              {navbar.services.map((service, index) => (
-                <a
-                  key={index}
-                  className="block px-4 py-2 text-black"
-                  href={service.href}
-                >
-                  {service.title}
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
-        {/* Consultation Button */}
-        <div>
-          <button>Consultation</button>
-        </div>
       </div>
 
+      {/* Consultation Button */}
+      <div className="flex flex-row items-center gap-x-5">
+        <CtaButton className="hover:text-primary-accent transition-colors">
+          Consultation
+          </CtaButton>
       {/* Desktop Language selector */}
       <div
         className="relative hidden md:block"
         onMouseEnter={() => setOpenLang(true)}
         onMouseLeave={() => setOpenLang(false)}
-      >
+        >
         <button className="flex flex-row items-center gap-2">
           <Globe size={20} />
           <span>{getLocaleLabel(locale)}</span>
@@ -89,17 +71,18 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           <div className="absolute top-full right-0 bg-white shadow-lg rounded-lg p-2 min-w-30">
             {locales.map((loc) => (
               <button
-                key={loc}
-                onClick={() => handleLanguageChange(loc)}
-                className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
-                  loc === locale ? "font-semibold" : ""
-                }`}
+              key={loc}
+              onClick={() => handleLanguageChange(loc)}
+              className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
+                loc === locale ? "font-semibold" : ""
+              }`}
               >
                 {getLocaleLabel(loc)}
               </button>
             ))}
           </div>
         )}
+        </div>
       </div>
 
       {/* Mobile hamburger button */}
@@ -116,44 +99,23 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           {navbar.links.map((link, index) => (
             <a
               key={index}
-              className="text-primary"
+              className="text-primary hover:text-primary-accent transition-colors"
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <div>
-            <button
-              className="flex flex-row items-center gap-2 text-primary"
-              onClick={() => setOpenService(!openService)}
-            >
-              Services
-              <ChevronDown size={16} />
-            </button>
-            {openService && (
-              <div className="mt-2 ml-4 flex flex-col gap-2">
-                {navbar.services.map((service, index) => (
-                  <a
-                    key={index}
-                    className="text-primary"
-                    href={service.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {service.title}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
-          <button className="text-primary">Consultation</button>
+          <button className="text-primary hover:text-primary-accent transition-colors">
+            Consultation
+          </button>
           <div className="border-t border-primary/20 pt-4">
             <div className="flex flex-col gap-2">
               {locales.map((loc) => (
                 <button
                   key={loc}
                   onClick={() => handleLanguageChange(loc)}
-                  className={`flex flex-row items-center gap-2 text-primary ${
+                  className={`flex flex-row items-center gap-2 text-primary hover:text-primary-accent transition-colors ${
                     loc === locale ? "font-semibold" : ""
                   }`}
                 >

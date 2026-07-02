@@ -108,7 +108,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering Heritage */}
-      <section className="flex flex-col items-center my-20 gap-y-5">
+      <section className="flex flex-col items-center my-20 gap-y-5" id="portfolio">
         <h1 className="main-heading text-center">{t.heritage_section.title}</h1>
         <p className="text-primary/70 text-center">
           {t.heritage_section.description}
@@ -138,7 +138,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* The Platform */}
-      <section className="flex flex-col items-center my-20 gap-y-5">
+      <section className="flex flex-col items-center my-20 gap-y-5" id="about">
         <h1 className="main-heading text-center">{t.platform_section.title}</h1>
         <p className="text-primary/70 text-center">{t.platform_section.description}</p>
         <Image src="/dashboard.png" alt="Platform" width={950} height={800} className="hidden lg:block" />
@@ -189,7 +189,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Case Study */}
-      <section className="flex flex-col items-center my-20 gap-y-5">
+      <section className="flex flex-col items-center my-20 gap-y-5" id="blog">
         <h1 className="main-heading">{t.studies_section.title}</h1>
         <p className="text-primary/70">{t.studies_section.description}</p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
@@ -212,7 +212,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Contact Form */}
-      <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-y-10 lg:gap-y-0">
+      <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-y-10 lg:gap-y-0" id="contact">
         {/* Left */}
         <div className="flex flex-col gap-y-5 pt-12">
           <h1 className="main-heading">{t.contact_section.title}</h1>
