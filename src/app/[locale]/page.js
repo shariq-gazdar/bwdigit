@@ -27,7 +27,7 @@ export default async function Home({ params }) {
         {/* Right */}
         <div className="relative hidden lg:block">
           {/* Gradient Overlay */}
-          <div className="absolute -top-4 left-0 lg:-left-3 w-full lg:w-[82%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl  z-10"></div>
+          <div className="absolute top-3 left-3 w-[85%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl  z-10"></div>
           <Image
             src="/hero-image.jpeg"
             alt="Hero"
