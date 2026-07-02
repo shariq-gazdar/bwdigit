@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ChevronDown, Globe } from "lucide-react";
+import { ChevronDown, Globe, Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { locales } from "@/i18n/config";
@@ -8,6 +8,7 @@ import { locales } from "@/i18n/config";
 const Navbar = ({ messages, locale, defaultLocale }) => {
   const [openService, setOpenService] = useState(false);
   const [openLang, setOpenLang] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const navbar = messages?.navbar || { links: [], services: [] };
@@ -28,7 +29,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
   };
 
   return (
-    <nav className="w-full fixed  flex flex-row items-center justify-between px-10 py-5 bg-background/90 z-999 text-primary">
+    <nav className="w-full fixed flex flex-row items-center justify-between px-10 py-5 bg-background/90 z-999 text-primary">
       {/* Logo */}
       <Image
         src="https://www.bwdigit.com/assets/bw-logo-BX0g2QWa.png"
@@ -36,8 +37,9 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
         height={50}
         alt="logo"
       />
-      {/* Links */}
-      <div className="flex flex-row gap-x-5 ">
+
+      {/* Desktop Links */}
+      <div className="hidden md:flex flex-row gap-x-5">
         {navbar.links.map((link, index) => (
           <a key={index} className="text-primary" href={link.href}>
             {link.label}
@@ -66,15 +68,15 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
             </div>
           )}
         </div>
-        {/* Consultation BUtton */}
+        {/* Consultation Button */}
         <div>
           <button>Consultation</button>
         </div>
       </div>
 
-      {/* Language selector */}
+      {/* Desktop Language selector */}
       <div
-        className="relative"
+        className="relative hidden md:block"
         onMouseEnter={() => setOpenLang(true)}
         onMouseLeave={() => setOpenLang(false)}
       >
@@ -99,6 +101,70 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           </div>
         )}
       </div>
+
+      {/* Mobile hamburger button */}
+      <button
+        className="md:hidden"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      >
+        {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="absolute top-full left-0 right-0 bg-background shadow-lg p-5 md:hidden flex flex-col gap-4">
+          {navbar.links.map((link, index) => (
+            <a
+              key={index}
+              className="text-primary"
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+          <div>
+            <button
+              className="flex flex-row items-center gap-2 text-primary"
+              onClick={() => setOpenService(!openService)}
+            >
+              Services
+              <ChevronDown size={16} />
+            </button>
+            {openService && (
+              <div className="mt-2 ml-4 flex flex-col gap-2">
+                {navbar.services.map((service, index) => (
+                  <a
+                    key={index}
+                    className="text-primary"
+                    href={service.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {service.title}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+          <button className="text-primary">Consultation</button>
+          <div className="border-t border-primary/20 pt-4">
+            <div className="flex flex-col gap-2">
+              {locales.map((loc) => (
+                <button
+                  key={loc}
+                  onClick={() => handleLanguageChange(loc)}
+                  className={`flex flex-row items-center gap-2 text-primary ${
+                    loc === locale ? "font-semibold" : ""
+                  }`}
+                >
+                  <Globe size={16} />
+                  {getLocaleLabel(loc)}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

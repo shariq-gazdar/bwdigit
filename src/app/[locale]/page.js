@@ -13,7 +13,7 @@ export default async function Home({ params }) {
   return (
     <div className="pt-20 bg-background font-body">
       {/* Hero Section */}
-      <section className=" grid grid-cols-1 lg:grid-cols-2 py-10 ">
+      <section className=" grid grid-cols-1 lg:grid-cols-2  py-10 gap-y-10 lg:gap-y-0 mb-2 lg:mb-0">
         {/* Left */}
         <div className="flex flex-col gap-y-5 mx-10 ">
           <h1 className="hero-gradient text-6xl font-heading">
@@ -25,21 +25,22 @@ export default async function Home({ params }) {
           </div>
         </div>
         {/* Right */}
-        <div className="relative">
+        <div className="relative hidden lg:block">
           {/* Gradient Overlay */}
-          <div className="absolute -top-4 -left-3 w-[82%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl z-10"></div>
+          <div className="absolute -top-4 left-0 lg:-left-3 w-full lg:w-[82%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl  z-10"></div>
           <Image
             src="/hero-image.jpeg"
             alt="Hero"
-            className="w-full h-auto max-w-125 absolute z-20"
-            width={500}
-            height={500}
+            className="w-full h-auto max-w-md lg:max-w-lg xl:max-w-xl absolute z-20"
+            width={800}
+            height={600}
+            priority
           />
         </div>
       </section>
       {/* Core Digital Services */}
       <section className="flex flex-col items-center my-20">
-        <h1 className="main-heading">{t.services_section.title}</h1>
+        <h1 className="main-heading text-center">{t.services_section.title}</h1>
         {/* Service Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretch gap-x-5">
           {t.services.map((service, index) => {
@@ -60,7 +61,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering + Software */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 my-20 mx-10 items-center justify-between gap-x-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 my-20 mx-10 items-center justify-between gap-x-5 gap-y-10 lg:gap-y-0">
         {/* Left */}
         <div className="flex flex-col gap-y-4">
           <h1 className="main-heading">{t.engineering_section.title}</h1>
@@ -139,8 +140,8 @@ export default async function Home({ params }) {
       {/* The Platform */}
       <section className="flex flex-col items-center my-20 gap-y-5">
         <h1 className="main-heading text-center">{t.platform_section.title}</h1>
-        <p className="text-primary/70">{t.platform_section.description}</p>
-        <Image src="/dashboard.png" alt="Platform" width={950} height={800} />
+        <p className="text-primary/70 text-center">{t.platform_section.description}</p>
+        <Image src="/dashboard.png" alt="Platform" width={950} height={800} className="hidden lg:block" />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-10">
           {t.platform.map((p, index) => {
             return (
@@ -163,8 +164,8 @@ export default async function Home({ params }) {
       </section>
       {/* Bussines Value */}
       <section className="flex flex-col items-center my-20 gap-y-5">
-        <h1 className="main-heading">{t.outcomes_section.title}</h1>
-        <div className="grid grid-cols-3 gap-x-5 mx-10">
+        <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
           {t.outcomes.map((outcome, index) => {
             const Icon = outcomes[index].icon;
             return (
@@ -191,7 +192,7 @@ export default async function Home({ params }) {
       <section className="flex flex-col items-center my-20 gap-y-5">
         <h1 className="main-heading">{t.studies_section.title}</h1>
         <p className="text-primary/70">{t.studies_section.description}</p>
-        <div className="grid grid-cols-3 gap-x-5 mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
           {t.studies.map((study, index) => {
             return (
               <div
@@ -211,7 +212,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Contact Form */}
-      <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10">
+      <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-y-10 lg:gap-y-0">
         {/* Left */}
         <div className="flex flex-col gap-y-5 pt-12">
           <h1 className="main-heading">{t.contact_section.title}</h1>
