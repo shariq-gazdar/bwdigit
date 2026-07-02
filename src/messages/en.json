@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "links" : [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+           "label" : "Portfolio",
+           "href": "/#portfolio"
+        },
+        {
+           "label" : "About Us",
+           "href": "/#about"
+        },
+        {
+           "label" : "Blog",
+           "href": "/#blog"
+        },
+        {
+           "label" : "FAQ",
+           "href": "/#faq"
+        },
+        {
+           "label" : "Contact",
+           "href": "/#contact"
+        }
+    ],
+    "services": [
+      {
+        "title": "UI/UX Design",
+        "description": "User-centered design solutions",
+        "href": "/services/ui-ux-design/"
+      },
+      {
+        "title": "AI Automation",
+        "description": "Intelligent process automation",
+        "href": "/services/ai-automation/"
+      },
+      {
+        "title": "E-commerce Solutions",
+        "description": "Custom online stores",
+        "href": "/services/ecommerce-solutions/"
+      },
+      {
+        "title": "Marketing & SEO",
+        "description": "Digital marketing strategies",
+        "href": "/services/marketing-seo/"
+      },
+      {
+        "title": "Mobile App Development",
+        "description": "Native & cross-platform apps",
+        "href": "/services/mobile-app-development/"
+      },
+      {
+        "title": "Custom Web Development",
+        "description": "Scalable, secure web solutions",
+        "href": "/services/custom-web-development/"
+      }
+    ]
+  },
+  "home": {
+    "title": "To get started, edit the page.js file.",
+    "description": "Looking for a starting point or more instructions? Head over to",
+    "templates": "Templates",
+    "learning": "Learning",
+    "center": "center.",
+    "deploy": "Deploy Now",
+    "documentation": "Documentation"
+  }
+}

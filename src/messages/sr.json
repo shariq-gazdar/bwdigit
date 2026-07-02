@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "links": [
+      {
+        "label": "Početna",
+        "href": "/"
+      },
+      {
+        "label": "Portfolio",
+        "href": "/#portfolio"
+      },
+      {
+        "label": "O nama",
+        "href": "/#about"
+      },
+      {
+        "label": "Blog",
+        "href": "/#blog"
+      },
+      {
+        "label": "Česta pitanja",
+        "href": "/#faq"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/#contact"
+      }
+    ],
+    "services": [
+      {
+        "title": "UI/UX Dizajn",
+        "description": "Rešenja usmerena na korisnika",
+        "href": "/services/ui-ux-design/"
+      },
+      {
+        "title": "AI Automatizacija",
+        "description": "Inteligentna automatizacija procesa",
+        "href": "/services/ai-automation/"
+      },
+      {
+        "title": "E-trgovinska rešenja",
+        "description": "Prilagođene online prodavnice",
+        "href": "/services/ecommerce-solutions/"
+      },
+      {
+        "title": "Marketing i SEO",
+        "description": "Strategije digitalnog marketinga",
+        "href": "/services/marketing-seo/"
+      },
+      {
+        "title": "Razvoj mobilnih aplikacija",
+        "description": "Izvorne i višestruke platforme",
+        "href": "/services/mobile-app-development/"
+      },
+      {
+        "title": "Prilagođeni razvoj veb aplikacija",
+        "description": "Skalabilna i bezbedna veb rešenja",
+        "href": "/services/custom-web-development/"
+      }
+    ]
+  },
+  "home": {
+    "title": "Um loszulegen, bearbeiten Sie die Datei page.js.",
+    "description": "Suchen Sie nach einem Startpunkt oder weiteren Anweisungen? Gehen Sie zu",
+    "templates": "Vorlagen",
+    "learning": "Lernen",
+    "center": "zentrum.",
+    "deploy": "Jetzt bereitstellen",
+    "documentation": "Dokumentation"
+  }
+}

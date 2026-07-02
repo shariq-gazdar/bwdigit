@@ -1,0 +1,71 @@
+{
+  "navbar": {
+    "links": [
+      {
+        "label": "Startseite",
+        "href": "/"
+      },
+      {
+        "label": "Portfolio",
+        "href": "/#portfolio"
+      },
+      {
+        "label": "Über uns",
+        "href": "/#about"
+      },
+      {
+        "label": "Blog",
+        "href": "/#blog"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/#contact"
+      }
+    ],
+    "services": [
+      {
+        "title": "UI/UX-Design",
+        "description": "Benutzerorientierte Designlösungen",
+        "href": "/services/ui-ux-design/"
+      },
+      {
+        "title": "KI-Automatisierung",
+        "description": "Intelligente Prozessautomatisierung",
+        "href": "/services/ai-automation/"
+      },
+      {
+        "title": "E-Commerce-Lösungen",
+        "description": "Maßgeschneiderte Onlineshops",
+        "href": "/services/ecommerce-solutions/"
+      },
+      {
+        "title": "Marketing & SEO",
+        "description": "Digitale Marketingstrategien",
+        "href": "/services/marketing-seo/"
+      },
+      {
+        "title": "Mobile App-Entwicklung",
+        "description": "Native und plattformübergreifende Apps",
+        "href": "/services/mobile-app-development/"
+      },
+      {
+        "title": "Individuelle Webentwicklung",
+        "description": "Skalierbare und sichere Weblösungen",
+        "href": "/services/custom-web-development/"
+      }
+    ]
+  },
+  "home": {
+    "title": "Um loszulegen, bearbeiten Sie die Datei page.js.",
+    "description": "Suchen Sie nach einem Startpunkt oder weiteren Anweisungen? Gehen Sie zu",
+    "templates": "Vorlagen",
+    "learning": "Lernen",
+    "center": "zentrum.",
+    "deploy": "Jetzt bereitstellen",
+    "documentation": "Dokumentation"
+  }
+}

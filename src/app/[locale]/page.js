@@ -1,0 +1,325 @@
+import Image from "next/image";
+import { getMessages } from "../../i18n/request.js";
+import { locales, defaultLocale } from "../../i18n/config.js";
+import CtaButton from "@/components/CtaButton.jsx";
+import { heritage, outcomes, platfrom, services, steps, studies } from '@/utils/home.js'
+import { Check, Factory, Mail ,  } from "lucide-react";
+
+export default async function Home({ params }) {
+  const { locale } = await params;
+  const messages = await getMessages(locale);
+  const t = messages.home;
+
+  return (
+    <div className="pt-20 bg-background font-body">
+      {/* Hero Section */}
+      <section className=" grid grid-cols-1 lg:grid-cols-2 py-10 ">
+        {/* Left */}
+        <div className="flex flex-col gap-y-5 mx-10 ">
+          <h1 className="hero-gradient text-6xl font-heading">
+            Digital QA/QC Tools. Built for Heavy Industry.
+          </h1>
+          <p className="text-primary">
+            Automating MDR compilation, weld traceability, and document
+            consistency. We transform complex engineering data into clear,
+            auditable asset records.
+          </p>
+          <div className="mt-5">
+            <CtaButton>Explore Our Digital Solution</CtaButton>
+          </div>
+        </div>
+        {/* Right */}
+        <div className="relative">
+          {/* Gradient Overlay */}
+          <div className="absolute -top-4 -left-3 w-[82%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl z-10"></div>
+          <Image
+            src="/hero-image.jpeg"
+            alt="Hero"
+            className="w-full h-auto max-w-125 absolute z-20"
+            width={500}
+            height={500}
+          />
+        </div>
+      </section>
+      {/* Core Digital Services */}
+      <section className="flex flex-col items-center my-20">
+        <h1 className="main-heading">Automating Industrial Compliance</h1>
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretch gap-x-5">
+          {services.map((service, index) => {
+            const Icon = service.Icon;
+            return (
+              <div
+                key={index}
+                className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all"
+              >
+                <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
+                  <Icon />
+                </div>
+                <h1 className="text-lg font-heading">{service.heading}</h1>
+                <p className="font-body text-base">{service.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      {/* Engineering + Software */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 my-20 mx-10 items-center justify-between gap-x-5">
+        {/* Left */}
+        <div className="flex flex-col gap-y-4">
+          <h1 className="main-heading">
+            Built by engineers who have signed off the documentation themselves.
+          </h1>
+          <p className="text-primary/90 ">
+            BW Digit is a hybrid practice. Our welding, materials and QA
+            engineers define the verification logic. Our software team turns
+            that logic into a deterministic platform that handles the volume,
+            consistency and audit trail no spreadsheet can.
+          </p>
+          {[
+            "Verification rules authored by code-qualified inspectors ",
+            "Deterministic pipelines — every check is reproducible",
+            "Deployed alongside your QA/QC organization, not above it",
+          ].map((point, index) => (
+            <div key={index} className="flex gap-x-1 ">
+              <Check className="text-primary-accent" />
+              <p className="text-primary/70">{point}</p>
+            </div>
+          ))}
+        </div>
+        {/* Right */}
+        <div className="relative">
+          {/* Vertical timeline */}
+          <div className="absolute left-[1.4rem] top-6 bottom-6 w-px bg-gradient-to-b from-primary-accent via-primary-accent/40 to-transparent"></div>
+
+          <ol className="space-y-6">
+            {steps.map((step, index) => (
+              <li key={index} className="relative pl-14">
+                {/* Step Number */}
+                <div className="absolute left-0 top-5 grid w-11 h-11 place-items-center rounded-full border border-primary-accent/40 bg-card text-sm font-semibold text-primary-accent z-10">
+                  {(index + 1).toString().padStart(2, "0")}
+                </div>
+
+                {/* Card */}
+                <div className="bg-[#11161c] rounded-2xl border border-primary-accent/10 p-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="text-lg font-heading text-primary">
+                      {step.heading}
+                    </h3>
+
+                    <Check className="w-4 h-4 text-primary-accent shrink-0 mt-1" />
+                  </div>
+
+                  <p className="mt-2 text-primary/70 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+      {/* Engineering Heritage */}
+      <section className="flex flex-col items-center my-20 gap-y-5">
+        <h1 className="main-heading text-center">
+          Operational experience encoded into <br /> software
+        </h1>
+        <p className="text-primary/70 text-center">
+          Every module is grounded in years of project work delivering complex
+          <br />
+          welded assets into demanding regulatory environments.
+        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4 mx-10 mt-5">
+          {heritage.map((h, index) => {
+            const Icon = h.icon;
+            return (
+              <div
+                className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all "
+                key={index}
+              >
+                <div className="bg-secondary/10 w-fit h-fit p-2 rounded-2xl">
+                  <Icon className="text-primary-accent" />
+                </div>
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-heading text-primary">
+                    {h.heading}
+                  </h3>
+                  <p className="mt-2 text-primary/70 leading-relaxed">
+                    {h.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      {/* The Platform */}
+      <section className="flex flex-col items-center my-20 gap-y-5">
+        <h1 className="main-heading text-center">
+          One control surface for industrial documentation
+        </h1>
+        <p className="text-primary/70">
+          A single platform consolidating MDR compilation, weld traceability and
+          compliance verification across every project, contractor and site.
+        </p>
+        <Image src="/dashboard.png" alt="Platform" width={950} height={800} />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-10">
+          {platfrom.map((p, index) => {
+            return (
+              <div
+                className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all "
+                key={index}
+              >
+                <div className="flex flex-col">
+                  <h3 className="text-lg font-heading text-primary">
+                    {p.heading}
+                  </h3>
+                  <p className="mt-2 text-base text-primary/70 leading-relaxed">
+                    {p.description}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      {/* Bussines Value */}
+      <section className="flex flex-col items-center my-20 gap-y-5">
+        <h1 className="main-heading">Outcomes operators and EPCs measure</h1>
+        <div className="grid grid-cols-3 gap-x-5 mx-10">
+          {outcomes.map((outcome, index) => {
+            const Icon = outcome.icon;
+            return (
+              <div
+                key={index}
+                className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all"
+              >
+                <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
+                  <Icon />
+                </div>
+                <h1 className="text-2xl font-heading text-primary-accent">
+                  {outcome.percentage}
+                </h1>
+                <h1 className="text-lg font-semibold font-heading">
+                  {outcome.heading}
+                </h1>
+                <p className="font-body text-base">{outcome.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      {/* Case Study */}
+      <section className="flex flex-col items-center my-20 gap-y-5">
+        <h1 className="main-heading">Proven in Complex Environments</h1>
+        <p className="text-primary/70">
+          Selected deployments across offshore, pipeline and petrochemical
+          projects in Europe.
+        </p>
+        <div className="grid grid-cols-3 gap-x-5 mx-10">
+          {studies.map((study, index) => {
+            return (
+              <div
+                key={index}
+                className={`text-primary bg-${study.hoverColor}/5 p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl border-card border-[0.5px]   transition-all`}
+              >
+                <h3 className="text-sm font-heading text-primary-accent">
+                  {study.heading}
+                </h3>
+                <h1 className="text-lg font-semibold font-heading">
+                  {study.heading}
+                </h1>
+                <p className="font-body text-base">{study.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      {/* Contact Form */}
+      <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10">
+        {/* Left */}
+        <div className="flex flex-col gap-y-5 pt-12">
+          <h1 className="main-heading">Deploy BW Digit on Your Project</h1>
+          <p className="text-primary/70">
+            Request a technical demonstration or discuss industrial data
+            automation requirements with our team.
+          </p>
+          <div className="flex items-center gap-2">
+            <Mail className="text-primary-accent" />
+            <p className="text-primary/70">info@bwdigit.com</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-linkedin size-4 text-primary-accent"
+              aria-hidden="true"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <p className="text-primary/70">info@bwdigit.com</p>
+          </div>
+        </div>
+        {/* Right */}
+        <div className="bg-card border-primary-accent/40 border rounded-2xl p-10 flex flex-col gap-y-5">
+          <label
+            htmlFor="name"
+            className="flex flex-col text-primary/80 uppercase text-sm"
+          >
+            Name
+            <input
+              type="text"
+              id="name"
+              className="border-primary/50 hover:border-primary-accent/50 border rounded-xl focus:outline-none p-2 mt-2"
+            />
+          </label>
+          <label
+            htmlFor="company"
+            className="flex flex-col text-primary/80 uppercase text-sm"
+          >
+            Company
+            <input
+              type="text"
+              id="company"
+              className="border-primary/50 hover:border-primary-accent/50 border rounded-xl focus:outline-none p-2 mt-2"
+            />
+          </label>
+          <label
+            htmlFor="cemail"
+            className="flex flex-col text-primary/80 uppercase text-sm"
+          >
+            Corporate Email
+            <input
+              type="text"
+              id="cemail"
+              className="border-primary/50 hover:border-primary-accent/50 border rounded-xl focus:outline-none p-2 mt-2"
+            />
+          </label>
+          <label
+            htmlFor="message"
+            className="flex flex-col text-primary/80 uppercase text-sm"
+          >
+            Message
+            <textarea
+              name="message"
+              id="message"
+              className="border-primary/50 hover:border-primary-accent/50 border rounded-xl focus:outline-none p-2 mt-2"
+            ></textarea>
+          </label>
+          <button type="submit">
+            <CtaButton>Submit</CtaButton>
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+}

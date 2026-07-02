@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: #0A0D10;
+  --color-primary: #F8FAFC; 
+  --color-secondary: #94A3B8; 
+  --color-primary-accent: #5EEAD4; 
+  --color-secondary-accent: #3B82F6; 
+  --color-orange: #F97316; 
+  --color-card: #11161c;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-heading);
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom right, var(--color-primary-accent), var(--color-secondary-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body
+{
+  color: var(--font-body);
+}
+
+.main-heading 
+{
+  @apply text-primary font-heading text-3xl font-bold;
+}
