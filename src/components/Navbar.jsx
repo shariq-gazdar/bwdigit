@@ -52,36 +52,36 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
       </div>
 
       {/* Consultation Button */}
-      <div className="flex flex-row items-center gap-x-5">
+      <div className=" flex-row items-center gap-x-5 hidden lg:flex">
         <CtaButton className="hover:text-primary-accent transition-colors">
           Consultation
-          </CtaButton>
-      {/* Desktop Language selector */}
-      <div
-        className="relative hidden md:block"
-        onMouseEnter={() => setOpenLang(true)}
-        onMouseLeave={() => setOpenLang(false)}
+        </CtaButton>
+        {/* Desktop Language selector */}
+        <div
+          className="relative hidden md:block"
+          onMouseEnter={() => setOpenLang(true)}
+          onMouseLeave={() => setOpenLang(false)}
         >
-        <button className="flex flex-row items-center gap-2">
-          <Globe size={20} />
-          <span>{getLocaleLabel(locale)}</span>
-          <ChevronDown size={16} />
-        </button>
-        {openLang && (
-          <div className="absolute top-full right-0 bg-white shadow-lg rounded-lg p-2 min-w-30">
-            {locales.map((loc) => (
-              <button
-              key={loc}
-              onClick={() => handleLanguageChange(loc)}
-              className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
-                loc === locale ? "font-semibold" : ""
-              }`}
-              >
-                {getLocaleLabel(loc)}
-              </button>
-            ))}
-          </div>
-        )}
+          <button className="flex flex-row items-center gap-2">
+            <Globe size={20} />
+            <span>{getLocaleLabel(locale)}</span>
+            <ChevronDown size={16} />
+          </button>
+          {openLang && (
+            <div className="absolute top-full right-0 bg-white shadow-lg rounded-lg p-2 min-w-30">
+              {locales.map((loc) => (
+                <button
+                  key={loc}
+                  onClick={() => handleLanguageChange(loc)}
+                  className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
+                    loc === locale ? "font-semibold" : ""
+                  }`}
+                >
+                  {getLocaleLabel(loc)}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
@@ -106,6 +106,9 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
               {link.label}
             </a>
           ))}
+          <CtaButton onClick={() => setMobileMenuOpen(false)}>
+            Consultation
+          </CtaButton>
           <div className="border-t border-primary/20 pt-4">
             <div className="flex flex-col gap-2">
               {locales.map((loc) => (
