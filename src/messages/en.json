@@ -111,18 +111,22 @@
     },
     "heritage": [
       {
+        "image":"/card-images/Offshore.png",
         "title": "Offshore Wind Structures",
         "description": "Heavy-wall monopile, transition piece and jacket fabrication — full weld traceability against DNV-ST-0126 and project class rules."
       },
       {
+        "image": "/card-images/Pipeline.png",
         "title": "High-Pressure Pipelines",
         "description": "Cross-country transmission lines with full mapping of welder qualifications, heat numbers, hydrotest and UT certification."
       },
       {
+        "image": "/card-images/Fabrication.png",
         "title": "Heavy Steel Fabrication",
         "description": "Spools, pressure vessels and large welded assemblies — verification of WPS/PQR coverage and dimensional inspection records."
       },
       {
+        "image": "/card-images/Plants.png",
         "title": "Petrochemical Plants",
         "description": "Process piping, columns and reactors compiled into hyperlinked MDR packs aligned with EN, ASME and operator standards."
       }

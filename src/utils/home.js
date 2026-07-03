@@ -107,7 +107,7 @@ export const studies = [
       "Deployed to automate the tracking and validation of thousands of material test reports (MTR) and non-destructive testing (NDT) logs for heavy-wall steel structures. Successfully cross-referenced 100% of weld tracking data against strict maritime requirements.",
   },
   {
-    hoverColor: "secondary-accent",
+    hoverColor: "blue",
     tagline: "Pipeline Infrastructure Support",
     heading: "European High-Pressure Transmission Pipeline",
     description:

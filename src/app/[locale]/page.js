@@ -61,7 +61,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering + Software */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 my-20 mx-10 items-center justify-between gap-x-5 gap-y-10 lg:gap-y-0">
+      <section className="grid grid-cols-1 lg:grid-cols-2 lg:my-20 my-10 mx-10 items-center justify-between gap-x-5 gap-y-10 lg:gap-y-0">
         {/* Left */}
         <div className="flex flex-col gap-y-4">
           <h1 className="main-heading">{t.engineering_section.title}</h1>
@@ -108,7 +108,10 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering Heritage */}
-      <section className="flex flex-col items-center my-20 gap-y-5" id="portfolio">
+      <section
+        className="flex flex-col items-center lg:my-20 my-10 gap-y-5"
+        id="portfolio"
+      >
         <h1 className="main-heading text-center">{t.heritage_section.title}</h1>
         <p className="text-primary/70 text-center">
           {t.heritage_section.description}
@@ -118,13 +121,19 @@ export default async function Home({ params }) {
             const Icon = heritage[index].icon;
             return (
               <div
-                className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all "
+                className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all "
                 key={index}
               >
-                <div className="bg-secondary/10 w-fit h-fit p-2 rounded-2xl">
-                  <Icon className="text-primary-accent" />
+                <div className="relative w-full h-96">
+                  <Image
+                    src={h.image}
+                    fill
+                    className="object-cover"
+                    alt={h.title}
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-primary-accent/30 to-transparent" />
                 </div>
-                <div className="flex flex-col">
+                <div className="p-6">
                   <h3 className="text-lg font-heading text-primary">
                     {h.title}
                   </h3>
@@ -138,10 +147,21 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* The Platform */}
-      <section className="flex flex-col items-center my-20 gap-y-5" id="about">
+      <section
+        className="flex flex-col items-center lg:my-20 my-10 gap-y-5"
+        id="about"
+      >
         <h1 className="main-heading text-center">{t.platform_section.title}</h1>
-        <p className="text-primary/70 text-center">{t.platform_section.description}</p>
-        <Image src="/dashboard.png" alt="Platform" width={950} height={800} className="hidden lg:block" />
+        <p className="text-primary/70 text-center">
+          {t.platform_section.description}
+        </p>
+        <Image
+          src="/dashboard.png"
+          alt="Platform"
+          width={950}
+          height={800}
+          className="hidden lg:block"
+        />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-10">
           {t.platform.map((p, index) => {
             return (
@@ -163,7 +183,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Bussines Value */}
-      <section className="flex flex-col items-center my-20 gap-y-5">
+      <section className="flex flex-col items-center lg:my-20 my-10 gap-y-5">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
           {t.outcomes.map((outcome, index) => {
@@ -189,7 +209,10 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Case Study */}
-      <section className="flex flex-col items-center my-20 gap-y-5" id="blog">
+      <section
+        className="flex flex-col items-center lg:my-20 my-10 gap-y-5"
+        id="blog"
+      >
         <h1 className="main-heading">{t.studies_section.title}</h1>
         <p className="text-primary/70">{t.studies_section.description}</p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
@@ -197,7 +220,13 @@ export default async function Home({ params }) {
             return (
               <div
                 key={index}
-                className={`text-primary bg-${studies[index].hoverColor}/5 p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl border-card border-[0.5px]   transition-all`}
+                className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl border-[0.5px] transition-all border-primary/30 ${
+                  studies[index].hoverColor === "orange"
+                    ? "bg-linear-to-b from-orange/30 to-card"
+                    : studies[index].hoverColor === "blue"
+                      ? "bg-linear-to-b from-secondary-accent/30 to-card"
+                      : "bg-linear-to-b from-primary-accent/30 to-card"
+                }`}
               >
                 <h3 className="text-sm font-heading text-primary-accent">
                   {study.tagline}
@@ -212,7 +241,10 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Contact Form */}
-      <section className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-y-10 lg:gap-y-0" id="contact">
+      <section
+        className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-y-10 lg:gap-y-0"
+        id="contact"
+      >
         {/* Left */}
         <div className="flex flex-col gap-y-5 pt-12">
           <h1 className="main-heading">{t.contact_section.title}</h1>
