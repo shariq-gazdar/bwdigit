@@ -28,6 +28,7 @@
     ],
     "services": [
       {
+        
         "title": "UI/UX Dizajn",
         "description": "Rešenja usmerena na korisnika",
         "href": "/services/ui-ux-design/"
@@ -70,14 +71,17 @@
     },
     "services": [
       {
+        "image": "/service-svgs/MDR.png",
         "title": "Automatizovano sastavljanje MDR-a",
         "description": "Analiziranje, validiranje i sastavljanje svakog sertifikata, mape zavarivanja i izveštaja o testiranju u jedan paket dokumenata spreman za reviziju, garantujući predaju bez grešaka."
       },
       {
+        "image": "/service-svgs/Weld.png",
         "title": "Digitalno praćenje zavarivanja",
         "description": "Živa matrica praćenja koja povezuje kvalifikacije zvarača, WPS, brojeve toplote i rezultate NDT-a preko svakog spoja, navoja i sklopa."
       },
       {
+        "image": "/service-svgs/Automation.png",
         "title": "Automatizacija usaglašenosti",
         "description": "Kontinuirana provera protiv DNV, EN, ASME i specifikacija klijenta, sa zastavama izuzetaka podignutim čim se podaci odmaknu od specifikacije."
       }

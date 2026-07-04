@@ -28,6 +28,64 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
     return labels[loc] || loc.toUpperCase();
   };
 
+  const getFlag = (loc) => {
+    const flags = {
+      en: (
+        <svg
+          viewBox="0 0 24 16"
+          className="h-4 w-6 shrink-0 overflow-hidden rounded-sm"
+          aria-hidden="true"
+          role="img"
+        >
+          <rect width="24" height="16" fill="#012169"></rect>
+          <path
+            d="M0,0 L24,16 M24,0 L0,16"
+            stroke="#FFFFFF"
+            stroke-width="3.2"
+          ></path>
+          <path
+            d="M0,0 L24,16 M24,0 L0,16"
+            stroke="#C8102E"
+            stroke-width="1.6"
+          ></path>
+          <path
+            d="M9.6,0 H14.4 V16 H9.6 Z M0,5.6 H24 V10.4 H0 Z"
+            fill="#FFFFFF"
+          ></path>
+          <path
+            d="M10.8,0 H13.2 V16 H10.8 Z M0,6.8 H24 V9.2 H0 Z"
+            fill="#C8102E"
+          ></path>
+        </svg>
+      ),
+      de: (
+        <svg
+          viewBox="0 0 24 16"
+          className="h-4 w-6 shrink-0 overflow-hidden rounded-sm"
+          aria-hidden="true"
+          role="img"
+        >
+          <rect width="24" height="5.33" fill="#000000"></rect>
+          <rect y="5.33" width="24" height="5.34" fill="#DD0000"></rect>
+          <rect y="10.67" width="24" height="5.33" fill="#FFCE00"></rect>
+        </svg>
+      ),
+      sr: (
+        <svg
+          viewBox="0 0 24 16"
+          className="h-4 w-6 shrink-0 overflow-hidden rounded-sm"
+          aria-hidden="true"
+          role="img"
+        >
+          <rect width="24" height="5.33" fill="#EE1C25"></rect>
+          <rect y="5.33" width="24" height="5.34" fill="#0C4675"></rect>
+          <rect y="10.67" width="24" height="5.33" fill="#FFFFFF"></rect>
+        </svg>
+      ),
+    };
+    return flags[loc] || "🏳️";
+  };
+
   return (
     <nav className="w-full fixed flex flex-row items-center justify-between px-10 py-5 bg-background/90 z-999 text-primary">
       {/* Logo */}
@@ -63,7 +121,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           onMouseLeave={() => setOpenLang(false)}
         >
           <button className="flex flex-row items-center gap-2">
-            <Globe size={20} />
+            <span className="text-xl">{getFlag(locale)}</span>
             <span>{getLocaleLabel(locale)}</span>
             <ChevronDown size={16} />
           </button>
@@ -74,9 +132,12 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
                   key={loc}
                   onClick={() => handleLanguageChange(loc)}
                   className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
-                    loc === locale ? "font-semibold" : ""
+                    loc === locale
+                      ? "bg-primary-accent text-primary-foreground font-semibold"
+                      : ""
                   }`}
                 >
+                  <span className="mr-2">{getFlag(loc)}</span>
                   {getLocaleLabel(loc)}
                 </button>
               ))}
@@ -99,27 +160,34 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           {navbar.links.map((link, index) => (
             <a
               key={index}
-              className="text-primary hover:text-primary-accent transition-colors"
+              className="text-primary hover:text-primary-accent transition-colors py-1"
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <CtaButton onClick={() => setMobileMenuOpen(false)}>
+          <CtaButton
+            changeStyle={
+              "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+            }
+            onClick={() => setMobileMenuOpen(false)}
+          >
             Consultation
           </CtaButton>
           <div className="border-t border-primary/20 pt-4">
-            <div className="flex flex-col gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {locales.map((loc) => (
                 <button
                   key={loc}
                   onClick={() => handleLanguageChange(loc)}
-                  className={`flex flex-row items-center gap-2 text-primary hover:text-primary-accent transition-colors ${
-                    loc === locale ? "font-semibold" : ""
+                  className={`flex flex-row items-center justify-center gap-2 p-2 rounded-2xl bg-card text-primary hover:text-primary-accent transition-colors ${
+                    loc === locale
+                      ? "bg-primary-accent text-primary-foreground font-semibold"
+                      : ""
                   }`}
                 >
-                  <Globe size={16} />
+                  <span className="text-xl">{getFlag(loc)}</span>
                   {getLocaleLabel(loc)}
                 </button>
               ))}

@@ -28,16 +28,19 @@
     ],
     "services": [
       {
+      
         "title": "UI/UX-Design",
         "description": "Benutzerorientierte Designlösungen",
         "href": "/services/ui-ux-design/"
       },
       {
+    
         "title": "KI-Automatisierung",
         "description": "Intelligente Prozessautomatisierung",
         "href": "/services/ai-automation/"
       },
       {
+ 
         "title": "E-Commerce-Lösungen",
         "description": "Maßgeschneiderte Onlineshops",
         "href": "/services/ecommerce-solutions/"
@@ -70,14 +73,17 @@
     },
     "services": [
       {
+        "image": "/service-svgs/MDR.png",
         "title": "Automatisierte MDR-Zusammenstellung",
         "description": "Analysieren, validieren und zusammenstellen aller Zertifikate, Schweißpläne und Prüfberichte in einem einzigen prüffertigen Dokumentationspaket mit garantierter fehlerfreier Übergabe."
       },
       {
+        "image": "/service-svgs/Weld.png",
         "title": "Digitale Schweißnahtverfolgung",
         "description": "Eine Live-Verfolgungsmatrix, die Schweißerqualifikationen, WPS, Chargennummern und ZfP-Ergebnisse über jede Verbindung, Spule und Baugruppe verknüpft."
       },
       {
+        "image": "/service-svgs/Automation.png",
         "title": "Konformitätsautomatisierung",
         "description": "Kontinuierliche Überprüfung gegen DNV, EN, ASME und Kundenspezifikationen mit Ausnahme-Flags, sobald Daten von der Spezifikation abweichen."
       }

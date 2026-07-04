@@ -70,14 +70,17 @@
     },
     "services": [
       {
+        "image": "/service-svgs/MDR.png",
         "title": "Automated MDR Compilation",
         "description": "Parse, validate and assemble every certificate, weld map and test report into a single audit-ready documentation pack, guaranteeing zero-error handovers."
       },
       {
+        "image": "/service-svgs/Weld.png",
         "title": "Digital Weld Tracking",
         "description": "A live traceability matrix linking welder qualifications, WPS, heat numbers and NDT results across every joint, spool and assembly."
       },
       {
+        "image": "/service-svgs/Automation.png",
         "title": "Compliance Automation",
         "description": "Continuous verification against DNV, EN, ASME and client specifications, with exception flags raised the moment data drifts from spec."
       }

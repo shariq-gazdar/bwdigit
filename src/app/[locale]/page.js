@@ -11,9 +11,9 @@ export default async function Home({ params }) {
   const t = messages.home;
 
   return (
-    <div className="pt-20 bg-background font-body">
+    <div className="pt-20 bg-background font-body w-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className=" grid grid-cols-1 lg:grid-cols-2  py-10 gap-y-10 lg:gap-y-0 mb-2 lg:mb-0">
+      <section className=" grid grid-cols-1 lg:grid-cols-2  py-10 gap-y-10 lg:gap-y-0  lg:mb-0">
         {/* Left */}
         <div className="flex flex-col gap-y-5 mx-10 ">
           <h1 className="hero-gradient text-6xl font-heading">
@@ -21,13 +21,19 @@ export default async function Home({ params }) {
           </h1>
           <p className="text-primary">{t.hero.description}</p>
           <div className="mt-5">
-            <CtaButton>{t.hero.cta}</CtaButton>
+            <CtaButton
+              changeStyle={
+                "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+              }
+            >
+              {t.hero.cta}
+            </CtaButton>
           </div>
         </div>
         {/* Right */}
         <div className="relative hidden lg:block">
           {/* Gradient Overlay */}
-          <div className="absolute top-3 left-3 w-[85%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl  z-10"></div>
+          <div className="absolute top-0 left-0 w-[85%] h-full bg-linear-to-br from-secondary-accent/20 to-primary-accent blur-2xl  z-10"></div>
           <Image
             src="/hero-image.jpeg"
             alt="Hero"
@@ -39,7 +45,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Core Digital Services */}
-      <section className="flex flex-col items-center my-20">
+      <section className="flex flex-col items-center my-10 lg:my-20">
         <h1 className="main-heading text-center">{t.services_section.title}</h1>
         {/* Service Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretch gap-x-5">
@@ -48,13 +54,20 @@ export default async function Home({ params }) {
             return (
               <div
                 key={index}
-                className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all"
+                className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all overflow-hidden"
               >
-                <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
-                  <Icon />
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-auto"
+                  width={400}
+                  height={300}
+                />
+                <div className="p-10 pt-6 flex flex-col gap-y-6">
+           
+                  <h1 className="text-lg font-heading">{service.title}</h1>
+                  <p className="font-body text-base">{service.description}</p>
                 </div>
-                <h1 className="text-lg font-heading">{service.title}</h1>
-                <p className="font-body text-base">{service.description}</p>
               </div>
             );
           })}
@@ -109,7 +122,7 @@ export default async function Home({ params }) {
       </section>
       {/* Engineering Heritage */}
       <section
-        className="flex flex-col items-center lg:my-20 my-10 gap-y-5"
+        className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-0 gap-y-5"
         id="portfolio"
       >
         <h1 className="main-heading text-center">{t.heritage_section.title}</h1>
@@ -124,7 +137,7 @@ export default async function Home({ params }) {
                 className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all "
                 key={index}
               >
-                <div className="relative w-full h-96">
+                {/* <div className="relative w-full h-96">
                   <Image
                     src={h.image}
                     fill
@@ -132,7 +145,7 @@ export default async function Home({ params }) {
                     alt={h.title}
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-primary-accent/30 to-transparent" />
-                </div>
+                </div> */}
                 <div className="p-6">
                   <h3 className="text-lg font-heading text-primary">
                     {h.title}
@@ -148,7 +161,7 @@ export default async function Home({ params }) {
       </section>
       {/* The Platform */}
       <section
-        className="flex flex-col items-center lg:my-20 my-10 gap-y-5"
+        className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-0 gap-y-5"
         id="about"
       >
         <h1 className="main-heading text-center">{t.platform_section.title}</h1>
@@ -183,7 +196,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Bussines Value */}
-      <section className="flex flex-col items-center lg:my-20 my-10 gap-y-5">
+      <section className="flex flex-col items-center lg:my-20 my-10 gap-y-5 mx-5 lg:mx-0">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
           {t.outcomes.map((outcome, index) => {
@@ -210,11 +223,13 @@ export default async function Home({ params }) {
       </section>
       {/* Case Study */}
       <section
-        className="flex flex-col items-center lg:my-20 my-10 gap-y-5"
+        className="flex flex-col items-center mx-5 lg:my-20 my-10 gap-y-5 mx-5 lg:mx-0"
         id="blog"
       >
-        <h1 className="main-heading">{t.studies_section.title}</h1>
-        <p className="text-primary/70">{t.studies_section.description}</p>
+        <h1 className="main-heading text-center">{t.studies_section.title}</h1>
+        <p className="text-primary/70 text-center">
+          {t.studies_section.description}
+        </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
           {t.studies.map((study, index) => {
             return (
@@ -323,7 +338,13 @@ export default async function Home({ params }) {
             ></textarea>
           </label>
           <button type="submit">
-            <CtaButton>{t.contact_form.submit}</CtaButton>
+            <CtaButton
+              changeStyle={
+                "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+              }
+            >
+              {t.contact_form.submit}
+            </CtaButton>
           </button>
         </div>
       </section>
