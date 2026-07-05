@@ -3,7 +3,7 @@ import { getMessages } from "../../i18n/request.js";
 import { locales, defaultLocale } from "../../i18n/config.js";
 import CtaButton from "@/components/CtaButton.jsx";
 import { heritage, outcomes, platfrom, services, steps, studies } from '@/utils/home.js'
-import { Check, Factory, Mail ,  } from "lucide-react";
+import { Check, Factory, Mail } from "lucide-react";
 
 export default async function Home({ params }) {
   const { locale } = await params;
@@ -20,13 +20,20 @@ export default async function Home({ params }) {
             {t.hero.title}
           </h1>
           <p className="text-primary">{t.hero.description}</p>
-          <div className="mt-5">
+          <div className="mt-5 flex gap-x-2 gap-y-2 lg:gap-y-0">
             <CtaButton
               changeStyle={
                 "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
               }
             >
               {t.hero.cta}
+            </CtaButton>
+            <CtaButton
+              changeStyle={
+                "bg-background text-primary px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+              }
+            >
+              {"Request Demo"}
             </CtaButton>
           </div>
         </div>
@@ -56,13 +63,14 @@ export default async function Home({ params }) {
                 key={index}
                 className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all overflow-hidden"
               >
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-auto"
-                  width={400}
-                  height={300}
-                />
+                <div className="relative w-full h-80 ">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-contain p-10"
+                    fill
+                  />
+                </div>
                 <div className="p-10 pt-6 flex flex-col gap-y-6">
                   <h1 className="text-lg font-heading">{service.title}</h1>
                   <p className="font-body text-base">{service.description}</p>
@@ -128,24 +136,15 @@ export default async function Home({ params }) {
         <p className="text-primary/70 text-center">
           {t.heritage_section.description}
         </p>
-        <div className="flex flex-col gap-8 mx-10 mt-5 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-10 mt-5 max-w-6xl">
           {t.heritage.map((h, index) => {
             const Icon = heritage[index].icon;
-            const isEven = index % 2 === 0;
             return (
               <div
-                className={`flex flex-col lg:flex-row items-center gap-8 ${isEven ? "" : "lg:flex-row-reverse"}`}
+                className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all "
                 key={index}
               >
-                <div className="relative w-full lg:w-1/2 h-96 rounded-2xl overflow-hidden">
-                  <Image
-                    src={h.image}
-                    fill
-                    className="object-cover"
-                    alt={h.title}
-                  />
-                </div>
-                <div className="bg-card rounded-2xl p-6 w-full lg:w-1/2 hover:border hover:border-primary-accent transition-all">
+                <div className="bg-card rounded-2xl p-6 hover:border hover:border-primary-accent transition-all">
                   <h3 className="text-lg font-heading text-primary">
                     {h.title}
                   </h3>
