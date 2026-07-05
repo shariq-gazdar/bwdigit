@@ -223,7 +223,7 @@ export default async function Home({ params }) {
       </section>
       {/* Case Study */}
       <section
-        className="flex flex-col items-center mx-5 lg:my-20 my-10 gap-y-5 mx-5 lg:mx-0"
+        className="flex flex-col items-center mx-2 lg:my-20 my-10 gap-y-5  lg:mx-0"
         id="blog"
       >
         <h1 className="main-heading text-center">{t.studies_section.title}</h1>
