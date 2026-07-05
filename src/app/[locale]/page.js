@@ -64,7 +64,6 @@ export default async function Home({ params }) {
                   height={300}
                 />
                 <div className="p-10 pt-6 flex flex-col gap-y-6">
-           
                   <h1 className="text-lg font-heading">{service.title}</h1>
                   <p className="font-body text-base">{service.description}</p>
                 </div>
@@ -120,7 +119,7 @@ export default async function Home({ params }) {
           </ol>
         </div>
       </section>
-      {/* Engineering Heritage */}
+      {/* Engineering Heritage  Operational */}
       <section
         className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-0 gap-y-5"
         id="portfolio"
@@ -129,24 +128,24 @@ export default async function Home({ params }) {
         <p className="text-primary/70 text-center">
           {t.heritage_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-4 mx-10 mt-5">
+        <div className="flex flex-col gap-8 mx-10 mt-5 max-w-6xl">
           {t.heritage.map((h, index) => {
             const Icon = heritage[index].icon;
+            const isEven = index % 2 === 0;
             return (
               <div
-                className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all "
+                className={`flex flex-col lg:flex-row items-center gap-8 ${isEven ? "" : "lg:flex-row-reverse"}`}
                 key={index}
               >
-                {/* <div className="relative w-full h-96">
+                <div className="relative w-full lg:w-1/2 h-96 rounded-2xl overflow-hidden">
                   <Image
                     src={h.image}
                     fill
                     className="object-cover"
                     alt={h.title}
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-primary-accent/30 to-transparent" />
-                </div> */}
-                <div className="p-6">
+                </div>
+                <div className="bg-card rounded-2xl p-6 w-full lg:w-1/2 hover:border hover:border-primary-accent transition-all">
                   <h3 className="text-lg font-heading text-primary">
                     {h.title}
                   </h3>
