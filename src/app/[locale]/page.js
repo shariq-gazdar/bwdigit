@@ -11,7 +11,7 @@ export default async function Home({ params }) {
   const t = messages.home;
 
   return (
-    <div className="pt-20 bg-background font-body w-screen overflow-x-hidden">
+    <div className="pt-20 bg-background font-body w-screen ">
       {/* Hero Section */}
       <section className=" grid grid-cols-1 lg:grid-cols-2  py-10 gap-y-10 lg:gap-y-0  lg:mb-0">
         {/* Left */}
@@ -63,15 +63,10 @@ export default async function Home({ params }) {
                 key={index}
                 className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all overflow-hidden"
               >
-                <div className="relative w-full h-80 ">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-contain p-10"
-                    fill
-                  />
-                </div>
                 <div className="p-10 pt-6 flex flex-col gap-y-6">
+                  <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
+                    <Icon />
+                  </div>
                   <h1 className="text-lg font-heading">{service.title}</h1>
                   <p className="font-body text-base">{service.description}</p>
                 </div>

@@ -73,17 +73,17 @@
       {
         "image": "/service-svgs/MDR.png",
         "title": "Automatizovano sastavljanje MDR-a",
-        "description": "Analiziranje, validiranje i sastavljanje svakog sertifikata, mape zavarivanja i izveštaja o testiranju u jedan paket dokumenata spreman za reviziju, garantujući predaju bez grešaka."
+        "description": "Eliminacija ručne papirologije. Naši alati automatski izvlače, verifikuju i sastavljaju kompletne Manufacturing Data Records (MDR) i As-Built dokumentacione pakete, garantujući predaju bez grešaka."
       },
       {
         "image": "/service-svgs/Weld.png",
         "title": "Digitalno praćenje zavarivanja",
-        "description": "Živa matrica praćenja koja povezuje kvalifikacije zvarača, WPS, brojeve toplote i rezultate NDT-a preko svakog spoja, navoja i sklopa."
+        "description": "Mapiranje napretka i kvaliteta u realnom vremenu. Digitalno povezujte kvalifikacije zvarača, WPS, rezultate NDT-a i materijalne sertifikate sa svakim pojedinačnim spojem, pružajući apsolutnu praćenost imovine."
       },
       {
         "image": "/service-svgs/Automation.png",
         "title": "Automatizacija usaglašenosti",
-        "description": "Kontinuirana provera protiv DNV, EN, ASME i specifikacija klijenta, sa zastavama izuzetaka podignutim čim se podaci odmaknu od specifikacije."
+        "description": "Pametni motori verifikacije napravljeni da analiziraju inženjerske podatke protiv DNV, ISO i specifičnih zahteva klijenta, označavajući praznine u podacima ili greške u dokumentaciji pre finalne revizije."
       }
     ],
     "engineering_section": {
@@ -115,18 +115,22 @@
     },
     "heritage": [
       {
+        "image": "/card-images/Offshore.png",
         "title": "Offshore vetrostrukture",
         "description": "Monopile sa debelim zidovima, prelazni deo i izrada jaketa — potpuno praćenje zavarivanja protiv DNV-ST-0126 i pravila klase projekta."
       },
       {
+        "image": "/card-images/Pipeline.png",
         "title": "Cevovodi visokog pritiska",
         "description": "Transmisione linije preko zemlje sa potpunim mapiranjem kvalifikacija zvarača, brojeva toplote, hidrotesta i UT sertifikacije."
       },
       {
+        "image": "/card-images/Fabrication.png",
         "title": "Teška čelična izrada",
         "description": "Navoji, posude pritiska i veliki zavarovani sklopovi — verifikacija pokrivenosti WPS/PQR i evidencije dimenzionalne inspekcije."
       },
       {
+        "image": "/card-images/Plants.png",
         "title": "Petrohemijske pogone",
         "description": "Procesne cevovode, kolone i reaktori sastavljeni u hiperlinkovane MDR pakete usklađene sa EN, ASME i standardima operatera."
       }

@@ -75,17 +75,17 @@
       {
         "image": "/service-svgs/MDR.png",
         "title": "Automatisierte MDR-Zusammenstellung",
-        "description": "Analysieren, validieren und zusammenstellen aller Zertifikate, Schweißpläne und Prüfberichte in einem einzigen prüffertigen Dokumentationspaket mit garantierter fehlerfreier Übergabe."
+        "description": "Beseitigung manueller Papierarbeit. Unsere Tools extrahieren, verifizieren und kompilieren automatisch vollständige Manufacturing Data Records (MDR) und As-Built-Dokumentationspakete mit garantierter fehlerfreier Übergabe."
       },
       {
         "image": "/service-svgs/Weld.png",
         "title": "Digitale Schweißnahtverfolgung",
-        "description": "Eine Live-Verfolgungsmatrix, die Schweißerqualifikationen, WPS, Chargennummern und ZfP-Ergebnisse über jede Verbindung, Spule und Baugruppe verknüpft."
+        "description": "Echtzeit-Fortschritts- und Qualitätsabbildung. Digital verknüpfen Sie Schweißerqualifikationen, WPS, ZfP-Ergebnisse und Materialzertifikate mit jeder einzelnen Verbindung für absolute Anlagenverfolgbarkeit."
       },
       {
         "image": "/service-svgs/Automation.png",
         "title": "Konformitätsautomatisierung",
-        "description": "Kontinuierliche Überprüfung gegen DNV, EN, ASME und Kundenspezifikationen mit Ausnahme-Flags, sobald Daten von der Spezifikation abweichen."
+        "description": "Intelligente Verifikations-Engines, die Ingenieurdaten gegen DNV, ISO und kundenspezifische Anforderungen analysieren und Datenlücken oder Dokumentationsfehler vor der Abschlussprüfung kennzeichnen."
       }
     ],
     "engineering_section": {
@@ -117,18 +117,22 @@
     },
     "heritage": [
       {
+        "image": "/card-images/Offshore.png",
         "title": "Offshore-Windstrukturen",
         "description": "Monopile mit dicken Wänden, Übergangsstück und Jacket-Fertigung — vollständige Schweißnahtverfolgbarkeit gegen DNV-ST-0126 und Projektklassenregeln."
       },
       {
+        "image": "/card-images/Pipeline.png",
         "title": "Hochdruck-Pipelines",
         "description": "Länderübergreifende Übertragungsleitungen mit vollständiger Abbildung von Schweißerqualifikationen, Chargennummern, Hydrauliktest und UT-Zertifizierung."
       },
       {
+        "image": "/card-images/Fabrication.png",
         "title": "Schwere Stahlfertigung",
         "description": "Spulen, Druckbehälter und große geschweißte Baugruppen — Verifizierung der WPS/PQR-Abdeckung und dimensionale Inspektionsaufzeichnungen."
       },
       {
+        "image": "/card-images/Plants.png",
         "title": "Petrochemische Anlagen",
         "description": "Rohrleitungen, Kolonnen und Reaktoren werden in verlinkte MDR-Pakete zusammengefasst, die auf EN, ASME und Betreiberstandards ausgerichtet sind."
       }
