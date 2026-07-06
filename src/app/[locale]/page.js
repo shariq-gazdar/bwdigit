@@ -28,7 +28,7 @@ export default async function Home({ params }) {
             <Link href={"/#about"}>
             <CtaButton
               changeStyle={
-                "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+                "bg-transparent text-primary px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
               }
               >
               {t.hero.cta}
@@ -90,12 +90,12 @@ export default async function Home({ params }) {
           <p className="text-primary/90 ">
             {t.engineering_section.description}
           </p>
-          {t.engineering_section.points.map((point, index) => (
+          {/* {t.engineering_section.points.map((point, index) => (
             <div key={index} className="flex gap-x-1 ">
               <Check className="text-primary-accent" />
               <p className="text-primary/70">{point}</p>
             </div>
-          ))}
+          ))} */}
         </div>
         {/* Right */}
         <div className="relative">
@@ -167,13 +167,15 @@ export default async function Home({ params }) {
         <p className="text-primary/70 text-center">
           {t.platform_section.description}
         </p>
+        <div className="w-[100vw] h-[500px] relative">
+
         <Image
           src="/dashboard.png"
           alt="Platform"
-          width={300}
-          height={100}
-          className="w-full"
-        />
+         fill
+          className="object-contain rounded-2xl"
+          />
+          </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mx-10 mx-2">
           {t.platform.map((p, index) => {
             return (

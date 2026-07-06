@@ -104,7 +104,7 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li className="flex items-center gap-2">100.png0.
+              <li className="flex items-center gap-2 bg-primary-accent rounded-2xl">
                 <Link
                   href="https://www.linkedin.com/company/backpackwander/"
                   className="hover:text-primary-accent transition-colors"
