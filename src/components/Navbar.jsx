@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { locales } from "@/i18n/config";
 import CtaButton from "./CtaButton";
+import Link from "next/link";
 
 const Navbar = ({ messages, locale, defaultLocale }) => {
   const [openLang, setOpenLang] = useState(false);
