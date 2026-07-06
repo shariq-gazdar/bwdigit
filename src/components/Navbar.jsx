@@ -90,7 +90,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
     <nav className="w-screen fixed flex flex-row items-center justify-between px-10 py-5 bg-background/90 z-999 text-primary">
       {/* Logo */}
       <Image
-        src="https://www.bwdigit.com/assets/bw-logo-BX0g2QWa.png"
+        src="/logo.png"
         width={100}
         height={50}
         alt="logo"
