@@ -86,8 +86,8 @@
       }
     ],
     "engineering_section": {
-      "title": "Built by engineers who have signed off the documentation themselves.",
-      "description": "BW Digit is a hybrid practice. Our welding, materials and QA engineers define the verification logic. Our software team turns that logic into a deterministic platform that handles the volume, consistency and audit trail no spreadsheet can.",
+      "title": "Built by Tech Experts backed by field inspectors",
+      "description": "Software is only as good as the logic behind it. BW Digit tools are designed and calibrated in direct partnership with active QA/QC field incpectors from pipeline quality, we don't just build code; we deploy prodcution - enginerring intelligence ",
       "points": [
         "Verification rules authored by code-qualified inspectors",
         "Deterministic pipelines — every check is reproducible",
@@ -96,16 +96,16 @@
     },
     "steps": [
       {
-        "title": "Field Data Input",
-        "description": "Welder logs, MTRs, NDT reports and inspection records ingested from site, lab and supplier systems."
+        "title": "Field Data and drawings",
+        "description": "Raw manufacturing logs WPS and certificates are captured"
       },
       {
-        "title": "Automated Verification Engine",
-        "description": "Rules built by metallurgists and QA engineers cross-check every record against project specifications and codes."
+        "title": "BW Digit Engine",
+        "description": "Automated integrity verification and cross-refrencing against DNV/ISO standards."
       },
       {
-        "title": "Audit-Ready Deliverables",
-        "description": "A structured, hyperlinked MDR and traceability matrix issued to client, certifying body and operator in hours, not weeks."
+        "title": "Audit-Ready MDR",
+        "description": "Seamless compilation and error-free package export. "
       }
     ],
     "heritage_section": {
@@ -157,16 +157,19 @@
     },
     "outcomes": [
       {
+        "image": "/value/70.png",
         "percentage": "70%",
         "title": "Faster Project Handover",
         "description": "Compress MDR compilation and final review from weeks to days through automated verification and assembly."
       },
       {
+        "image": "/value/0.png",
         "percentage": "0",
         "title": "Audit Data Failures",
         "description": "Every certificate, weld map and test report is checked against project specification before it enters the dossier."
       },
       {
+        "image": "/value/100.png",
         "percentage": "100%",
         "title": "Traceability Coverage",
         "description": "Joint-level linkage from welder qualification through NDT result to as-built record across the entire asset."
@@ -195,7 +198,7 @@
     ],
     "contact_section": {
       "title": "Deploy BW Digit on Your Project",
-      "description": "Request a technical demonstration or discuss industrial data automation requirements with our team.",
+      "description": "Request a technical demo and explore data automation for your next asset deslivery",
       "email_label": "info@bwdigit.com",
       "linkedin_label": "info@bwdigit.com"
     },
@@ -204,7 +207,7 @@
       "company_label": "Company",
       "email_label": "Corporate Email",
       "message_label": "Message",
-      "submit": "Submit"
+      "submit": "Request Technical Demo"
     }
   }
 }

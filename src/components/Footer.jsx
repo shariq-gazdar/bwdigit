@@ -9,10 +9,6 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2">
-              <span className="grid size-8 place-items-center rounded-md border border-primary/20 bg-card">
-                <CircleDot className="size-4 text-primary-accent" />
-              </span>
-
               <span className="font-heading text-lg font-semibold text-primary">
                 BW Digit
               </span>
@@ -35,19 +31,28 @@ export default function Footer() {
 
             <ul className="mt-5 space-y-3 text-sm text-primary/70">
               <li>
-                <Link href="#" className="hover:text-primary-accent transition-colors">
+                <Link
+                  href="#"
+                  className="hover:text-primary-accent transition-colors"
+                >
                   MDR Automation
                 </Link>
               </li>
 
               <li>
-                <Link href="#" className="hover:text-primary-accent transition-colors">
+                <Link
+                  href="#"
+                  className="hover:text-primary-accent transition-colors"
+                >
                   Weld Traceability
                 </Link>
               </li>
 
               <li>
-                <Link href="#" className="hover:text-primary-accent transition-colors">
+                <Link
+                  href="#"
+                  className="hover:text-primary-accent transition-colors"
+                >
                   Compliance Verification
                 </Link>
               </li>
@@ -62,13 +67,19 @@ export default function Footer() {
 
             <ul className="mt-5 space-y-3 text-sm text-primary/70">
               <li>
-                <Link href="#" className="hover:text-primary-accent transition-colors">
+                <Link
+                  href="https://www.pipelinequality.com/en/"
+                  className="hover:text-primary-accent transition-colors"
+                >
                   Pipeline Quality
                 </Link>
               </li>
 
               <li>
-                <Link href="#" className="hover:text-primary-accent transition-colors">
+                <Link
+                  href="https://www.backpackwander.com/"
+                  className="hover:text-primary-accent transition-colors"
+                >
                   Backpack Wander
                 </Link>
               </li>
@@ -93,8 +104,11 @@ export default function Footer() {
                 </a>
               </li>
 
-              <li className="flex items-center gap-2">
-                <Link href="#" className="hover:text-primary-accent transition-colors">
+              <li className="flex items-center gap-2">100.png0.
+                <Link
+                  href="https://www.linkedin.com/company/backpackwander/"
+                  className="hover:text-primary-accent transition-colors"
+                >
                   LinkedIn
                 </Link>
               </li>

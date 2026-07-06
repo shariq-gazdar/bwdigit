@@ -63,7 +63,7 @@ export default async function Home({ params }) {
       <section className="flex flex-col items-center my-10 lg:my-20">
         <h1 className="main-heading text-center">{t.services_section.title}</h1>
         {/* Service Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretch gap-x-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretchh gap-x-5">
           {t.services.map((service, index) => {
             const Icon = services[index].Icon;
             return (
@@ -138,19 +138,19 @@ export default async function Home({ params }) {
         <p className="text-primary/70 text-center">
           {t.heritage_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 Lg:mx-10 mx-2 mt-5 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-stretch Lg:mx-10 mx-2 mt-5 max-w-6xl">
           {t.heritage.map((h, index) => {
             const Icon = heritage[index].icon;
             return (
               <AnimateIn key={index} delay={index * 0.1}>
-                <div className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all ">
-                  <div className="bg-card rounded-2xl p-6 hover:border hover:border-primary-accent transition-all">
+                <div className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all h-full flex flex-col justify-center items-center">
+                  <div className="bg-card rounded-2xl p-6 hover:border hover:border-primary-accent transition-all flex-1">
                     <h3 className="text-lg font-heading text-primary">
                       {h.title}
                     </h3>
-                    <p className="mt-2 text-primary/70 leading-relaxed">
+                    {/* <p className="mt-2 text-primary/70 leading-relaxed">
                       {h.description}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </AnimateIn>
@@ -202,9 +202,13 @@ export default async function Home({ params }) {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all">
-                  <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
-                    <Icon />
-                  </div>
+                  <Image 
+                  src={outcome.image}
+                  alt={outcome.title}
+                  width={100}
+                    height={100}
+                    className="self-center rounded-2xl"
+                  />
                   <h1 className="text-2xl font-heading text-primary-accent">
                     {outcome.percentage}
                   </h1>
@@ -224,7 +228,7 @@ export default async function Home({ params }) {
         id="blog"
       >
         <h1 className="main-heading text-center">{t.studies_section.title}</h1>
-        <p className="text-primary/70 text-center">
+        <p className="text-primary/70 text-center ">
           {t.studies_section.description}
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-5 lg:mx-10">
@@ -243,7 +247,7 @@ export default async function Home({ params }) {
                   <h3 className="text-sm font-heading text-primary-accent">
                     {study.tagline}
                   </h3>
-                  <h1 className="text-lg font-semibold font-heading">
+                  <h1 className="text-lg font-semibold font-heading -mt-4">
                     {study.title}
                   </h1>
                   <p className="font-body text-base">{study.description}</p>
@@ -342,7 +346,7 @@ export default async function Home({ params }) {
           <button type="submit">
             <CtaButton
               changeStyle={
-                "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+                "bg-transparent hover:text-primary text-primary-accent px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
               }
             >
               {t.contact_form.submit}
