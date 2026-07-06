@@ -286,7 +286,7 @@ export default async function Home({ params }) {
         </div>
         {/* Right */}
         <form
-          className="bg-card border-primary-accent/40 border rounded-2xl p-10 flex flex-col gap-y-5"
+          className="bg-card border-primary-accent/40 border rounded-2xl p-5 lg:p-10 flex flex-col gap-y-5"
           action={"https://formspree.io/f/xqevnjrq"}
           method="POST"
         >
