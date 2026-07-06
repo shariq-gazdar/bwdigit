@@ -63,8 +63,8 @@ export default async function Home({ params }) {
             const Icon = services[index].Icon;
             return (
               <AnimateIn key={index} delay={index * 0.1}>
-                <div className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent    transition-all overflow-hidden">
-                  <div className="p-10 pt-6 flex  flex-col gap-y-6">
+                <div className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent    transition-all overflow-hidden h-82">
+                  <div className="p-10 pt-6 flex  flex-col gap-y-6 ">
                     <div className="bg-secondary/10  w-fit p-3 rounded-2xl text-primary-accent self-center">
                       <Icon size={42} />
                     </div>
