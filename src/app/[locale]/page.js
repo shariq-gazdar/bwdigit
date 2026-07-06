@@ -23,7 +23,7 @@ export default async function Home({ params }) {
             {t.hero.title}
           </h1>
           <p className="text-primary">{t.hero.description}</p>
-          <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-2 lg:gap-y-0">
+          <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-5 lg:gap-y-0">
             <CtaButton
               changeStyle={
                 "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
@@ -63,7 +63,7 @@ export default async function Home({ params }) {
             const Icon = services[index].Icon;
             return (
               <AnimateIn key={index} delay={index * 0.1}>
-                <div className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent    transition-all overflow-hidden h-82">
+                <div className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent    transition-all overflow-hidden lg:h-82 h-auto">
                   <div className="p-10 pt-6 flex  flex-col gap-y-6 ">
                     <div className="bg-secondary/10  w-fit p-3 rounded-2xl text-primary-accent self-center">
                       <Icon size={42} />
@@ -227,7 +227,7 @@ export default async function Home({ params }) {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div
-                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all border-primary/30 h-86 ${
+                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all border-primary/30 h-auto lg:h-86 ${
                     studies[index].hoverColor === "orange"
                       ? "bg-linear-to-b from-orange/30 to-card"
                       : studies[index].hoverColor === "blue"
@@ -288,6 +288,7 @@ export default async function Home({ params }) {
         <form
           className="bg-card border-primary-accent/40 border rounded-2xl p-10 flex flex-col gap-y-5"
           action={"https://formspree.io/f/xqevnjrq"}
+          method="POST"
         >
           <label
             htmlFor="name"
