@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getMessages } from "../../i18n/request.js";
 import { locales, defaultLocale } from "../../i18n/config.js";
 import CtaButton from "@/components/CtaButton.jsx";
+import AnimateIn from "@/components/AnimateIn.jsx";
 import { heritage, outcomes, platfrom, services, steps, studies } from '@/utils/home.js'
 import { Check, Factory, Mail } from "lucide-react";
 
@@ -13,9 +14,11 @@ export default async function Home({ params }) {
   return (
     <div className="pt-20 bg-background font-body w-screen ">
       {/* Hero Section */}
-      <section className=" grid grid-cols-1 lg:grid-cols-2  py-10 gap-y-10 lg:gap-y-0  lg:mb-0">
+      <section className="relative grid grid-cols-1 lg:grid-cols-2 py-10 gap-y-10 lg:gap-y-0 lg:mb-0">
+        {/* Mobile Gradient Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-linear-to-br from-secondary-accent/5 to-primary-accent/20 blur-2xl z-0 lg:hidden"></div>
         {/* Left */}
-        <div className="flex flex-col gap-y-5 mx-10 ">
+        <div className="relative z-10 flex flex-col gap-y-5 mx-10 ">
           <h1 className="hero-gradient text-6xl font-heading">
             {t.hero.title}
           </h1>
@@ -30,7 +33,7 @@ export default async function Home({ params }) {
             </CtaButton>
             <CtaButton
               changeStyle={
-                "bg-background text-primary px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
+                "bg-transparent text-primary px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center flex flex-row justify-center items-center "
               }
             >
               {"Request Demo"}
@@ -59,18 +62,17 @@ export default async function Home({ params }) {
           {t.services.map((service, index) => {
             const Icon = services[index].Icon;
             return (
-              <div
-                key={index}
-                className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all overflow-hidden"
-              >
-                <div className="p-10 pt-6 flex flex-col gap-y-6">
-                  <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
-                    <Icon />
+              <AnimateIn key={index} delay={index * 0.1}>
+                <div className="text-primary bg-card flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent    transition-all overflow-hidden">
+                  <div className="p-10 pt-6 flex  flex-col gap-y-6">
+                    <div className="bg-secondary/10  w-fit p-3 rounded-2xl text-primary-accent self-center">
+                      <Icon size={42} />
+                    </div>
+                    <h1 className="text-lg font-heading">{service.title}</h1>
+                    <p className="font-body text-base ">{service.description}</p>
                   </div>
-                  <h1 className="text-lg font-heading">{service.title}</h1>
-                  <p className="font-body text-base">{service.description}</p>
                 </div>
-              </div>
+              </AnimateIn>
             );
           })}
         </div>
@@ -131,23 +133,22 @@ export default async function Home({ params }) {
         <p className="text-primary/70 text-center">
           {t.heritage_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-10 mt-5 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 Lg:mx-10 mx-2 mt-5 max-w-6xl">
           {t.heritage.map((h, index) => {
             const Icon = heritage[index].icon;
             return (
-              <div
-                className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all "
-                key={index}
-              >
-                <div className="bg-card rounded-2xl p-6 hover:border hover:border-primary-accent transition-all">
-                  <h3 className="text-lg font-heading text-primary">
-                    {h.title}
-                  </h3>
-                  <p className="mt-2 text-primary/70 leading-relaxed">
-                    {h.description}
-                  </p>
+              <AnimateIn key={index} delay={index * 0.1}>
+                <div className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all ">
+                  <div className="bg-card rounded-2xl p-6 hover:border hover:border-primary-accent transition-all">
+                    <h3 className="text-lg font-heading text-primary">
+                      {h.title}
+                    </h3>
+                    <p className="mt-2 text-primary/70 leading-relaxed">
+                      {h.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </AnimateIn>
             );
           })}
         </div>
@@ -164,57 +165,55 @@ export default async function Home({ params }) {
         <Image
           src="/dashboard.png"
           alt="Platform"
-          width={950}
-          height={800}
-          className="hidden lg:block"
+          width={300}
+          height={100}
+          className="w-full"
         />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mx-10 mx-2">
           {t.platform.map((p, index) => {
             return (
-              <div
-                className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all "
-                key={index}
-              >
-                <div className="flex flex-col">
-                  <h3 className="text-lg font-heading text-primary">
-                    {p.title}
-                  </h3>
-                  <p className="mt-2 text-base text-primary/70 leading-relaxed">
-                    {p.description}
-                  </p>
+              <AnimateIn key={index} delay={index * 0.1}>
+                <div className="bg-card rounded-2xl p-6 flex flex-row gap-x-5 hover:border hover:border-primary-accent transition-all ">
+                  <div className="flex flex-col">
+                    <h3 className="text-lg font-heading text-primary">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-base text-primary/70 leading-relaxed">
+                      {p.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </AnimateIn>
             );
           })}
         </div>
       </section>
       {/* Bussines Value */}
-      <section className="flex flex-col items-center lg:my-20 my-10 gap-y-5 mx-5 lg:mx-0">
+      <section className="flex flex-col items-center lg:my-20 my-10 lg:gap-y-5 gap-y-3 mx-5 lg:mx-0">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 lg:mx-10">
           {t.outcomes.map((outcome, index) => {
             const Icon = outcomes[index].icon;
             return (
-              <div
-                key={index}
-                className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all"
-              >
-                <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
-                  <Icon />
+              <AnimateIn key={index} delay={index * 0.1}>
+                <div className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all">
+                  <div className="bg-secondary/10 w-fit p-3 rounded-2xl text-primary-accent">
+                    <Icon />
+                  </div>
+                  <h1 className="text-2xl font-heading text-primary-accent">
+                    {outcome.percentage}
+                  </h1>
+                  <h1 className="text-lg font-semibold font-heading">
+                    {outcome.title}
+                  </h1>
+                  <p className="font-body text-base">{outcome.description}</p>
                 </div>
-                <h1 className="text-2xl font-heading text-primary-accent">
-                  {outcome.percentage}
-                </h1>
-                <h1 className="text-lg font-semibold font-heading">
-                  {outcome.title}
-                </h1>
-                <p className="font-body text-base">{outcome.description}</p>
-              </div>
+              </AnimateIn>
             );
           })}
         </div>
       </section>
-      {/* Case Study */}
+      {/* Case Study Colored Cards */}
       <section
         className="flex flex-col items-center mx-2 lg:my-20 my-10 gap-y-5  lg:mx-0"
         id="blog"
@@ -226,31 +225,32 @@ export default async function Home({ params }) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
           {t.studies.map((study, index) => {
             return (
-              <div
-                key={index}
-                className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 my-10 rounded-2xl border-[0.5px] transition-all border-primary/30 ${
-                  studies[index].hoverColor === "orange"
-                    ? "bg-linear-to-b from-orange/30 to-card"
-                    : studies[index].hoverColor === "blue"
-                      ? "bg-linear-to-b from-secondary-accent/30 to-card"
-                      : "bg-linear-to-b from-primary-accent/30 to-card"
-                }`}
-              >
-                <h3 className="text-sm font-heading text-primary-accent">
-                  {study.tagline}
-                </h3>
-                <h1 className="text-lg font-semibold font-heading">
-                  {study.title}
-                </h1>
-                <p className="font-body text-base">{study.description}</p>
-              </div>
+              <AnimateIn key={index} delay={index * 0.1}>
+                <div
+                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all border-primary/30 ${
+                    studies[index].hoverColor === "orange"
+                      ? "bg-linear-to-b from-orange/30 to-card"
+                      : studies[index].hoverColor === "blue"
+                        ? "bg-linear-to-b from-secondary-accent/30 to-card"
+                        : "bg-linear-to-b from-primary-accent/30 to-card"
+                  }`}
+                >
+                  <h3 className="text-sm font-heading text-primary-accent">
+                    {study.tagline}
+                  </h3>
+                  <h1 className="text-lg font-semibold font-heading">
+                    {study.title}
+                  </h1>
+                  <p className="font-body text-base">{study.description}</p>
+                </div>
+              </AnimateIn>
             );
           })}
         </div>
       </section>
       {/* Contact Form */}
       <section
-        className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 py-10 gap-y-10 lg:gap-y-0"
+        className="bg-linear-to-br from-background to-primary-accent/10 grid grid-cols-1 lg:grid-cols-2 px-10 lg:py-10 gap-x-20 gap-y-10 lg:gap-y-0 -mt-10 pb-10 lg:mt-0 lg:pb-10 "
         id="contact"
       >
         {/* Left */}
@@ -285,7 +285,10 @@ export default async function Home({ params }) {
           </div>
         </div>
         {/* Right */}
-        <div className="bg-card border-primary-accent/40 border rounded-2xl p-10 flex flex-col gap-y-5">
+        <form
+          className="bg-card border-primary-accent/40 border rounded-2xl p-10 flex flex-col gap-y-5"
+          action={"https://formspree.io/f/xqevnjrq"}
+        >
           <label
             htmlFor="name"
             className="flex flex-col text-primary/80 uppercase text-sm"
@@ -339,7 +342,7 @@ export default async function Home({ params }) {
               {t.contact_form.submit}
             </CtaButton>
           </button>
-        </div>
+        </form>
       </section>
     </div>
   );
