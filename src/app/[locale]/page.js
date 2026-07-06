@@ -5,6 +5,7 @@ import CtaButton from "@/components/CtaButton.jsx";
 import AnimateIn from "@/components/AnimateIn.jsx";
 import { heritage, outcomes, platfrom, services, steps, studies } from '@/utils/home.js'
 import { Check, Factory, Mail } from "lucide-react";
+import Link from "next/link.js";
 
 export default async function Home({ params }) {
   const { locale } = await params;
@@ -24,20 +25,24 @@ export default async function Home({ params }) {
           </h1>
           <p className="text-primary">{t.hero.description}</p>
           <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-5 lg:gap-y-0">
+            <Link href={"/#about"}>
             <CtaButton
               changeStyle={
                 "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
               }
-            >
+              >
               {t.hero.cta}
             </CtaButton>
+              </Link>
+            <Link href={"/#contact"}>
             <CtaButton
               changeStyle={
                 "bg-transparent text-primary px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center flex flex-row justify-center items-center "
               }
-            >
+              >
               {"Request Demo"}
             </CtaButton>
+              </Link>
           </div>
         </div>
         {/* Right */}
