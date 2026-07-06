@@ -111,9 +111,11 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
 
       {/* Consultation Button */}
       <div className=" flex-row items-center gap-x-5 hidden lg:flex">
+        <Link href={"/#contact"}>
         <CtaButton className="hover:text-primary-accent transition-colors">
           Consultation
         </CtaButton>
+        </Link>
         {/* Desktop Language selector */}
         <div
           className="relative hidden md:block"
