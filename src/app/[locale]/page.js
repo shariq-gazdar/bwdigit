@@ -12,7 +12,7 @@ export default async function Home({ params }) {
   const t = messages.home;
 
   return (
-    <div className="pt-20 bg-background font-body w-screen ">
+    <div className="pt-20 bg-background font-body w-screen overflow-x-hidden ">
       {/* Hero Section */}
       <section className="relative grid grid-cols-1 lg:grid-cols-2 py-10 gap-y-10 lg:gap-y-0 lg:mb-0">
         {/* Mobile Gradient Overlay */}
@@ -23,7 +23,7 @@ export default async function Home({ params }) {
             {t.hero.title}
           </h1>
           <p className="text-primary">{t.hero.description}</p>
-          <div className="mt-5 flex gap-x-2 gap-y-2 lg:gap-y-0">
+          <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-2 lg:gap-y-0">
             <CtaButton
               changeStyle={
                 "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
@@ -222,12 +222,12 @@ export default async function Home({ params }) {
         <p className="text-primary/70 text-center">
           {t.studies_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-5 lg:mx-10">
           {t.studies.map((study, index) => {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div
-                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all border-primary/30 ${
+                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all border-primary/30 h-86 ${
                     studies[index].hoverColor === "orange"
                       ? "bg-linear-to-b from-orange/30 to-card"
                       : studies[index].hoverColor === "blue"

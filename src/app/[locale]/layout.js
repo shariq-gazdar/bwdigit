@@ -27,7 +27,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased overflow-x-hidden`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased overflow-x-hidden `}
     >
       <body className="min-h-full flex flex-col">
         <Navbar
