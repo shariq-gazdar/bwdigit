@@ -34,7 +34,7 @@ export default async function Home({ params }) {
               {t.hero.cta}
             </CtaButton>
               </Link>
-            <Link href={"/#contact"}>
+            {/* <Link href={"/#contact"}>
             <CtaButton
               changeStyle={
                 "bg-transparent text-primary px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full lg:w-fit shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center flex flex-row justify-center items-center "
@@ -42,7 +42,7 @@ export default async function Home({ params }) {
               >
               {"Request Demo"}
             </CtaButton>
-              </Link>
+              </Link> */}
           </div>
         </div>
         {/* Right */}
