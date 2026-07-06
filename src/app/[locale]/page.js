@@ -144,7 +144,7 @@ export default async function Home({ params }) {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all h-full flex flex-col justify-center items-center">
-                  <div className="bg-card rounded-2xl p-6 hover:border hover:border-primary-accent transition-all flex-1">
+                  <div className="bg-card rounded-2xl p-6  transition-all flex-col flex items-center justify-center">
                     <h3 className="text-lg font-heading text-primary">
                       {h.title}
                     </h3>
@@ -246,7 +246,7 @@ export default async function Home({ params }) {
                         : "bg-linear-to-b from-primary-accent/30 to-card"
                   }`}
                 >
-                  <h3 className="text-sm font-heading text-primary-accent">
+                  <h3 className="text-sm font-heading text-primary font-bold">
                     {study.tagline}
                   </h3>
                   <h1 className="text-lg font-semibold font-heading -mt-4">

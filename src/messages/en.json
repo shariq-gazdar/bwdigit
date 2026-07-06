@@ -18,10 +18,6 @@
         "href": "/#blog"
       },
       {
-        "label": "FAQ",
-        "href": "/#faq"
-      },
-      {
         "label": "Contact",
         "href": "/#contact"
       }
@@ -66,7 +62,7 @@
       "cta": "Explore Our Digital Solution"
     },
     "services_section": {
-      "title": "Automating Industrial Compliance"
+      "title": "CORE DIGITAL CAPABILITIES"
     },
     "services": [
       {
