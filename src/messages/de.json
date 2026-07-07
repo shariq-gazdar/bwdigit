@@ -28,34 +28,37 @@
     ],
     "services": [
       {
-      
+        "id": 1,
         "title": "UI/UX-Design",
         "description": "Benutzerorientierte Designlösungen",
         "href": "/services/ui-ux-design/"
       },
       {
-    
+        "id": 2,
         "title": "KI-Automatisierung",
         "description": "Intelligente Prozessautomatisierung",
         "href": "/services/ai-automation/"
       },
       {
- 
+        "id": 3,
         "title": "E-Commerce-Lösungen",
         "description": "Maßgeschneiderte Onlineshops",
         "href": "/services/ecommerce-solutions/"
       },
       {
+        "id": 4,
         "title": "Marketing & SEO",
         "description": "Digitale Marketingstrategien",
         "href": "/services/marketing-seo/"
       },
       {
+        "id": 5,
         "title": "Mobile App-Entwicklung",
         "description": "Native und plattformübergreifende Apps",
         "href": "/services/mobile-app-development/"
       },
       {
+        "id": 6,
         "title": "Individuelle Webentwicklung",
         "description": "Skalierbare und sichere Weblösungen",
         "href": "/services/custom-web-development/"
@@ -69,7 +72,8 @@
       "cta": "Unsere digitale Lösung erkunden"
     },
     "services_section": {
-      "title": "Automatisierung der industriellen Konformität"
+      "title": "Eine Agentur. Alle Ihre digitalen Bedürfnisse",
+      "description": "Viele Unternehmen verschwenden Zeit mit Websites, die langsam, schwer zu bedienen sind oder nicht ihren Zielen entsprechen. BW Digit löst das. Wir erstellen Websites, Online-Shops, mobile Apps und Marketing-Tools, die besser funktionieren, damit Ihr Unternehmen gut aussieht, schneller läuft und mehr Menschen erreicht. Als digitale Full-Service-Agentur kümmern wir uns um alles von Design und Entwicklung bis hin zu SEO und E-Commerce mit einem Ziel: Ihnen beim Online-Wachstum zu helfen."
     },
     "services": [
       {
@@ -89,26 +93,100 @@
       }
     ],
     "engineering_section": {
-      "title": "Entwickelt von Ingenieuren, die die Dokumentation selbst abgezeichnet haben.",
-      "description": "BW Digit ist eine hybride Praxis. Unsere Schweiß-, Werkstoff- und QA-Ingenieure definieren die Verifikationslogik. Unser Software-Team verwandelt diese Logik in eine deterministische Plattform, die Volumen, Konsistenz und Audit-Trail bewältigt, wie es kein Tabellenkalkulationsprogramm kann.",
+      "title": "Entwickelt von Technikexperten, unterstützt von Feldinspektoren",
+      "description": "Software ist nur so gut wie die Logik dahinter. BW Digit-Tools werden in direkter Partnerschaft mit aktiven QA/QC-Feldinspektoren von Pipeline Quality entworfen und kalibriert. Wir bauen nicht nur Code; wir部署 Produktions-Ingenieursintelligenz.",
       "points": [
         "Verifikationsregeln erstellt von code-qualifizierten Prüfern",
         "Deterministische Pipelines — jede Prüfung ist reproduzierbar",
         "Eingesetzt neben Ihrer QA/QC-Organisation, nicht darüber"
       ]
     },
+    "digital_services": [
+      {
+        "image": "/service-tech/web.png",
+        "id": 1,
+        "title": "Webentwicklung",
+        "subtitle": "Webdesign & -entwicklung",
+        "points": [
+          "Maßgeschneiderte Entwicklung & moderne Technologien genau für Sie",
+          "Personalisierte E-Commerce-Plattformen (Shopify, WooCommerce)",
+          "Mobile Apps & blitzschnelle, mobile-optimierte Websites",
+          "WordPress, Webflow & Laravel-Lösungen, die inspirieren"
+        ]
+      },
+      {
+        "image": "/service-tech/mobile.png",
+        "id": 2,
+        "title": "Mobile App-Entwicklung",
+        "subtitle": "Schnelle und zuverlässige App-Entwicklung für alle Plattformen",
+        "points": [
+          "Native & plattformübergreifende Entwicklung",
+          "iOS & Android Apps",
+          "App-Store-Optimierung",
+          "Wartung & Updates"
+        ]
+      },
+      {
+        "image": "/service-tech/ui.png",
+        "id": 3,
+        "title": "UI/UX-Design",
+        "subtitle": "Schnittstellen für Klarheit, Engagement und Benutzerfreundlichkeit",
+        "points": [
+          "Benutzerzentriertes Design",
+          "Wireframing & Prototyping",
+          "Visuelles Design",
+          "Usability-Testing"
+        ]
+      },
+      {
+        "image": "/service-tech/digital.png",
+        "id": 4,
+        "title": "Digitales Marketing",
+        "subtitle": "SEO & Online-Marketing",
+        "points": [
+          "Ergebnisorientiertes SEO zur Steigerung der Sichtbarkeit und Gewinnung hochkonvertierender Leads",
+          "Strategisches Online-Marketing zur Ansprache Ihrer idealen Kunden",
+          "Content-Marketing & Performance-Optimierung",
+          "Mehr Traffic, Leads und Umsatz für Ihr Unternehmen"
+        ]
+      },
+      {
+        "image": "/service-tech/ecom.png",
+        "id": 5,
+        "title": "E-Commerce-Lösungen",
+        "subtitle": "Maßgeschneiderte Shopify & WooCommerce-Entwicklung",
+        "points": [
+          "Shopify-Entwicklung",
+          "WooCommerce-Lösungen",
+          "Zahlungs-Gateway-Integration",
+          "Bestandsverwaltung"
+        ]
+      },
+      {
+        "image": "/service-tech/consult.png",
+        "id": 6,
+        "title": "Beratung",
+        "subtitle": "Strategische Beratung für Wachstum und digitale Transformation",
+        "points": [
+          "Digitalstrategie",
+          "Technologieberatung",
+          "Performance-Analyse",
+          "Wachstumsplanung"
+        ]
+      }
+    ],
     "steps": [
       {
-        "title": "Felddateneingabe",
-        "description": "Schweißerprotokolle, MTRs, ZfP-Berichte und Inspektionsaufzeichnungen werden von Baustelle, Labor und Lieferantensystemen erfasst."
+        "title": "Felddaten und Zeichnungen",
+        "description": "Roh-Fertigungsprotokolle, WPS und Zertifikate werden erfasst."
       },
       {
-        "title": "Automatisierte Verifikations-Engine",
-        "description": "Von Metallurgen und QA-Ingenieuren erstellte Regeln kreuzprüfen jeden Datensatz gegen Projektspezifikationen und Normen."
+        "title": "BW Digit Engine",
+        "description": "Automatisierte Integritätsverifizierung und Querverweisung gegen DNV/ISO-Standards."
       },
       {
-        "title": "Prüffertige Lieferungen",
-        "description": "Eine strukturierte, verlinkte MDR und Verfolgungsmatrix wird an Kunde, Zertifizierungsstelle und Betreiber in Stunden statt Wochen ausgehändigt."
+        "title": "Prüffertiger MDR",
+        "description": "Nahtlose Zusammenstellung und fehlerfreier Paketexport."
       }
     ],
     "heritage_section": {
@@ -160,16 +238,19 @@
     },
     "outcomes": [
       {
+        "image": "/value/70.png",
         "percentage": "70%",
         "title": "Schnellere Projektübergabe",
         "description": "Komprimierung der MDR-Zusammenstellung und Endprüfung von Wochen auf Tage durch automatisierte Verifizierung und Zusammenstellung."
       },
       {
+        "image": "/value/0.png",
         "percentage": "0",
         "title": "Audit-Datenfehler",
         "description": "Jedes Zertifikat, jeder Schweißplan und jeder Prüfbericht wird gegen Projektspezifikation geprüft, bevor er in das Dossier eingeht."
       },
       {
+        "image": "/value/100.png",
         "percentage": "100%",
         "title": "Verfolgbarkeitsabdeckung",
         "description": "Verbindungsebene-Verknüpfung von Schweißerqualifikation durch ZfP-Ergebnis zum As-Built-Datensatz über die gesamte Anlage."
@@ -198,7 +279,7 @@
     ],
     "contact_section": {
       "title": "BW Digit in Ihrem Projekt einsetzen",
-      "description": "Fordern Sie eine technische Demonstration an oder diskutieren Sie Anforderungen zur Automatisierung industrieller Daten mit unserem Team.",
+      "description": "Fordern Sie eine technische Demo an und erkunden Sie die Datenautomatisierung für Ihre nächste Anlagenlieferung",
       "email_label": "info@bwdigit.com",
       "linkedin_label": "info@bwdigit.com"
     },
@@ -207,7 +288,7 @@
       "company_label": "Unternehmen",
       "email_label": "Geschäftliche E-Mail",
       "message_label": "Nachricht",
-      "submit": "Absenden"
+      "submit": "Technische Demo anfordern"
     }
   }
 }

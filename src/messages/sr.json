@@ -28,32 +28,37 @@
     ],
     "services": [
       {
-        
+        "id": 1,
         "title": "UI/UX Dizajn",
         "description": "Rešenja usmerena na korisnika",
         "href": "/services/ui-ux-design/"
       },
       {
+        "id": 2,
         "title": "AI Automatizacija",
         "description": "Inteligentna automatizacija procesa",
         "href": "/services/ai-automation/"
       },
       {
+        "id": 3,
         "title": "E-trgovinska rešenja",
         "description": "Prilagođene online prodavnice",
         "href": "/services/ecommerce-solutions/"
       },
       {
+        "id": 4,
         "title": "Marketing i SEO",
         "description": "Strategije digitalnog marketinga",
         "href": "/services/marketing-seo/"
       },
       {
+        "id": 5,
         "title": "Razvoj mobilnih aplikacija",
         "description": "Izvorne i višestruke platforme",
         "href": "/services/mobile-app-development/"
       },
       {
+        "id": 6,
         "title": "Prilagođeni razvoj veb aplikacija",
         "description": "Skalabilna i bezbedna veb rešenja",
         "href": "/services/custom-web-development/"
@@ -67,7 +72,8 @@
       "cta": "Istražite naše digitalno rešenje"
     },
     "services_section": {
-      "title": "Automatizacija industrijske usaglašenosti"
+      "title": "Jedna agencija. Sve vaše digitalne potrebe",
+      "description": "Mnoge kompanije gube vreme sa veb sajtovima koji su spori, teški za korišćenje ili ne odgovaraju njihovim ciljevima. BW Digit rešava to. Mi kreiramo veb sajtove, online prodavnice, mobilne aplikacije i marketing alate koji rade bolje, tako da vaš posao izgleda dobro, radi brže i doseže više ljudi. Kao digitalna agencija punih usluga, mi se brinemo o svemu od dizajna i razvoja do SEO i e-trgovine sa jednim ciljem: Pomoći vam da rastete online."
     },
     "services": [
       {
@@ -87,26 +93,100 @@
       }
     ],
     "engineering_section": {
-      "title": "Napravljeno od inženjera koji su sami potpisivali dokumentaciju.",
-      "description": "BW Digit je hibridna praksa. Naši inženjeri zavarivanja, materijala i QA definišu logiku verifikacije. Naš softverski tim pretvara tu logiku u determinističku platformu koja rukuje volumenom, konzistentnošću i tragom revizije koji nijedan tabelarni program ne može.",
+      "title": "Napravljeno od tehničkih eksperata, podržano od inspektora na terenu",
+      "description": "Softver je samo dobro koliko je logika iza njega. BW Digit alati su dizajnirani i kalibrisani u direktnom partnerstvu sa aktivnim QA/QC inspektorima sa terena od Pipeline Quality, ne gradimo samo kod; implementiramo proizvodnu inženjersku inteligenciju.",
       "points": [
         "Pravila verifikacije napisana od inspektora kvalifikovanih za kod",
         "Deterministički cevovodi — svaka provera je reproducibilna",
         "Implementirano pored vaše QA/QC organizacije, ne iznad nje"
       ]
     },
+    "digital_services": [
+      {
+        "image": "/service-tech/web.png",
+        "id": 1,
+        "title": "Razvoj veb aplikacija",
+        "subtitle": "Veb dizajn i razvoj",
+        "points": [
+          "Prilagođeni razvoj i moderne tehnologije baš za vas",
+          "Personalizovane e-trgovinske platforme (Shopify, WooCommerce)",
+          "Mobilne aplikacije i brze, mobilno-optimizovane veb sajtove",
+          "WordPress, Webflow i Laravel rešenja koja inspirišu"
+        ]
+      },
+      {
+        "image": "/service-tech/mobile.png",
+        "id": 2,
+        "title": "Razvoj mobilnih aplikacija",
+        "subtitle": "Brz i pouzdan razvoj aplikacija za sve platforme",
+        "points": [
+          "Izvorni i višeplatformski razvoj",
+          "iOS i Android aplikacije",
+          "Optimizacija aplikacijskih prodavnica",
+          "Održavanje i ažuriranja"
+        ]
+      },
+      {
+        "image": "/service-tech/ui.png",
+        "id": 3,
+        "title": "UI/UX Dizajn",
+        "subtitle": "Interfejsi izgrađeni za jasnoću, uključenost i upotrebljivost",
+        "points": [
+          "Dizajn usmeren na korisnika",
+          "Wireframing i prototipiranje",
+          "Vizuelni dizajn",
+          "Testiranje upotrebljivosti"
+        ]
+      },
+      {
+        "image": "/service-tech/digital.png",
+        "id": 4,
+        "title": "Digitalni marketing",
+        "subtitle": "SEO i online marketing",
+        "points": [
+          "SEO vođen rezultatima za povećanje vidljivosti i privlačenje visoko-konvertujućih leadova",
+          "Strategijski online marketing za uključivanje vaših idealnih kupaca",
+          "Marketing sadržaja i optimizacija performansi",
+          "Više saobraćaja, leadova i prihoda za vaš posao"
+        ]
+      },
+      {
+        "image": "/service-tech/ecom.png",
+        "id": 5,
+        "title": "E-trgovinska rešenja",
+        "subtitle": "Prilagođeni Shopify i WooCommerce razvoj",
+        "points": [
+          "Shopify razvoj",
+          "WooCommerce rešenja",
+          "Integracija platnih gateway-a",
+          "Upravljanje zalihama"
+        ]
+      },
+      {
+        "image": "/service-tech/consult.png",
+        "id": 6,
+        "title": "Konsalting",
+        "subtitle": "Strategijsko vođstvo za rast i digitalnu transformaciju",
+        "points": [
+          "Digitalna strategija",
+          "Tehnološki konsalting",
+          "Analiza performansi",
+          "Planiranje rasta"
+        ]
+      }
+    ],
     "steps": [
       {
-        "title": "Unos podataka sa terena",
-        "description": "Dnevnici zvarača, MTR-ovi, NDT izveštaji i evidencije inspekcije se unose sa lokacije, laboratorije i sistema dobavljača."
+        "title": "Podaci sa terena i crteži",
+        "description": "Sirovi proizvodni dnevnici, WPS i sertifikati se prikupljaju."
       },
       {
-        "title": "Automatizovani motor verifikacije",
-        "description": "Pravila napravljena od metalurga i QA inženjera unakrsno proveravaju svaki zapis protiv specifikacija projekta i kodova."
+        "title": "BW Digit Motor",
+        "description": "Automatizovana verifikacija integriteta i unakrsna referenciranost protiv DNV/ISO standarda."
       },
       {
-        "title": "Dostave spremne za reviziju",
-        "description": "Strukturirani, hiperlinkovani MDR i matrica praćenja se izdaju klijentu, telu za sertifikaciju i operateru u satima, ne nedeljama."
+        "title": "MDR spreman za reviziju",
+        "description": "Bezbedna kompilacija i izvoz paketa bez grešaka."
       }
     ],
     "heritage_section": {
@@ -158,16 +238,19 @@
     },
     "outcomes": [
       {
+        "image": "/value/70.png",
         "percentage": "70%",
         "title": "Brža predaja projekta",
         "description": "Kompresovanje sastavljanja MDR-a i konačne revizije iz nedelja u dane kroz automatizovanu verifikaciju i sastavljanje."
       },
       {
+        "image": "/value/0.png",
         "percentage": "0",
         "title": "Neuspehi revizijskih podataka",
         "description": "Svaki sertifikat, mapa zavarivanja i izveštaj o testiranju se proverava protiv specifikacije projekta pre nego što uđe u dosije."
       },
       {
+        "image": "/value/100.png",
         "percentage": "100%",
         "title": "Pokrivenost praćenja",
         "description": "Povezivanje na nivou spoja od kvalifikacije zvarača kroz rezultat NDT-a do evidencije as-built preko cele imovine."
@@ -196,7 +279,7 @@
     ],
     "contact_section": {
       "title": "Implementirajte BW Digit na svom projektu",
-      "description": "Zatražite tehničku demonstraciju ili diskutujte zahteve za automatizaciju industrijskih podataka sa našim timom.",
+      "description": "Zatražite tehničku demo i istražite automatizaciju podataka za vašu sledeću isporuku imovine",
       "email_label": "info@bwdigit.com",
       "linkedin_label": "info@bwdigit.com"
     },
@@ -205,7 +288,7 @@
       "company_label": "Kompanija",
       "email_label": "Poslovna e-pošta",
       "message_label": "Poruka",
-      "submit": "Pošalji"
+      "submit": "Zatražite tehničku demo"
     }
   }
 }

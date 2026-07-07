@@ -24,31 +24,37 @@
     ],
     "services": [
       {
+        "id": 1,
         "title": "UI/UX Design",
         "description": "User-centered design solutions",
         "href": "/services/ui-ux-design/"
       },
       {
+        "id": 2,
         "title": "AI Automation",
         "description": "Intelligent process automation",
         "href": "/services/ai-automation/"
       },
       {
+        "id": 3,
         "title": "E-commerce Solutions",
         "description": "Custom online stores",
         "href": "/services/ecommerce-solutions/"
       },
       {
+        "id": 4,
         "title": "Marketing & SEO",
         "description": "Digital marketing strategies",
         "href": "/services/marketing-seo/"
       },
       {
+        "id": 5,
         "title": "Mobile App Development",
         "description": "Native & cross-platform apps",
         "href": "/services/mobile-app-development/"
       },
       {
+        "id": 6,
         "title": "Custom Web Development",
         "description": "Scalable, secure web solutions",
         "href": "/services/custom-web-development/"
@@ -62,7 +68,8 @@
       "cta": "Explore Our Digital Solution"
     },
     "services_section": {
-      "title": "CORE DIGITAL CAPABILITIES"
+      "title": "One Agency. All Your Digital Needs",
+      "description": "Many businesses waste time with websites that are slow, hard to use or don't match their goals. BW Digit fixes that. We create websites, online stores, mobile apps and marketing tools that work better, so your business looks good, runs faster and reaches more people. As a full digital agency, we handle everything from design and development to SEO and e-commerce with one goal: Helping you grow online."
     },
     "services": [
       {
@@ -90,6 +97,80 @@
         "Deployed alongside your QA/QC organization, not above it"
       ]
     },
+    "digital_services": [
+      {
+        "image": "/service-tech/web.png",
+        "id": 1,
+        "title": "Web Development",
+        "subtitle": "Web Design & Development",
+        "points": [
+          "Custom development & modern technologies tailored just for you",
+          "Personalized e-commerce platforms (Shopify, WooCommerce)",
+          "Mobile apps & lightning-fast, mobile-optimized websites",
+          "WordPress, Webflow & Laravel solutions that inspire"
+        ]
+      },
+      {
+        "image": "/service-tech/mobile.png",
+        "id": 2,
+        "title": "Mobile App Development",
+        "subtitle": "Fast and reliable app development for all platforms",
+        "points": [
+          "Native & cross-platform development",
+          "iOS & Android apps",
+          "App store optimization",
+          "Maintenance & updates"
+        ]
+      },
+      {
+        "image": "/service-tech/ui.png",
+        "id": 3,
+        "title": "UI/UX Design",
+        "subtitle": "Interfaces built for clarity, engagement, and usability",
+        "points": [
+          "User-centered design",
+          "Wireframing & prototyping",
+          "Visual design",
+          "Usability testing"
+        ]
+      },
+      {
+        "image": "/service-tech/digital.png",
+        "id": 4,
+        "title": "Digital Marketing",
+        "subtitle": "SEO & Online Marketing",
+        "points": [
+          "Result-driven SEO to increase visibility and attract high-converting leads",
+          "Strategic online marketing to engage your ideal customers",
+          "Content marketing & performance optimization",
+          "More traffic, leads, and revenue for your business"
+        ]
+      },
+      {
+        "image": "/service-tech/ecom.png",
+        "id": 5,
+        "title": "E-Commerce Solutions",
+        "subtitle": "Custom Shopify & WooCommerce development",
+        "points": [
+          "Shopify development",
+          "WooCommerce solutions",
+          "Payment gateway integration",
+          "Inventory management"
+        ]
+      },
+      {
+        "image": "/service-tech/consult.png",
+        "id": 6,
+        "title": "Consulting",
+        "subtitle": "Strategic guidance for growth and digital transformation",
+        "points": [
+          "Digital strategy",
+          "Technology consulting",
+          "Performance analysis",
+          "Growth planning"
+        ]
+      }
+    ],
     "steps": [
       {
         "title": "Field Data and drawings",
@@ -110,7 +191,7 @@
     },
     "heritage": [
       {
-        "image":"/card-images/Offshore.png",
+        "image": "/card-images/Offshore.png",
         "title": "Offshore Wind Structures",
         "description": "Heavy-wall monopile, transition piece and jacket fabrication — full weld traceability against DNV-ST-0126 and project class rules."
       },

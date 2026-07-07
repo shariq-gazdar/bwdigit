@@ -10,6 +10,7 @@ import Link from "next/link";
 const Navbar = ({ messages, locale, defaultLocale }) => {
   const [openLang, setOpenLang] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [serviceOpen, setServiceOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const navbar = messages?.navbar || { links: [] };
@@ -90,12 +91,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
   return (
     <nav className="w-screen fixed flex flex-row items-center justify-between px-10 py-5 bg-background/90 z-999 text-primary">
       {/* Logo */}
-      <Image
-        src="/logo.png"
-        width={100}
-        height={50}
-        alt="logo"
-      />
+      <Image src="/logo.png" width={100} height={50} alt="logo" />
 
       {/* Desktop Links */}
       <div className="hidden md:flex flex-row gap-x-5 items-center">
@@ -108,14 +104,30 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
             {link.label}
           </a>
         ))}
+        {/* <button onClick={() => setServiceOpen(!serviceOpen)} className="relative">
+          Service {serviceOpen ? "↑" : "↓"}
+      
+            <div className="absolute top-9 rounded-2xl left-0 bg-background border border-gray-200 shadow-lg grid grid-cols-2 w-96 p-2 ">
+              {navbar.services.map((service, index) => (
+                <a
+                  key={index}
+                  className="block px-4 py-2 text-primary hover:text-primary-accent transition-colors"
+                  href={`/service/${index+1}`}
+                >
+                  {service.title}
+                </a>
+              ))}
+            </div>
+      
+        </button> */}
       </div>
 
       {/* Consultation Button */}
       <div className=" flex-row items-center gap-x-5 hidden lg:flex">
         <Link href={"/#contact"}>
-        <CtaButton className="hover:text-primary-accent transition-colors">
-          Consultation
-        </CtaButton>
+          <CtaButton className="hover:text-primary-accent transition-colors">
+            Consultation
+          </CtaButton>
         </Link>
         {/* Desktop Language selector */}
         <div
@@ -170,6 +182,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
               {link.label}
             </a>
           ))}
+
           <CtaButton
             changeStyle={
               "bg-primary-accent text-primary-foreground px-6 py-3 rounded-3xl border-2 border-primary-accent font-semibold hover:bg-primary-accent/90 transition-colors cursor-pointer w-full shadow-[0_20px_90px_-100px_rgba(94,234,212,0.5),0_8px_10px_-6px_rgba(94,234,212,0.5)] text-center"
