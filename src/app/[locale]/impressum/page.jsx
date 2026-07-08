@@ -9,7 +9,7 @@ function page() {
             Impressum
           </h1>
           <p className="mt-3 text-secondaryText text-lg">
-            Legal information for Backpack Wander GmbH
+            Legal information for BW Digit GmbH
           </p>
         </div>
         <div className="prose-container mx-auto mt-12 max-w-3xl space-y-10">
@@ -18,7 +18,7 @@ function page() {
               1. Company Information
             </h2>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              <span className="text-offwhite">Company Name:</span> Backpack Wander GmbH
+              <span className="text-offwhite">Company Name:</span> BW Digit GmbH
             </p>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
               <span className="text-offwhite">Address:</span> Kolonnenstraße 8, 10827 Berlin, Germany
@@ -26,10 +26,10 @@ function page() {
             <p className="mt-4 max-w-none text-secondaryText text-lg">
               <span className="text-offwhite">Email:</span>{" "}
               <a
-                href="mailto:info@backpackwander.com"
+                href="mailto:info@bwdigit.com"
                 className="footer-link-accent hover:underline"
               >
-                info@backpackwander.com
+                info@bwdigit.com
               </a>
             </p>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
@@ -47,7 +47,7 @@ function page() {
               2. Business Description
             </h2>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              Backpack Wander GmbH provides specialized QA/QC engineering services and digital tools for the construction industry.
+              BW Digit GmbH provides specialized QA/QC engineering services and digital tools for the construction industry.
             </p>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
               Our two main service pillars are:

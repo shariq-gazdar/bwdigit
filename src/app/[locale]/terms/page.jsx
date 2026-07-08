@@ -20,10 +20,10 @@ function page() {
             </h2>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
               These General Terms and Conditions apply to all services and
-              offers of Backpack Wander GmbH.
+              offers of BW Digit GmbH.
             </p>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              Backpack Wander GmbH provides, in particular, the following
+              BW Digit GmbH provides, in particular, the following
               services:
             </p>
             <ul className="mt-3 list-disc space-y-2 pl-5 text-secondaryText">
@@ -37,11 +37,11 @@ function page() {
               <li>Sale of digital products and merchandise</li>
             </ul>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              The services are provided under various brands of Backpack Wander
-              GmbH, including the Pipeline Quality brand.
+              The services are provided under various brands of BW Digit GmbH,
+              including the Pipeline Quality brand.
             </p>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              The contractual partner is exclusively Backpack Wander GmbH,
+              The contractual partner is exclusively BW Digit GmbH,
               unless expressly agreed otherwise.
             </p>
           </article>
@@ -76,7 +76,7 @@ function page() {
               4. Limitation of Liability
             </h2>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              The liability of Backpack Wander GmbH is limited to intent and
+              The liability of BW Digit GmbH is limited to intent and
               gross negligence, to the extent permitted by law.
             </p>
             <p className="mt-4 max-w-none text-secondaryText text-lg">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <section className="bg-background text-primary pt-30">
+    <section className="bg-background text-primary pt-30 px-5 lg:px-0">
       <div className="section-shell">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-5xl font-bold text-primary-accent">
@@ -18,7 +18,7 @@ function page() {
               1. General Information
             </h2>
             <p className="mt-4 max-w-none text-secondaryText text-lg">
-              Backpack Wander GmbH takes the protection of personal data
+              BW Digit GmbH takes the protection of personal data
               seriously and processes personal data in accordance with
               applicable data protection laws, including the GDPR.
             </p>
