@@ -122,8 +122,26 @@ export default function Footer() {
           developed with BW Digit.
         </p>
 
-        <p className="mt-8 text-center text-xs text-primary/50">
+        <p className="mt-8 text-center text-xs text-primary/50 flex flex-row gap-x-5 items-center justify-center">
+          <div>
+            
           © 2026 BW Digit. All rights reserved.
+          </div>
+          <div className="flex flex-row gap-x-5">
+
+          <Link href="/privacy-policy" className="hover:text-primary-accent transition-colors">
+            Privacy Policy
+          </Link>
+          
+          <Link href="/terms" className="hover:text-primary-accent transition-colors">
+            Terms & Conditions
+          </Link>
+          
+          <Link href="/impressum" className="hover:text-primary-accent transition-colors">
+            Impressum
+          </Link>
+          </div>
+          
         </p>
       </div>
     </footer>

@@ -23,7 +23,7 @@ export default async function Home({ params }) {
           <h1 className="hero-gradient text-6xl font-heading">
             {t.hero.title}
           </h1>
-          <p className="text-primary">{t.hero.description}</p>
+          <p className="text-primary text-lg">{t.hero.description}</p>
           <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-5 lg:gap-y-0">
             <Link href={"/#about"}>
               <CtaButton
@@ -206,7 +206,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Service Section */}
-      <section className="flex flex-col items-center gap-y-5">
+      <section className="flex flex-col items-center gap-y-5" id="service">
         <h1 className="main-heading">{t.services_section.title}</h1>
         <p className="text-primary/90 w-1/2 font-body text-center text-lg">
           {t.services_section.description}

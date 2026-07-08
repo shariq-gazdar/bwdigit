@@ -123,7 +123,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
       </div>
 
       {/* Consultation Button */}
-      <div className=" flex-row items-center gap-x-5 hidden lg:flex">
+      <div className=" flex-row items-center gap-x-5 hidden lg:flex ">
         <Link href={"/#contact"}>
           <CtaButton className="hover:text-primary-accent transition-colors">
             Consultation
@@ -131,7 +131,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
         </Link>
         {/* Desktop Language selector */}
         <div
-          className="relative hidden md:block"
+          className="relative hidden md:block border border-primary-accent hover:bg-primary-accent p-4 rounded-sm"
           onMouseEnter={() => setOpenLang(true)}
           onMouseLeave={() => setOpenLang(false)}
         >
@@ -146,7 +146,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
                 <button
                   key={loc}
                   onClick={() => handleLanguageChange(loc)}
-                  className={`block w-full text-left px-4 py-2 rounded hover:bg-gray-100 text-background ${
+                  className={`items-center w-full text-left px-4 py-2 flex flex-row rounded hover:bg-gray-100 text-background ${
                     loc === locale
                       ? "bg-primary-accent text-primary-foreground font-semibold"
                       : ""
