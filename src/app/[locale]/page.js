@@ -188,7 +188,7 @@ export default async function Home({ params }) {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div className="bg-card rounded-2xl p-6 grid grid-cols-3 gap-x-5 hover:border hover:border-primary-accent transition-all items-center">
-                  <div className="flex flex-row items-center gap-x-5 col-span-1">
+                  <div className="flex flex-col items-start lg:flex-row lg:items-center gap-x-5 col-span-1">
                     <p className="text-primary-accent text-sm">
                       {"0" + (index + 1)}
                     </p>
@@ -206,12 +206,12 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Service Section */}
-      <section className="flex flex-col items-center gap-y-5" id="service">
-        <h1 className="main-heading">{t.services_section.title}</h1>
-        <p className="text-primary/90 w-1/2 font-body text-center text-lg">
+      <section className="flex flex-col items-center gap-y-5 mx-5 lg:mx-0" id="service">
+        <h1 className="main-heading text-center">{t.services_section.title}</h1>
+        <p className="text-primary/90 w-full lg:w-1/2 font-body text-center text-lg">
           {t.services_section.description}
         </p>
-        <div className="grid grid-cols-3 grid-rows-2 gap-5 mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-5 mx-10">
           {t.digital_services.map((service) => (
             <div
               key={service.id}
@@ -257,7 +257,7 @@ export default async function Home({ params }) {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all">
-                  <div className="flex flex-row items-center gap-x-5">
+                  <div className="flex flex-col items-start lg:flex-row lg:items-center gap-x-5 gap-y-5 lg:gap-y-0">
                     <Image
                       src={outcome.image}
                       alt={outcome.title}
@@ -326,7 +326,7 @@ export default async function Home({ params }) {
         </div>
         {/* Right */}
         <form
-          className="bg-card border-primary-accent/40 border rounded-2xl p-5 lg:p-10 flex flex-col gap-y-5 w-[65%]"
+          className="bg-card border-primary-accent/40 border rounded-2xl p-5 lg:p-10 flex flex-col gap-y-5 w-full lg:w-[65%]"
           action={"https://formspree.io/f/xqevnjrq"}
           method="POST"
         >
