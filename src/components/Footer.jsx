@@ -129,7 +129,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-row gap-x-5">
 
-          <Link href="/privacy-policy" className="hover:text-primary-accent transition-colors">
+          <Link href="/privacy" className="hover:text-primary-accent transition-colors">
             Privacy Policy
           </Link>
           
