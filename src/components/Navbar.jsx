@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronDown, Globe, Menu, X } from "lucide-react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
@@ -11,6 +11,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
   const [openLang, setOpenLang] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
   const router = useRouter();
   const pathname = usePathname();
   const navbar = messages?.navbar || { links: [] };
@@ -20,6 +21,31 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
     router.push(`/${newLocale}${currentPath}`);
     setOpenLang(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      const scrollPosition = window.scrollY + 100;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute("id");
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveSection(sectionId);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const getLocaleLabel = (loc) => {
     const labels = {
@@ -95,15 +121,23 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
 
       {/* Desktop Links */}
       <div className="hidden md:flex flex-row gap-x-5 items-center">
-        {navbar.links.map((link, index) => (
-          <a
-            key={index}
-            className="text-primary hover:text-primary-accent transition-colors"
-            href={link.href}
-          >
-            {link.label}
-          </a>
-        ))}
+        {navbar.links.map((link, index) => {
+          const sectionId = link.href.replace("/#", "");
+          const isActive = activeSection === sectionId;
+          return (
+            <a
+              key={index}
+              className={`transition-colors ${
+                isActive
+                  ? "text-primary-accent"
+                  : "text-primary hover:text-primary-accent"
+              }`}
+              href={link.href}
+            >
+              {link.label}
+            </a>
+          );
+        })}
         {/* <button onClick={() => setServiceOpen(!serviceOpen)} className="relative">
           Service {serviceOpen ? "↑" : "↓"}
       
@@ -172,16 +206,24 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-background shadow-lg p-5 md:hidden flex flex-col gap-4 h-screen">
-          {navbar.links.map((link, index) => (
-            <a
-              key={index}
-              className="text-primary hover:text-primary-accent transition-colors py-1"
-              href={link.href}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
+          {navbar.links.map((link, index) => {
+            const sectionId = link.href.replace("/#", "");
+            const isActive = activeSection === sectionId;
+            return (
+              <a
+                key={index}
+                className={`transition-colors py-1 ${
+                  isActive
+                    ? "text-primary-accent"
+                    : "text-primary hover:text-primary-accent"
+                }`}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            );
+          })}
 
           <CtaButton
             changeStyle={
