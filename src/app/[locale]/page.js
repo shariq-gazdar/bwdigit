@@ -60,7 +60,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Core Digital Services */}
-      <section className="flex flex-col items-center my-10 lg:my-20">
+      <section className="flex flex-col items-center my-10 lg:my-20 mx-5 lg:mx-10">
         <h1 className="main-heading text-center">{t.services_section.title}</h1>
         {/* Service Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretchh gap-x-5">
@@ -142,7 +142,7 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering Heritage  Operational */}
-      <section className="flex flex-col lg:flex-row justify-between mx-5 lg:mx-10 gap-y-5 lg:gap-y-0" id="portfolio">
+      <section className="flex flex-col lg:flex-row justify-between mx-5 lg:mx-10 gap-y-5 lg:gap-y-0 my-10 " id="portfolio">
         {" "}
         <div className="mt-10 w-full lg:w-1/2">
           <h1 className="main-heading text-center lg:text-start">
@@ -235,7 +235,7 @@ export default async function Home({ params }) {
                   className="self-start lg:self-center"
                 />
                 <div>
-                  <h2 className="text-xl font-heading text-primary">
+                  <h2 className="text-2xl font-heading text-primary">
                     {service.title}
                   </h2>
                   <p className="font-body text-xl text-primary/70">
@@ -247,7 +247,7 @@ export default async function Home({ params }) {
                 {service.points.map((point, index) => (
                   <li
                     key={index}
-                    className="font-body text-bas text-primary/70"
+                    className="font-body text-lg text-primary/70"
                   >
                     {point}
                   </li>
@@ -277,11 +277,11 @@ export default async function Home({ params }) {
                     <h1 className="text-2xl font-heading text-primary-accent">
                       {outcome.percentage}
                     </h1>
-                    <h1 className="text-xl font-semibold font-heading">
+                    <h1 className="text-2xl font-semibold font-heading">
                       {outcome.title}
                     </h1>
                   </div>
-                  <p className="font-body text-xl">{outcome.description}</p>
+                  <p className="font-body text-lg">{outcome.description}</p>
                 </div>
               </AnimateIn>
             );
