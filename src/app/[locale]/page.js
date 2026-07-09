@@ -80,7 +80,9 @@ export default async function Home({ params }) {
                     {/* <div className="bg-secondary/10  w-fit p-3 rounded-2xl text-primary-accent self-center">
                       <Icon size={42} />
                     </div> */}
-                    <h1 className="text-2xl font-heading font-bold">{service.title}</h1>
+                    <h1 className="text-2xl font-heading font-bold">
+                      {service.title}
+                    </h1>
                     <p className="font-body text-lg ">{service.description}</p>
                   </div>
                 </div>
@@ -94,8 +96,10 @@ export default async function Home({ params }) {
       <section className="grid grid-cols-1 lg:grid-cols-2 lg:my-20 my-10 mx-10 items-stretch justify-between gap-x-5 gap-y-10 lg:gap-y-0">
         {/* Left */}
         <div className="flex flex-col gap-y-4 mt-5">
-          <h1 className="main-heading">{t.engineering_section.title}</h1>
-          <p className="text-primary/90 text-lg">
+          <h1 className="main-heading text-center lg:text-start">
+            {t.engineering_section.title}
+          </h1>
+          <p className="text-primary/90 text-lg text-center lg:text-start">
             {t.engineering_section.description}
           </p>
           {/* {t.engineering_section.points.map((point, index) => (
@@ -138,15 +142,17 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering Heritage  Operational */}
-      <section
-        className="grid grid-cols-1 lg:grid-cols-2 items-start lg:my-20 my-10 mx-5 lg:mx-10 gap-y-5"
-        id="portfolio"
-      >
-        <div className="mt-10">
-          <h1 className="main-heading ">{t.heritage_section.title}</h1>
-          <p className="text-primary/70 text-lg pt-2 ">{t.heritage_section.description}</p>
+      <section className="flex flex-col lg:flex-row justify-between mx-5 lg:mx-10 gap-y-5 lg:gap-y-0" id="portfolio">
+        {" "}
+        <div className="mt-10 w-full lg:w-1/2">
+          <h1 className="main-heading text-center lg:text-start">
+            {t.heritage_section.title}
+          </h1>
+          <p className="text-primary/70 text-lg pt-2 text-center lg:text-start">
+            {t.heritage_section.description}
+          </p>
         </div>
-        <div className="flex flex-col gap-y-3">
+        <div className="flex flex-col gap-y-3 w-full lg:w-[40%] ">
           {t.heritage.map((h, index) => {
             const Icon = heritage[index].icon;
             return (
@@ -187,9 +193,9 @@ export default async function Home({ params }) {
           {t.platform.map((p, index) => {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
-                <div className="bg-card rounded-2xl p-6 grid grid-cols-3 gap-x-5 hover:border hover:border-primary-accent transition-all items-center">
-                  <div className="flex flex-col items-start lg:flex-row lg:items-center gap-x-5 col-span-1">
-                    <p className="text-primary-accent text-sm">
+                <div className="bg-card rounded-2xl p-6 grid grid-cols-1 lg:grid-cols-3 gap-y-5 lg:gap-y-0 gap-x-5 hover:border hover:border-primary-accent transition-all items-center">
+                  <div className="flex flex-col items-start lg:flex-row lg:items-center gap-x-5  col-span-1">
+                    <p className="text-primary-accent text-sm mb-1 lg:mb-0">
                       {"0" + (index + 1)}
                     </p>
                     <h3 className="text-xl font-heading text-primary">
@@ -206,24 +212,27 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Service Section */}
-      <section className="flex flex-col items-center gap-y-5 mx-5 lg:mx-0" id="service">
+      <section
+        className="flex flex-col items-center gap-y-5 mx-5 lg:mx-0"
+        id="service"
+      >
         <h1 className="main-heading text-center">{t.services_section.title}</h1>
         <p className="text-primary/90 w-full lg:w-1/2 font-body text-center text-lg">
           {t.services_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-5 mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-5 lg:mx-10 mx-5">
           {t.digital_services.map((service) => (
             <div
               key={service.id}
               className="bg-card text-primary p-6 rounded-xl flex flex-col gap-y-5 hover:border hover:border-primary-accent"
             >
-              <div className="flex items-center gap-x-5">
+              <div className="flex flex-col lg:flex-row gap-y-3 lg:gap-y-0 items-start lg:items-center gap-x-5">
                 <Image
                   src={service.image}
                   width={50}
                   height={50}
                   alt={service.title}
-                  className="self-center"
+                  className="self-start lg:self-center"
                 />
                 <div>
                   <h2 className="text-xl font-heading text-primary">
@@ -248,15 +257,15 @@ export default async function Home({ params }) {
           ))}
         </div>
       </section>
-      {/* Bussines Value */}
+      {/* Bussines Value Outcome*/}
       <section className="flex flex-col items-center lg:my-20 my-10 lg:gap-y-5 gap-y-3 mx-5 lg:mx-0">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 lg:mx-10">
+        <div className="items-stretch  grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-5 lg:gap-y-0 lg:mx-10">
           {t.outcomes.map((outcome, index) => {
             const Icon = outcomes[index].icon;
             return (
               <AnimateIn key={index} delay={index * 0.1}>
-                <div className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all">
+                <div className="text-primary bg-card p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl hover:border-[0.5px] hover:border-primary-accent   transition-all lg:h-[80%] h-full">
                   <div className="flex flex-col items-start lg:flex-row lg:items-center gap-x-5 gap-y-5 lg:gap-y-0">
                     <Image
                       src={outcome.image}
@@ -293,7 +302,7 @@ export default async function Home({ params }) {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div
-                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all border-primary/30 h-auto lg:h-86 ${
+                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all  border-primary/30 h-auto lg:h-86 ${
                     studies[index].hoverColor === "orange"
                       ? "bg-linear-to-b from-orange/30 to-card"
                       : studies[index].hoverColor === "blue"
@@ -301,13 +310,11 @@ export default async function Home({ params }) {
                         : "bg-linear-to-b from-primary-accent/30 to-card"
                   }`}
                 >
-                  <h3 className="text-xl font-heading text-primary font-bold">
+                  <h3 className="text-2xl font-heading text-primary font-bold">
                     {study.tagline}
                   </h3>
-                  <h1 className="text-sm font-heading -mt-4">
-                    {study.title}
-                  </h1>
-                  <p className="font-body text-lg">{study.description}</p>
+                  <h1 className="text-sm font-heading -mt-4">{study.title}</h1>
+                  <p className="font-body text-base">{study.description}</p>
                 </div>
               </AnimateIn>
             );
@@ -322,7 +329,9 @@ export default async function Home({ params }) {
         {/* Left */}
         <div className="flex flex-col gap-y-5 pt-12 items-center">
           <h1 className="main-heading">{t.contact_section.title}</h1>
-          <p className="text-primary/70 text-lg">{t.contact_section.description}</p>
+          <p className="text-primary/70 text-lg">
+            {t.contact_section.description}
+          </p>
         </div>
         {/* Right */}
         <form

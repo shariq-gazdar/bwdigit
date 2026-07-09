@@ -123,11 +123,11 @@ export default function Footer() {
         </p>
 
         <p className="mt-8 text-center text-xs text-primary/50 flex flex-row gap-x-5 items-center justify-center">
-          <div>
+          <span className="flex flex-col lg:flex-row gap-x-5 gap-y-5 lg:gap-y-0">
+          <span>
             
           © 2026 BW Digit. All rights reserved.
-          </div>
-          <div className="flex flex-row gap-x-5">
+          </span>
 
           <Link href="/privacy" className="hover:text-primary-accent transition-colors">
             Privacy Policy
@@ -140,7 +140,7 @@ export default function Footer() {
           <Link href="/impressum" className="hover:text-primary-accent transition-colors">
             Impressum
           </Link>
-          </div>
+          </span>
           
         </p>
       </div>
