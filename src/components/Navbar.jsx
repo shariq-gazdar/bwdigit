@@ -239,10 +239,10 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
                 <button
                   key={loc}
                   onClick={() => handleLanguageChange(loc)}
-                  className={`flex flex-row items-center justify-center gap-2 p-2 rounded-2xl bg-card text-primary hover:text-primary-accent transition-colors ${
+                  className={`flex flex-row items-center justify-center gap-2 p-2 rounded-2xl bg-card  hover:text-primary-accent transition-colors ${
                     loc === locale
-                      ? "bg-primary-accent text-primary-foreground font-semibold"
-                      : ""
+                      ? "bg-primary-accent text-background font-semibold"
+                      : "text-primary"
                   }`}
                 >
                   <span className="text-xl">{getFlag(loc)}</span>
