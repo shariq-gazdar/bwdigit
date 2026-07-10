@@ -63,7 +63,7 @@ export default async function Home({ params }) {
       <section className="flex flex-col items-center my-10 lg:my-20 mx-5 lg:mx-10">
         <h1 className="main-heading text-center">{t.services_section.title}</h1>
         {/* Service Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 mx-5 justify-between items-stretchh gap-x-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 mx-2 lg:mx-5 justify-between items-stretchh gap-x-5">
           {t.services.map((service, index) => {
             const Icon = services[index].Icon;
             return (
