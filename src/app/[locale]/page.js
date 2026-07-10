@@ -247,7 +247,7 @@ export default async function Home({ params }) {
                 {service.points.map((point, index) => (
                   <li
                     key={index}
-                    className="font-body text-bas text-primary/70"
+                    className="font-body text-base text-primary/70"
                   >
                     {point}
                   </li>
