@@ -50,7 +50,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
   const getLocaleLabel = (loc) => {
     const labels = {
       en: "English",
-      de: "Deutsch",
+      de: "German",
       sr: "Serbian",
     };
     return labels[loc] || loc.toUpperCase();

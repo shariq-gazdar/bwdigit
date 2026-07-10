@@ -220,7 +220,7 @@ export default async function Home({ params }) {
         <p className="text-primary/90 w-full lg:w-1/2 font-body text-center text-lg">
           {t.services_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-5 lg:mx-10 mx-5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-5 lg:mx-10 mx-2">
           {t.digital_services.map((service) => (
             <div
               key={service.id}
