@@ -235,7 +235,7 @@ export default async function Home({ params }) {
                   className="self-start lg:self-center"
                 />
                 <div>
-                  <h2 className="text-xl font-heading text-primary">
+                  <h2 className="text-2xl font-heading text-primary">
                     {service.title}
                   </h2>
                   <p className="font-body text-lg text-primary/70">
@@ -247,7 +247,7 @@ export default async function Home({ params }) {
                 {service.points.map((point, index) => (
                   <li
                     key={index}
-                    className="font-body text-base text-primary/70"
+                    className="font-body text-bas text-primary/70"
                   >
                     {point}
                   </li>
