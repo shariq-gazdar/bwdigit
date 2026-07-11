@@ -73,7 +73,7 @@
     },
     "services_section": {
       "title": "One Agency. All Your Digital Needs",
-      "description": "Many businesses waste time with websites that are slow, hard to use or don't match their goals. BW Digit fixes that. We create websites, online stores, mobile apps and marketing tools that work better, so your business looks good, runs faster and reaches more people. As a full digital agency, we handle everything from design and development to SEO and e-commerce with one goal: Helping you grow online."
+      "description": "BW Digit creates fast, modern websites, mobile apps, e-commerce stores, and marketing solutions designed to help your business attract more customers and grow online."
     },
     "services": [
       {
@@ -190,7 +190,7 @@
       }
     ],
     "heritage_section": {
-      "title": "Operational experience encoded into software",
+      "title": "Experience Built Into Software",
       "description": "Every module is grounded in years of project work delivering complex welded assets into demanding regulatory environments."
     },
     "heritage": [
@@ -216,7 +216,7 @@
       }
     ],
     "platform_section": {
-      "title": "One control surface for industrial documentation",
+      "title": "Single Documentation Platform",
       "description": "A single platform consolidating MDR compilation, weld traceability and compliance verification across every project, contractor and site."
     },
     "platform": [

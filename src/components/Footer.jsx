@@ -5,16 +5,16 @@ export default function Footer() {
   return (
     <footer className="bg-background">
       <div className="max-w-7xl mx-auto px-6 py-20">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 ">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-heading text-lg font-semibold text-primary">
+              <span className="font-heading text-2xl font-semibold text-primary">
                 BW Digit
               </span>
             </div>
 
-            <p className="mt-4 text-sm text-primary/70">
+            <p className="mt-4 text-base text-primary/70">
               Industrial Data Automation
             </p>
 
@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Solutions */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            <h4 className="text-base font-semibold uppercase tracking-[0.2em] text-primary">
               Solutions
             </h4>
 
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Ecosystem */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            <h4 className="text-base font-semibold uppercase tracking-[0.2em] text-primary">
               The GmbH Ecosystem
             </h4>
 
@@ -88,7 +88,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            <h4 className="text-base font-semibold uppercase tracking-[0.2em] text-primary">
               Office
             </h4>
 
@@ -121,28 +121,33 @@ export default function Footer() {
           Technical quality services supported by proprietary digital solutions
           developed with BW Digit.
         </p>
+        <div className="flex flex-col items-center gap-y-2 text-sm">
+          <p className="mt-8 text-center text-xs text-primary/50 flex flex-row gap-x-5 items-center justify-center">
+            <span>© 2026 BW Digit. All rights reserved.</span>
+          </p>
+          <span className="flex  flex-row gap-x-5 gap-y-5 lg:gap-y-0">
+            <Link
+              href="/privacy"
+              className="hover:text-primary-accent text-primary/50 transition-colors"
+            >
+              Privacy Policy
+            </Link>
 
-        <p className="mt-8 text-center text-xs text-primary/50 flex flex-row gap-x-5 items-center justify-center">
-          <span className="flex flex-col lg:flex-row gap-x-5 gap-y-5 lg:gap-y-0">
-          <span>
-            
-          © 2026 BW Digit. All rights reserved.
-          </span>
+            <Link
+              href="/terms"
+              className="hover:text-primary-accent text-primary/50 transition-colors"
+            >
+              Terms & Conditions
+            </Link>
 
-          <Link href="/privacy" className="hover:text-primary-accent transition-colors">
-            Privacy Policy
-          </Link>
-          
-          <Link href="/terms" className="hover:text-primary-accent transition-colors">
-            Terms & Conditions
-          </Link>
-          
-          <Link href="/impressum" className="hover:text-primary-accent transition-colors">
-            Impressum
-          </Link>
+            <Link
+              href="/impressum"
+              className="hover:text-primary-accent text-primary/50 transition-colors"
+            >
+              Impressum
+            </Link>
           </span>
-          
-        </p>
+        </div>
       </div>
     </footer>
   );

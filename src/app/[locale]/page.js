@@ -20,10 +20,12 @@ export default async function Home({ params }) {
         <div className="absolute top-0 left-0 w-full h-full bg-linear-to-br from-secondary-accent/5 to-primary-accent/20 blur-2xl z-0 lg:hidden"></div>
         {/* Left */}
         <div className="relative z-10 flex flex-col gap-y-5 mx-10 ">
-          <h1 className="hero-gradient text-6xl font-heading">
+          <h1 className="hero-gradient text-5xl text-center lg:text-start lg:text-6xl font-heading">
             {t.hero.title}
           </h1>
-          <p className="text-primary text-lg">{t.hero.description}</p>
+          <p className="text-primary text-lg text-center lg:text-start">
+            {t.hero.description}
+          </p>
           <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-5 lg:gap-y-0">
             <Link href={"/#about"}>
               <CtaButton
@@ -80,10 +82,12 @@ export default async function Home({ params }) {
                     {/* <div className="bg-secondary/10  w-fit p-3 rounded-2xl text-primary-accent self-center">
                       <Icon size={42} />
                     </div> */}
-                    <h1 className="text-2xl font-heading font-bold">
+                    <h1 className="text-xl font-heading font-bold text-primary">
                       {service.title}
                     </h1>
-                    <p className="font-body text-lg ">{service.description}</p>
+                    <p className="font-body text-base text-primary/70">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </AnimateIn>
@@ -91,9 +95,8 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-
       {/* Engineering + Software */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 lg:my-20 my-10 mx-10 items-stretch justify-between gap-x-5 gap-y-10 lg:gap-y-0">
+      <section className="grid grid-cols-1 lg:grid-cols-2 lg:my-20 my-10 mx-5 lg:mx-10 items-stretch justify-between gap-x-5 gap-y-10 lg:gap-y-0">
         {/* Left */}
         <div className="flex flex-col gap-y-4 mt-5">
           <h1 className="main-heading text-center lg:text-start">
@@ -125,14 +128,14 @@ export default async function Home({ params }) {
                 {/* Card */}
                 <div className="bg-card rounded-2xl border border-primary-accent/10 p-5">
                   <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-lg font-heading text-primary ">
+                    <h3 className="text-xl font-heading text-primary ">
                       {step.title}
                     </h3>
 
                     <Check className="w-4 h-4 text-primary-accent shrink-0 mt-1" />
                   </div>
 
-                  <p className="mt-2 text-primary/70 leading-relaxed">
+                  <p className="mt-2 text-primary/70 leading-relaxed text-base">
                     {step.description}
                   </p>
                 </div>
@@ -142,7 +145,10 @@ export default async function Home({ params }) {
         </div>
       </section>
       {/* Engineering Heritage  Operational */}
-      <section className="flex flex-col lg:flex-row justify-between mx-5 lg:mx-10 gap-y-5 lg:gap-y-0 my-10 " id="portfolio">
+      <section
+        className="flex flex-col lg:flex-row justify-between mx-5 lg:mx-10 gap-y-5 lg:gap-y-0 my-10 "
+        id="portfolio"
+      >
         {" "}
         <div className="mt-10 w-full lg:w-1/2">
           <h1 className="main-heading text-center lg:text-start">
@@ -159,7 +165,7 @@ export default async function Home({ params }) {
               <AnimateIn key={index} delay={index * 0.1}>
                 <div className="bg-card rounded-2xl overflow-hidden hover:border hover:border-primary-accent transition-all h-full flex flex-col justify-center items-center">
                   <div className="bg-card rounded-2xl p-6 w-screen lg:w-auto  transition-all flex-col flex items-center justify-center">
-                    <h3 className="text-lg font-heading text-primary">
+                    <h3 className="text-xl font-heading text-primary">
                       {h.title}
                     </h3>
                     {/* <p className="mt-2 text-primary/70 leading-relaxed">
@@ -172,7 +178,7 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-      {/* The Platform */}
+      ;{/* The Platform */}
       <section
         className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-0 gap-y-5"
         id="about"
@@ -202,7 +208,7 @@ export default async function Home({ params }) {
                       {p.title}
                     </h3>
                   </div>
-                  <p className="text-xl text-primary/70 leading-relaxed col-span-2">
+                  <p className="text-base text-primary/70 leading-relaxed col-span-2">
                     {p.description}
                   </p>
                 </div>
@@ -211,7 +217,7 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-      {/* Service Section */}
+      ;{/* Service Section */}
       <section
         className="flex flex-col items-center gap-y-5 mx-5 lg:mx-0"
         id="service"
@@ -235,10 +241,10 @@ export default async function Home({ params }) {
                   className="self-start lg:self-center"
                 />
                 <div>
-                  <h2 className="text-2xl font-heading text-primary">
+                  <h2 className="text-xl font-heading text-primary">
                     {service.title}
                   </h2>
-                  <p className="font-body text-lg text-primary/70">
+                  <p className="font-body text-base text-primary/70">
                     {service.subtitle}
                   </p>
                 </div>
@@ -257,7 +263,7 @@ export default async function Home({ params }) {
           ))}
         </div>
       </section>
-      {/* Bussines Value Outcome*/}
+      ;{/* Bussines Value Outcome*/}
       <section className="flex flex-col items-center lg:my-20 my-10 lg:gap-y-5 gap-y-3 mx-5 lg:mx-0">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
         <div className="items-stretch  grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-5 lg:gap-y-0 lg:mx-10">
@@ -274,21 +280,23 @@ export default async function Home({ params }) {
                       height={100}
                       className="rounded-2xl"
                     />
-                    <h1 className="text-2xl font-heading text-primary-accent">
+                    <h1 className="text-xl font-heading text-primary-accent">
                       {outcome.percentage}
                     </h1>
-                    <h1 className="text-2xl font-semibold font-heading">
+                    <h1 className="text-xl font-semibold font-heading text-primary">
                       {outcome.title}
                     </h1>
                   </div>
-                  <p className="font-body text-lg">{outcome.description}</p>
+                  <p className="font-body text-base text-primary/70">
+                    {outcome.description}
+                  </p>
                 </div>
               </AnimateIn>
             );
           })}
         </div>
       </section>
-      {/* Case Study Colored Cards */}
+      ;{/* Case Study Colored Cards */}
       <section
         className="flex flex-col items-center mx-2 lg:my-20 my-10 gap-y-5  lg:mx-0"
         id="blog"
@@ -310,18 +318,22 @@ export default async function Home({ params }) {
                         : "bg-linear-to-b from-primary-accent/30 to-card"
                   }`}
                 >
-                  <h3 className="text-2xl font-heading text-primary font-bold">
+                  <h3 className="text-xl font-heading text-primary font-bold">
                     {study.tagline}
                   </h3>
-                  <h1 className="text-sm font-heading -mt-4">{study.title}</h1>
-                  <p className="font-body text-base">{study.description}</p>
+                  <h1 className="text-base font-heading -mt-4 text-primary">
+                    {study.title}
+                  </h1>
+                  <p className="font-body text-base text-primary/70">
+                    {study.description}
+                  </p>
                 </div>
               </AnimateIn>
             );
           })}
         </div>
       </section>
-      {/* Contact Form */}
+      ;{/* Contact Form */}
       <section
         className="bg-linear-to-br from-background to-primary-accent/10 flex flex-col  px-10 lg:py-10 gap-x-20 gap-y-10 lg:gap-y-5 -mt-10 pb-10 lg:mt-0 lg:pb-10 items-center justify-center w-full "
         id="contact"
