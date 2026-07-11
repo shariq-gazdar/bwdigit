@@ -125,7 +125,7 @@ export default function Footer() {
           <p className="mt-8 text-center text-xs text-primary/50 flex flex-row gap-x-5 items-center justify-center">
             <span>© 2026 BW Digit. All rights reserved.</span>
           </p>
-          <span className="flex  flex-row gap-x-5 gap-y-5 lg:gap-y-0">
+          <span className="flex  flex-row gap-x-5 gap-y-5 lg:gap-y-0 items-center">
             <Link
               href="/privacy"
               className="hover:text-primary-accent text-primary/50 transition-colors"
