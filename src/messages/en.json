@@ -26,6 +26,10 @@
         "href": "/#contact"
       }
     ],
+    "service_dropdown": {
+      "title": "Our Services",
+      "description": "Comprehensive digital solutions for your business"
+    },
     "services": [
       {
         "id": 1,
@@ -366,4 +370,5 @@
     "liability_notice_title": "3. Liability Notice",
     "liability_notice": "Despite careful monitoring of content, we as operators of this website assume no liability for the content of external links. The operators of linked pages are solely responsible for their content."
   }
+  
 }

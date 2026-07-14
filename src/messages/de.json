@@ -30,6 +30,10 @@
         "href": "/#contact"
       }
     ],
+    "service_dropdown": {
+      "title": "Unsere Dienstleistungen",
+      "description": "Umfassende digitale Lösungen für Ihr Unternehmen"
+    },
     "services": [
       {
         "id": 1,

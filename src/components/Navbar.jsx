@@ -69,12 +69,12 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           <path
             d="M0,0 L24,16 M24,0 L0,16"
             stroke="#FFFFFF"
-            stroke-width="3.2"
+            strokeWidth="3.2"
           ></path>
           <path
             d="M0,0 L24,16 M24,0 L0,16"
             stroke="#C8102E"
-            stroke-width="1.6"
+            strokeWidth="1.6"
           ></path>
           <path
             d="M9.6,0 H14.4 V16 H9.6 Z M0,5.6 H24 V10.4 H0 Z"
@@ -127,7 +127,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
           return (
             <a
               key={index}
-              className={`transition-colors ${
+              className={`transition-colors    ${
                 isActive
                   ? "text-primary-accent"
                   : "text-primary hover:text-primary-accent"
@@ -138,22 +138,78 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
             </a>
           );
         })}
-        {/* <button onClick={() => setServiceOpen(!serviceOpen)} className="relative">
-          Service {serviceOpen ? "↑" : "↓"}
-      
-            <div className="absolute top-9 rounded-2xl left-0 bg-background border border-gray-200 shadow-lg grid grid-cols-2 w-96 p-2 ">
-              {navbar.services.map((service, index) => (
-                <a
-                  key={index}
-                  className="block px-4 py-2 text-primary hover:text-primary-accent transition-colors"
-                  href={`/service/${index+1}`}
-                >
-                  {service.title}
-                </a>
-              ))}
+        {/* Service Dropdown */}
+        <div
+          className="relative"
+          onMouseEnter={() => setServiceOpen(true)}
+          onMouseLeave={() => setServiceOpen(false)}
+        >
+          <button className="relative flex items-center gap-1 text-primary hover:text-primary-accent transition-colors">
+            {navbar.links.find((link) => link.href === "/#service")?.label ||
+              "Service"}
+            <ChevronDown
+              size={16}
+              className={`transition-transform ${serviceOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+          {serviceOpen && (
+            <div className="absolute top-4 left-0 -translate-x-1/2 mt-2 w-150 bg-card rounded-lg shadow-xl border border-primary/20 py-4 z-50">
+              <div className="px-6 py-2 border-b border-primary/10">
+                <h3 className="text-lg font-semibold text-primary">
+                  {navbar.service_dropdown.title}
+                </h3>
+                <p className="text-sm text-primary/70">
+                  {navbar.service_dropdown.description}
+                </p>
+              </div>
+              <div className="py-2 flex">
+                <div className="flex-1 px-2">
+                  {navbar.services.slice(0, 3).map((service, index) => (
+                    <Link
+                      key={index}
+                      className="block px-4 py-3 hover:bg-primary/5 transition-colors duration-200 group rounded-md mx-2"
+                      href={service.href}
+                    >
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary-accent rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
+                        <div>
+                          <h4 className="text-primary font-medium group-hover:text-primary-accent transition-colors">
+                            {service.title}
+                          </h4>
+                          <p className="text-sm text-primary/70 mt-1">
+                            {service.description}
+                          </p>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <div className="w-px bg-primary/20 mx-2"></div>
+                <div className="flex-1 px-2">
+                  {navbar.services.slice(3).map((service, index) => (
+                    <a
+                      key={index + 3}
+                      className="block px-4 py-3 hover:bg-primary/5 transition-colors duration-200 group rounded-md mx-2"
+                      href={service.href}
+                    >
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary-accent rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
+                        <div>
+                          <h4 className="text-primary font-medium group-hover:text-primary-accent transition-colors">
+                            {service.title}
+                          </h4>
+                          <p className="text-sm text-primary/70 mt-1">
+                            {service.description}
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
-      
-        </button> */}
+          )}
+        </div>
       </div>
 
       {/* Consultation Button */}

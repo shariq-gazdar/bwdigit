@@ -30,6 +30,10 @@
         "href": "/#contact"
       }
     ],
+    "service_dropdown": {
+      "title": "Naše usluge",
+      "description": "Sveobuhvatna digitalna rešenja za vaš posao"
+    },
     "services": [
       {
         "id": 1,
