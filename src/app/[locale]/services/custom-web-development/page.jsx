@@ -1,5 +1,7 @@
 import CtaButton from '@/components/CtaButton';
 import Hero from '@/components/Service/Hero'
+import Projects from '@/components/Service/Projects';
+import TestimonialsSection from '@/components/Service/Testimonial';
 import { ArrowRight, Building, Check, CheckCircle2, Gauge, Globe, Layout, Link, Rocket, Target, TrendingUp, Users, Wrench } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
@@ -335,7 +337,11 @@ function page() {
             </CtaButton>
           </div>
         </div>
-      </section>
+          </section>
+          {/* Projects */}
+          <Projects />
+          {/* Testimonials */}
+          <TestimonialsSection />
     </div>
   );
 }
