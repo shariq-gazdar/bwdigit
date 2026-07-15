@@ -10,35 +10,30 @@ import "swiper/css/pagination";
 
 const inspirations = [
   {
-    title: "Klur Skincare",
-    category: "Beauty & Skincare",
-    image: "/images/inspirations/klur.webp",
-    url: "#",
+    title: "BackPack Wander",
+    category: "Travel & Lifestyle",
+    image: "/service/projects/backpack.png",
+    url: "https://www.backpackwander.org/",
   },
   {
-    title: "Little's Coffee",
+    title: "Studio Mara",
     category: "E-commerce",
-    image: "/images/inspirations/littles.webp",
-    url: "#",
+    image: "/service/projects/mara.png",
+    url: "https://urbannestinteriors.co.uk/",
   },
   {
-    title: "Studio Coffee",
+    title: "Mimedicoplus",
     category: "Coffee Brand",
-    image: "/images/inspirations/coffee.webp",
-    url: "#",
+    image: "/service/projects/mimed.png",
+    url: "https://mimedicoplus.com",
   },
   {
-    title: "Plant Boutique",
+    title: "Setfreeway",
     category: "Lifestyle",
-    image: "/images/inspirations/plants.webp",
-    url: "#",
+    image: "/service/projects/set.png",
+    url: "https://setfreeway.com/",
   },
-  {
-    title: "Modern Fashion",
-    category: "Fashion Store",
-    image: "/images/inspirations/fashion.webp",
-    url: "#",
-  },
+
 ];
 
 export default function Projects() {
