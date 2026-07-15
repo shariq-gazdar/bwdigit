@@ -12,6 +12,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [serviceOpen, setServiceOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const [mobservice , setMobService] = useState(false)
   const router = useRouter();
   const pathname = usePathname();
   const navbar = messages?.navbar || { links: [] };
@@ -261,7 +262,7 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-background shadow-lg p-5 md:hidden flex flex-col gap-4 h-screen">
+        <div className="absolute top-full left-0 right-0 bg-background shadow-lg p-5 md:hidden flex flex-col gap-4 h-screen overflow-scroll">
           {navbar.links.map((link, index) => {
             const sectionId = link.href.replace("/#", "");
             const isActive = activeSection === sectionId;
@@ -280,6 +281,53 @@ const Navbar = ({ messages, locale, defaultLocale }) => {
               </a>
             );
           })}
+          {/* Service Dropdown */}
+          <div
+            className="relative"
+            onClick={() => setServiceOpen(!serviceOpen)}
+          >
+            <button className="relative flex items-center gap-1 text-primary hover:text-primary-accent transition-colors">
+              {navbar.links.find((link) => link.href === "/#service")?.label ||
+                "Service"}
+              <ChevronDown
+                size={16}
+                className={`transition-transform ${serviceOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+            {serviceOpen && (
+              <div className="mt-2 mx-auto bg-card rounded-lg shadow-xl border border-primary/20 py-4 z-50 w-fit">
+                <div className="px-6 py-2 border-b border-primary/10">
+                  <h3 className="text-lg font-semibold text-primary">
+                    {navbar.service_dropdown.title}
+                  </h3>
+                  <p className="text-sm text-primary/70">
+                    {navbar.service_dropdown.description}
+                  </p>
+                </div>
+                <div className="py-2 flex flex-col">
+                  {navbar.services.map((service, index) => (
+                    <a
+                      key={index }
+                      className="block px-4 py-3 hover:bg-primary/5 transition-colors duration-200 group rounded-md mx-2"
+                      href={service.href}
+                    >
+                      <div className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary-accent rounded-full mt-2 group-hover:scale-125 transition-transform"></div>
+                        <div>
+                          <h4 className="text-primary font-medium group-hover:text-primary-accent transition-colors">
+                            {service.title}
+                          </h4>
+                          <p className="text-sm text-primary/70 mt-1">
+                            {service.description}
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
 
           <CtaButton
             changeStyle={
