@@ -94,7 +94,7 @@ export default function Projects() {
                 </div>
 
                 <div className="p-6">
-                  <span className="text-sm font-medium text-accent">
+                  <span className="text-sm font-medium bg-primary-accent text-background p-1 mb-2 rounded-2xl">
                     {item.category}
                   </span>
 
