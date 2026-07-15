@@ -12,165 +12,62 @@ import {
   Check,
   Sparkles,
   CheckCircle2,
-  Target,
   Pen,
   Clock3,
   BarChart3,
   TrendingUp,
 } from "lucide-react";
-import Image from 'next/image';
-import TestimonialsSection from '@/components/Service/Testimonial';
-import Projects from '@/components/Service/Projects';
-import CtaButton from '@/components/CtaButton';
+import Image from "next/image";
+import TestimonialsSection from "@/components/Service/Testimonial";
+import Projects from "@/components/Service/Projects";
+import CtaButton from "@/components/CtaButton";
+import { getMessages } from "@/i18n/request";
 
+async function page({ params }) {
+  const { locale } = await params;
+  const messages = await getMessages(locale);
+  const t = messages.services_pages.ai_automation;
+  const common = messages.services_pages.common;
 
-function page() {
-    const resources = [
-      {
-        title: "Smart AI Tools & Integrations",
-        description:
-          "Tools for writing, scheduling and automation with guides to help you start fast.",
-        icon: Bot,
-        features: [
-          "ChatGPT integration setups",
-          "AI writing tools for faster content",
-          "Scheduling and time management apps",
-          "Data analysis powered by AI",
-        ],
-      },
-      {
-        title: "Step-by-Step Guides",
-        description:
-          "Simple tutorials to help you automate everyday tasks like content planning, onboarding and emails.",
-        icon: BookOpen,
-        features: [
-          "How-to videos and written walkthroughs",
-          "Setup tips and best practices",
-          "Easy workflows you can use today",
-        ],
-      },
-      {
-        title: "Everyday AI In Action",
-        description:
-          "See how AI fits into your daily business routine without extra tools or tech stress.",
-        icon: Lightbulb,
-        features: [
-          "Write better emails faster",
-          "Prioritize tasks with AI tools",
-          "Get meeting summaries and smart suggestions",
-        ],
-      },
-      {
-        title: "Ready-to-Use Templates",
-        description:
-          "Save time with plug-and-play templates for Notion, Airtable and Canva built to simplify your workday.",
-        icon: Wrench,
-        features: [
-          "Project management templates",
-          "Workflow automations",
-          "Standard operating procedures",
-          "Easy to connect with your tools",
-        ],
-      },
-      {
-        title: "Courses & Learning Resources",
-        description:
-          "Learn to use AI for real business tasks with short, practical content.",
-        icon: FileText,
-        features: [
-          "Short video courses",
-          "Real-world case studies",
-          "Interviews with experts",
-          "Practical implementation guides",
-        ],
-      },
-    ];
-    const audience = [
-      {
-        icon: PlayCircle,
-        title: "Freelancers & Solopreneurs",
-      },
-      {
-        icon: FileText,
-        title: "Content Creators & Bloggers",
-      },
-      {
-        icon: CircleCheckBig,
-        title: "Online Entrepreneurs",
-      },
-      {
-        icon: Lightbulb,
-        title: "Remote Workers & Digital Nomads",
-      },
-      {
-        icon: Check,
-        title: "Small Business Owners",
-      },
-    ];
-    const checklist = [
-        "Free and Premium AI Tools",
-        "1-on-1 Consulting",
-        "Ready-Made Templates & Toolkits",
-        "Custom AI Solutions"
-    ]
-    const Popresources = [
-      {
-        icon: Pen,
-        badge: "AI Writing Guide",
-        title: "How to Use ChatGPT for Freelance Writing",
-        description:
-          "A complete walkthrough for creating AI-assisted content with ready-to-use prompts, writing workflows and practical tips.",
-        href: "#",
-      },
-      {
-        icon: FileText,
-        badge: "Business Plan Template",
-        title: "AI-Powered Business Plan Generator (Notion)",
-        description:
-          "Create professional business plans in minutes using our AI-powered Notion template with built-in prompts.",
-        href: "#",
-      },
-      {
-        icon: Clock3,
-        badge: "Workflow Automation Tutorial",
-        title: "Save Time with Notion + Zapier",
-        description:
-          "Learn how to automate your daily workflow across Notion, Gmail, Slack and other productivity tools.",
-        href: "#",
-      },
-    ];
-    const features = [
-      {
-        icon: Clock3,
-        title: "Explore Resources",
-        description: "Tools, templates and guides to help you get started.",
-      },
-      {
-        icon: Bot,
-        title: "Book a 1:1 Session",
-        description: "Personalized support to build your automation plan.",
-      },
-      {
-        icon: TrendingUp,
-        title: "Work Smarter",
-        description: "Use AI to handle repetitive work and free up your time.",
-      },
-      {
-        icon: BarChart3,
-        title: "Scale Faster",
-        description:
-          "Build systems that help your business grow with less effort.",
-      },
-    ];
+  const iconMap = [Bot, BookOpen, Lightbulb, Wrench, FileText];
+  const resources = t.resources.map((item, index) => ({
+    ...item,
+    icon: iconMap[index],
+  }));
+
+  const audienceIconMap = [
+    PlayCircle,
+    FileText,
+    CircleCheckBig,
+    Lightbulb,
+    Check,
+  ];
+  const audience = t.audience.map((title, index) => ({
+    icon: audienceIconMap[index],
+    title,
+  }));
+
+  const checklist = t.checklist;
+
+  const popResourceIconMap = [Pen, FileText, Clock3];
+  const Popresources = t.popular_items.map((item, index) => ({
+    ...item,
+    icon: popResourceIconMap[index],
+    href: "#",
+  }));
+
+  const featureIconMap = [Clock3, Bot, TrendingUp, BarChart3];
+  const features = t.cta_features.map((item, index) => ({
+    ...item,
+    icon: featureIconMap[index],
+  }));
   return (
     <div>
       {/* Hero */}
       <Hero
-        title="AI and Automation Solutions"
-        description={
-          "We build smart AI tools to automate tasks, save time and help your business grow, whether you run a startup, online shop or freelance business."
-        }
-        cta={"Get Started"}
+        title={t.hero.title}
+        description={t.hero.description}
+        cta={t.hero.cta}
         image={"/service/hero/ai.png"}
       />
       {/* What You Will Find */}
@@ -179,17 +76,14 @@ function page() {
           {/* Heading */}
 
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="main-heading">
-              What You'll Find Inside
-            </h2>
+            <h2 className="main-heading">{t.what_you_find.title}</h2>
 
             <p className="mt-4 text-xl font-semibold text-primary-accent">
-              AI Tools That Make Work Easier
+              {t.what_you_find.subtitle}
             </p>
 
             <p className="mt-5 text-lg leading-relaxed text-primary/70 ">
-              We offer tested AI tools and resources that help you save time,
-              stay organized, and run your business more smoothly.
+              {t.what_you_find.description}
             </p>
           </div>
 
@@ -232,7 +126,7 @@ function page() {
                   </ul>
 
                   <button className="mt-8 inline-flex items-center gap-2 font-medium text-primary-accent transition hover:gap-3">
-                    Learn More
+                    {common.learn_more}
                     <ArrowRight className="h-4 w-4" />
                   </button>
                 </div>
@@ -246,13 +140,10 @@ function page() {
         <div className="container mx-auto max-w-7xl px-6">
           {/* Heading */}
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <h2 className="main-heading">
-              Who Can Use Our AI & Automation Tools?
-            </h2>
+            <h2 className="main-heading">{t.who_can_use.title}</h2>
 
             <p className="mt-5 text-lg leading-relaxed text-primary/70 ">
-              Our solutions are built for anyone who wants to save time, reduce
-              manual tasks and work smarter.
+              {t.who_can_use.description}
             </p>
           </div>
 
@@ -286,8 +177,7 @@ function page() {
               </div>
 
               <p className="text-center text-lg font-medium leading-relaxed text-primary-accent">
-                If your to-do list keeps growing, we'll help you shrink it with
-                automation that actually works.
+                {t.highlight}
               </p>
             </div>
           </div>
@@ -298,23 +188,18 @@ function page() {
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2 lg:items-center">
           {/* Left Content */}
           <div className="order-2 lg:order-1">
-            <h2 className="main-heading">
-              {"Custom UI/UX Design Services"}
-            </h2>
+            <h2 className="main-heading">{t.about_service.title}</h2>
 
             <p className="mt-5 text-xl font-medium text-primary-accent">
-              Built Around How People Use Your Product
+              {t.about_service.subtitle}
             </p>
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-primary/70 ">
-              We craft layouts that are easy to follow and enjoyable to use,
-              with every detail tuned for clarity and smooth interaction.
-              Whether launching something new or improving an existing product,
-              we focus on making every click count.
+              {t.about_service.description}
             </p>
 
             <h3 className="mt-10 text-2xl font-semibold text-primary">
-              What We Do
+              {t.about_service.what_we_do}
             </h3>
 
             <ul className="mt-8 space-y-5">
@@ -351,13 +236,10 @@ function page() {
         <div className="container mx-auto max-w-7xl px-6">
           {/* Heading */}
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <h2 className="main-heading">
-              Popular AI & Automation Resources
-            </h2>
+            <h2 className="main-heading">{t.popular_resources.title}</h2>
 
             <p className="mt-5 text-lg leading-relaxed text-primary/70 ">
-              Use our most popular tools and guides to save time and boost
-              productivity.
+              {t.popular_resources.description}
             </p>
           </div>
 
@@ -397,7 +279,7 @@ function page() {
                     href={resource.href}
                     className="inline-flex items-center gap-2 font-semibold text-primary-accent transition-all hover:gap-3"
                   >
-                    Learn More
+                    {common.learn_more}
                     <ArrowRight className="h-5 w-5" />
                   </article>
                 </article>
@@ -412,16 +294,10 @@ function page() {
           <div className="overflow-hidden rounded-4xl bg-card p-8 shadow-xl md:p-14">
             {/* Heading */}
             <div className="mx-auto max-w-4xl text-center">
-              <h2 className="main-heading">
-                Get Started with{" "}
-                <span className="text-primary-accent">AI Automation</span>
-                <br />
-                Without the Overwhelm
-              </h2>
+              <h2 className="main-heading">{t.cta_section.title}</h2>
 
               <p className="mt-6 text-lg leading-relaxed text-primary/70 ">
-                Cut down on repetitive tasks and focus on work that actually
-                moves your business forward.
+                {t.cta_section.description}
               </p>
             </div>
 
@@ -453,15 +329,11 @@ function page() {
 
             {/* Buttons */}
             <div className="mt-12 flex flex-col justify-center gap-4 sm:flex-row">
-              <CtaButton >
-                Explore Tools Now
-              </CtaButton>
+              <CtaButton>{t.explore_tools}</CtaButton>
 
               <CtaButton changeStyle={"outline-button"}>
-                Book Your Free Call
-                
+                {t.book_call}
               </CtaButton>
-         
             </div>
           </div>
         </div>

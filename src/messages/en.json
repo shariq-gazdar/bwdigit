@@ -369,6 +369,714 @@
     "pillar_2": "BW Digit: Digital tools and automation solutions for construction site documentation and management",
     "liability_notice_title": "3. Liability Notice",
     "liability_notice": "Despite careful monitoring of content, we as operators of this website assume no liability for the content of external links. The operators of linked pages are solely responsible for their content."
+  },
+  "services_pages": {
+    "common": {
+      "learn_more": "Learn More"
+    },
+    "custom_web_development": {
+      "hero": {
+        "title": "Custom Web Development Built for Your Growth",
+        "description": "From fast-loading landing pages to full-scale web platforms, we build custom websites that are secure, scalable and made to fit your business goals.",
+        "cta": "Let's build it right – together"
+      },
+      "about": {
+        "title": "Custom UI/UX Design Services",
+        "subtitle": "Built Around How People Use Your Product",
+        "description": "We craft layouts that are easy to follow and enjoyable to use, with every detail tuned for clarity and smooth interaction. Whether launching something new or improving an existing product, we focus on making every click count.",
+        "what_we_do": "What We Do"
+      },
+      "checklist": [
+        "Mobile-First Design: Responsive layouts that work on every device",
+        "Custom Code: Clean, scalable and built for long-term growth",
+        "SEO-Ready Structure: Fast load times, clean code and smart structure for search engines",
+        "Third-Party Integration: Connect your site with CRMs, APIs, payment gateways and more",
+        "CMS Options: WordPress or other systems if you want full content control"
+      ],
+      "tech_section": {
+        "title": "What You'll Find Inside",
+        "subtitle": "AI Tools That Make Work Easier",
+        "description": "We offer tested AI tools and resources that help you save time, stay organized, and run your business more smoothly."
+      },
+      "resources": [
+        {
+          "title": "Frameworks & Languages",
+          "description": "We use proven frameworks and backend languages for fast and flexible development.",
+          "features": [
+            "React, Next.js, Vue.js",
+            "Node.js, PHP, Laravel",
+            "Python (Django, FastAPI)"
+          ]
+        },
+        {
+          "title": "Styling & UI Libraries",
+          "description": "For clean, responsive interfaces that look good on any device.",
+          "features": ["Tailwind CSS", "Bootstrap", "Styled Components"]
+        },
+        {
+          "title": "CMS & Headless Platforms",
+          "description": "Manage content your way with flexible CMS and headless systems.",
+          "features": [
+            "WordPress (Classic & Headless)",
+            "Sanity, Strapi, Contentful"
+          ]
+        },
+        {
+          "title": "Databases & Backend Tools",
+          "description": "Secure, scalable databases and backend support for all types of web applications.",
+          "features": ["MongoDB, PostgreSQL, MySQL", "Firebase, Supabase"]
+        },
+        {
+          "title": "DevOps & Deployment",
+          "description": "We use trusted tools for deployment, performance and updates.",
+          "features": [
+            "Docker, Vercel, Netlify",
+            "GitHub Actions",
+            "Cloudflare for security and speed"
+          ]
+        }
+      ],
+      "features_section": {
+        "title": "What You'll Find Inside",
+        "subtitle": "AI Tools That Make Work Easier"
+      },
+      "features": [
+        "Startups launching MVPs or building new web platforms",
+        "Small businesses looking to grow their online presence",
+        "Enterprises modernizing outdated systems and workflows",
+        "Creative professionals and personal brands needing a strong web presence",
+        "Agencies that need reliable frontend or backend development support",
+        "Internal teams building dashboards, portals or custom business tools"
+      ],
+      "problems_section": {
+        "title": "We Solve Real Web Development Problems",
+        "description": "If your current website is holding you back, we're here to fix it with clean, fast and custom-built solutions that help your business stand out online."
+      },
+      "problems": [
+        {
+          "title": "Generic Templates That Don't Fit Your Brand",
+          "description": "We build fully custom websites, no cookie-cutter themes."
+        },
+        {
+          "title": "A Slow Website That Ranks Poorly",
+          "description": "Our sites are fast, lightweight, and built with SEO best practices from day one."
+        },
+        {
+          "title": "Disconnected Tools and Systems",
+          "description": "We integrate your website with CRMs, APIs, booking tools and more, so everything works together."
+        },
+        {
+          "title": "No Clear Strategy for Growth",
+          "description": "We help you define a smart, scalable path forward with a website that supports your business goals."
+        }
+      ],
+      "cta": "Start Your Project Today"
+    },
+    "ai_automation": {
+      "hero": {
+        "title": "AI and Automation Solutions",
+        "description": "We build smart AI tools to automate tasks, save time and help your business grow, whether you run a startup, online shop or freelance business.",
+        "cta": "Get Started"
+      },
+      "what_you_find": {
+        "title": "What You'll Find Inside",
+        "subtitle": "AI Tools That Make Work Easier",
+        "description": "We offer tested AI tools and resources that help you save time, stay organized, and run your business more smoothly."
+      },
+      "resources": [
+        {
+          "title": "Smart AI Tools & Integrations",
+          "description": "Tools for writing, scheduling and automation with guides to help you start fast.",
+          "features": [
+            "ChatGPT integration setups",
+            "AI writing tools for faster content",
+            "Scheduling and time management apps",
+            "Data analysis powered by AI"
+          ]
+        },
+        {
+          "title": "Step-by-Step Guides",
+          "description": "Simple tutorials to help you automate everyday tasks like content planning, onboarding and emails.",
+          "features": [
+            "How-to videos and written walkthroughs",
+            "Setup tips and best practices",
+            "Easy workflows you can use today"
+          ]
+        },
+        {
+          "title": "Everyday AI In Action",
+          "description": "See how AI fits into your daily business routine without extra tools or tech stress.",
+          "features": [
+            "Write better emails faster",
+            "Prioritize tasks with AI tools",
+            "Get meeting summaries and smart suggestions"
+          ]
+        },
+        {
+          "title": "Ready-to-Use Templates",
+          "description": "Save time with plug-and-play templates for Notion, Airtable and Canva built to simplify your workday.",
+          "features": [
+            "Project management templates",
+            "Workflow automations",
+            "Standard operating procedures",
+            "Easy to connect with your tools"
+          ]
+        },
+        {
+          "title": "Courses & Learning Resources",
+          "description": "Learn to use AI for real business tasks with short, practical content.",
+          "features": [
+            "Short video courses",
+            "Real-world case studies",
+            "Interviews with experts",
+            "Practical implementation guides"
+          ]
+        }
+      ],
+      "who_can_use": {
+        "title": "Who Can Use Our AI & Automation Tools?",
+        "description": "Our solutions are built for anyone who wants to save time, reduce manual tasks and work smarter."
+      },
+      "audience": [
+        "Freelancers & Solopreneurs",
+        "Content Creators & Bloggers",
+        "Online Entrepreneurs",
+        "Remote Workers & Digital Nomads",
+        "Small Business Owners"
+      ],
+      "highlight": "If your to-do list keeps growing, we'll help you shrink it with automation that actually works.",
+      "about_service": {
+        "title": "Custom UI/UX Design Services",
+        "subtitle": "Built Around How People Use Your Product",
+        "description": "We craft layouts that are easy to follow and enjoyable to use, with every detail tuned for clarity and smooth interaction. Whether launching something new or improving an existing product, we focus on making every click count.",
+        "what_we_do": "What We Do"
+      },
+      "checklist": [
+        "Free and Premium AI Tools",
+        "1-on-1 Consulting",
+        "Ready-Made Templates & Toolkits",
+        "Custom AI Solutions"
+      ],
+      "popular_resources": {
+        "title": "Popular AI & Automation Resources",
+        "description": "Use our most popular tools and guides to save time and boost productivity."
+      },
+      "popular_items": [
+        {
+          "badge": "AI Writing Guide",
+          "title": "How to Use ChatGPT for Freelance Writing",
+          "description": "A complete walkthrough for creating AI-assisted content with ready-to-use prompts, writing workflows and practical tips."
+        },
+        {
+          "badge": "Business Plan Template",
+          "title": "AI-Powered Business Plan Generator (Notion)",
+          "description": "Create professional business plans in minutes using our AI-powered Notion template with built-in prompts."
+        },
+        {
+          "badge": "Workflow Automation Tutorial",
+          "title": "Save Time with Notion + Zapier",
+          "description": "Learn how to automate your daily workflow across Notion, Gmail, Slack and other productivity tools."
+        }
+      ],
+      "cta_section": {
+        "title": "Get Started with AI Automation Without the Overwhelm",
+        "description": "Cut down on repetitive tasks and focus on work that actually moves your business forward."
+      },
+      "cta_features": [
+        {
+          "title": "Explore Resources",
+          "description": "Tools, templates and guides to help you get started."
+        },
+        {
+          "title": "Book a 1:1 Session",
+          "description": "Personalized support to build your automation plan."
+        },
+        {
+          "title": "Work Smarter",
+          "description": "Use AI to handle repetitive work and free up your time."
+        },
+        {
+          "title": "Scale Faster",
+          "description": "Build systems that help your business grow with less effort."
+        }
+      ],
+      "explore_tools": "Explore Tools Now",
+      "book_call": "Book Your Free Call"
+    },
+    "ui_ux_design": {
+      "hero": {
+        "title": "Smart UI/UX Design That Moves Users to Action",
+        "description": "At BW Digit, we create websites and apps that feel simple from the first click, designed to guide, respond and convert with minimal effort.",
+        "cta": "Faster. Clear. Easy to use."
+      },
+      "about": {
+        "title": "Custom UI/UX Design Services",
+        "subtitle": "Built Around How People Use Your Product",
+        "description": "We craft layouts that are easy to follow and enjoyable to use, with every detail tuned for clarity and smooth interaction. Whether launching something new or improving an existing product, we focus on making every click count.",
+        "what_we_do": "What We Do"
+      },
+      "checklist": [
+        "UI aligned with your brand to build trust",
+        "UX research grounded in heatmaps, A/B tests & analytics",
+        "Wireframes and clickable prototypes",
+        "Easy-to-use mobile and desktop layouts",
+        "Full revamps or small updates that improve results",
+        "Accessibility-friendly design for better reach and inclusivity"
+      ],
+      "target_note": "Everything we design helps users find what they need faster and act with confidence.",
+      "what_you_get": {
+        "title": "What You Get",
+        "subtitle": "Our Collaborative Design Process From Idea to Clickable Prototype",
+        "description": "You'll work directly with our designers to shape designs that align with your brand and work best for your users."
+      },
+      "get_cards": [
+        {
+          "title": "User Flows & Personas",
+          "description": "We map how real users move through your site or app, helping us design with purpose and clarity."
+        },
+        {
+          "title": "High-Fidelity Mockups",
+          "description": "Clear, detailed visuals that show exactly how your product will look before development begins."
+        },
+        {
+          "title": "Clickable Prototypes",
+          "description": "Interactive demos to test before launch. Experience your product like a real user would!"
+        },
+        {
+          "title": "Design Workshops",
+          "description": "We run hands-on sessions to shape your ideas and align them with your brand and business goals."
+        }
+      ],
+      "benefits": {
+        "title": "Who Benefits From UI/UX Design?",
+        "description": "Our UI/UX design services help growing teams, startups, SaaS tools and E-commerce brands solve key user experience problems to raise engagement and conversion rates."
+      },
+      "audience_cards": [
+        "Startups launching MVPs that need simple, clear user flows.",
+        "Businesses updating old websites or apps that no longer feel modern and need fresh structure.",
+        "SaaS platforms looking to improve user retention and ease of use.",
+        "eCommerce stores that want to increase sales and reduce cart abandonment."
+      ],
+      "benefit_note": "If users get stuck or leave too soon, we redesign the experience to keep them engaged.",
+      "tools": {
+        "title": "Design Tools That Fit Your Workflow",
+        "description": "We use design tools that make collaboration easy, letting reviews and feedback happen faster. Developers know and clients love platforms like Figma, Adobe XD and InVision."
+      },
+      "tool_names": [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "InVision",
+        "Miro",
+        "Webflow"
+      ],
+      "special_offer": {
+        "badge": "Special Offer",
+        "title": "High-Converting Landing Page UI/UX Redesign Services",
+        "description": "Need better results from your landing page? Struggling with low conversions? Let's Fix That.",
+        "get_started": "Get Started Now",
+        "view_examples": "🔍 View Examples",
+        "ideal_for": "Ideal for product launches, service pages and lead generation campaigns.",
+        "results": "Results: Faster load times, better engagement, more signups.",
+        "included_title": "It will be visually aligned with your brand, load fast and get more clicks. Here's what's included:",
+        "included_items": [
+          "UX strategy based on user behavior",
+          "Wireframes and interactive prototypes",
+          "Clean, modern UI that fits your brand",
+          "Up to 2 rounds of revisions for fine-tuning design",
+          "1-hour strategy call with our design team",
+          "Quick turnaround for fast launches",
+          "Layouts built to convert",
+          "Focus on ease of use and clear messaging"
+        ],
+        "guarantee": "We redesign underperforming landing pages into fast, mobile-first layouts optimized for speed, with a clear call to action. All designs are optimized for Core Web Vitals and built to meet Google's UX standards."
+      },
+      "cta": {
+        "title": "Want A Landing Page That Brings In More Leads And Converts Better?",
+        "description": "Don't settle for a layout that just looks good. Let's design one that delivers faster load times, better UX, and more conversions across devices.",
+        "primary": "Book a Free Consultation",
+        "secondary": "Request a Free Quote"
+      }
+    },
+    "ecommerce_solutions": {
+      "hero": {
+        "title": "E-Commerce Solutions That Help You Sell More",
+        "description": "From new online stores to fast-growing brands, BW Digit builds e-commerce websites that are secure, mobile-ready and designed to turn visitors into buyers on every device.",
+        "cta": "Book a Free Strategy Call"
+      },
+      "what_we_offer": {
+        "title": "What You'll Find Inside",
+        "subtitle": "AI Tools That Make Work Easier",
+        "description": "We offer tested AI tools and resources that help you save time, stay organized, and run your business more smoothly."
+      },
+      "resources": [
+        {
+          "title": "Custom Store Development",
+          "description": "Build your online store with the right tools Shopify, WooCommerce or custom CMS solutions.",
+          "features": [
+            "Custom themes that match your brand",
+            "Plugin and app integrations",
+            "Payment gateway setup",
+            "Store speed and structure optimization"
+          ]
+        },
+        {
+          "title": "Mobile-First Design",
+          "description": "Your store will look and function great on every screen size, especially on mobile devices.",
+          "features": [
+            "Responsive layouts for phones and tablets",
+            "Easy navigation with touch-friendly design",
+            "Fast mobile load times",
+            "App-like user experience"
+          ]
+        },
+        {
+          "title": "Payments & Security",
+          "description": "We set up secure systems to protect customer data and build trust.",
+          "features": [
+            "SSL certificate and data encryption",
+            "Payment gateway integration (Stripe, PayPal and more)",
+            "Built-in fraud prevention tools"
+          ]
+        },
+        {
+          "title": "Multi-Language & Currency Support",
+          "description": "Sell globally with stores that speak your customers' language and match their local currency.",
+          "features": [
+            "Switch languages and regions based on user location",
+            "Auto currency conversion",
+            "Local pricing and payment options"
+          ]
+        },
+        {
+          "title": "Backend Automation",
+          "description": "Save time with systems that handle inventory, orders and billing in the background.",
+          "features": [
+            "Real-time stock updates and alerts",
+            "Automated order processing",
+            "Invoicing and sales reporting"
+          ]
+        }
+      ],
+      "industries": {
+        "title": "Industries We Serve",
+        "description": "We create modern digital experiences tailored for businesses across multiple industries and markets."
+      },
+      "industry_names": [
+        "Fashion & Apparel",
+        "Health & Wellness",
+        "Education",
+        "Food & Drinks",
+        "Digital Products",
+        "Handmade & Art",
+        "SaaS",
+        "Subscription Services"
+      ],
+      "platforms": {
+        "title": "Design Tools That Fit Your Workflow",
+        "description": "We use design tools that make collaboration easy, letting reviews and feedback happen faster. Developers know and clients love platforms like Figma, Adobe XD and InVision."
+      },
+      "platform_names": [
+        "Shopify",
+        "WooCommerce",
+        "Next.js",
+        "React",
+        "Laravel",
+        "Stripe",
+        "PayPal",
+        "Klarna"
+      ],
+      "why_us": {
+        "title": "Why Work with BW Digit for E-Commerce?",
+        "description": "We help businesses launch and grow online stores that are fast, secure and built to convert."
+      },
+      "why_features": [
+        {
+          "title": "Scalable E-Commerce Development",
+          "description": "Built to grow with your business, no matter the size or product range."
+        },
+        {
+          "title": "Custom Store Design That Converts",
+          "description": "Clean, user-friendly layouts that guide visitors from product to checkout."
+        },
+        {
+          "title": "Ongoing Support & Store Optimization",
+          "description": "We help you keep things running smoothly and improve performance over time."
+        },
+        {
+          "title": "Ongoing Support & Store Optimization",
+          "description": "We help you keep things running smoothly and improve performance over time."
+        }
+      ],
+      "offer": {
+        "title": "Limited-Time Offer: E-Commerce Starter Package",
+        "description": "Launch your online store with a simple and professional setup, ideal for small businesses or product testing.",
+        "whats_included": "What's Included:",
+        "features": [
+          {
+            "title": "1-Page Custom E-Commerce Website",
+            "description": "A clean, high-performing landing page, built for quick setup and easy sales.",
+            "badge": "SPECIAL OFFER"
+          },
+          {
+            "title": "Fully Responsive Design",
+            "description": "Looks great and works perfectly on desktop, tablet and mobile.",
+            "badge": "INCLUDED"
+          },
+          {
+            "title": "Bonus: Free Strategy Session",
+            "description": "Get a one-on-one call to plan your product, goals and launch strategy.",
+            "badge": "BONUS"
+          }
+        ],
+        "book_call": "Book a Free Strategy Call",
+        "request_quote": "Request a Custom Quote"
+      }
+    },
+    "marketing_seo": {
+      "hero": {
+        "title": "Marketing and SEO Services That Actually Deliver",
+        "description": "Want to attract more visitors and turn them into real customers? At BW Digit, we build smart, results-driven SEO and marketing strategies that get your business in front of the right people Let's turn searches into sales!",
+        "cta": "Book a Free Strategy Call"
+      },
+      "features": {
+        "title": "What You'll Find Inside",
+        "subtitle": "AI Tools That Make Work Easier",
+        "description": "We offer tested AI tools and resources that help you save time, stay organized, and run your business more smoothly."
+      },
+      "resources": [
+        {
+          "title": "SEO That Covers It All",
+          "description": "We handle every part of SEO, so your site performs better and ranks higher:",
+          "features": [
+            "Full on-page, off-page and technical SEO",
+            "Detailed SEO audits and keyword research",
+            "Site speed, mobile structure & indexing fixes",
+            "SEO content strategy based on real user intent"
+          ]
+        },
+        {
+          "title": "Paid Ads That Reach the Right Audience",
+          "description": "We run ad campaigns that bring traffic and conversions without wasting budget. We focus on data, not guesswork:",
+          "features": [
+            "Google Ads setup and management",
+            "Facebook and Instagram ad campaigns",
+            "TikTok, LinkedIn Ads and more",
+            "Retargeting for warm leads",
+            "Ad performance tracking and reporting"
+          ]
+        },
+        {
+          "title": "Local SEO for Nearby Customers",
+          "description": "We help local businesses get found in their area:",
+          "features": [
+            "Google Business Profile setup and optimization",
+            "Local keywords that match search habits",
+            "Managing reviews and building citations"
+          ]
+        },
+        {
+          "title": "Content That Brings in Leads",
+          "description": "We create content that's easy to find and worth reading:",
+          "features": [
+            "SEO blog posts and service pages",
+            "Email campaigns that keep users engaged",
+            "Lead magnets and funnel content to drive action"
+          ]
+        }
+      ],
+      "offer": {
+        "title": "What We Offer: All in One Place",
+        "description": "From ranking on Google to paid Marketing and Emails that convert, we handle all your needs under one roof. smoothly."
+      },
+      "offers": [
+        {
+          "title": "Full SEO Services",
+          "description": "We help your website get seen by the right audience and perform better in search:",
+          "features": [
+            "Keyword research & competitor analysis",
+            "On-page SEO (titles, structure, metadata)",
+            "Technical fixes (speed, mobile, indexing)",
+            "Backlink building for long-term growth",
+            "Google Business Profile optimization"
+          ]
+        },
+        {
+          "title": "Paid Advertising",
+          "description": "We create and manage ad campaigns that drive real traffic and leads.",
+          "features": [
+            "Google Ads: search, display & video",
+            "Facebook and Instagram ads",
+            "LinkedIn campaigns for B2B",
+            "Retargeting and funnel strategy"
+          ]
+        },
+        {
+          "title": "Content & Email Marketing",
+          "description": "We write content that ranks and emails that get responses:",
+          "features": [
+            "Blog posts optimized for SEO",
+            "Email sequences that build trust and drive conversions",
+            "Lead magnets and newsletters to grow your list"
+          ]
+        }
+      ],
+      "tools": {
+        "title": "Design Tools That Fit Your Workflow",
+        "description": "We use design tools that make collaboration easy, letting reviews and feedback happen faster. Developers know and clients love platforms like Figma, Adobe XD and InVision."
+      },
+      "tool_names": [
+        "Google Analytics",
+        "SEMrush",
+        "Ahrefs",
+        "Search Console",
+        "Hotjar",
+        "Meta Ads Manager",
+        "Mailchimp"
+      ],
+      "cta": {
+        "badge": "LIMITED TIME OFFER",
+        "title": "Free SEO Audit + Strategy Session",
+        "description": "When you book any marketing package with BW Digit, you'll get a full SEO audit and consultation at no extra cost.",
+        "cards": [
+          {
+            "title": "SEO Audit Overview",
+            "description": "We'll run a complete check of your website's SEO, from technical issues to content gaps."
+          },
+          {
+            "title": "Personalized Strategy Call",
+            "description": "We'll run a complete check of your website's SEO, from technical issues to content gaps."
+          },
+          {
+            "title": "Clear Step-by-Step Action Plan",
+            "description": "We'll run a complete check of your website's SEO, from technical issues to content gaps."
+          }
+        ],
+        "book_call": "Book a Free Strategy Call",
+        "request_quote": "Request a Custom Quote"
+      }
+    },
+    "mobile_app_development": {
+      "hero": {
+        "title": "Custom Mobile App Development",
+        "description": "We build mobile apps that are fast, reliable, and easy to use whether you're starting a new project or improving an existing one. At BW Digit, we transform your app idea into a functional product with a clean design and smart, scalable technology.",
+        "cta": "Start your project"
+      },
+      "features": {
+        "title": "What You'll Find Inside",
+        "subtitle": "AI Tools That Make Work Easier",
+        "description": "We offer tested AI tools and resources that help you save time, stay organized, and run your business more smoothly."
+      },
+      "resources": [
+        {
+          "title": "IOS & Android Native App Development",
+          "description": "We craft high-performance native apps tailored for each platform:",
+          "features": [
+            "Swift development for iOS",
+            "Kotlin development for Android",
+            "Fast, stable apps with native features",
+            "UI designs aligned with Apple and Google guidelines"
+          ]
+        },
+        {
+          "title": "Cross-Platform App Solutions",
+          "description": "Build once and run everywhere:",
+          "features": [
+            "Flutter app development",
+            "React Native for iOS & Android",
+            "Unified codebase = consistent experience",
+            "Reduced development time and cost"
+          ]
+        },
+        {
+          "title": "End-To-End Mobile App Services",
+          "description": "We handle the entire development process so you don't have to:",
+          "features": [
+            "User-focused UI/UX design & prototyping",
+            "Scalable backend systems and API integrations",
+            "QA testing, app optimization and publishing",
+            "Full support for App Store and Google Play submission"
+          ]
+        }
+      ],
+      "tools": {
+        "title": "Design Tools That Fit Your Workflow",
+        "description": "We use design tools that make collaboration easy, letting reviews and feedback happen faster. Developers know and clients love platforms like Figma, Adobe XD and InVision."
+      },
+      "tool_names": [
+        "Flutter",
+        "React Native",
+        "Swift",
+        "Kotlin",
+        "Firebase",
+        "Node.js",
+        "Laravel"
+      ],
+      "difference": {
+        "title": "Where Mobile Apps Make a Real Difference",
+        "description": "Our mobile app solutions are built to match the needs of your business and industry. Here's how we help companies grow through smart, effective apps:"
+      },
+      "solutions": [
+        {
+          "title": "On-demand service apps",
+          "description": "Delivery, healthcare, or home repair give your users instant access and smooth booking experiences!",
+          "cta": "Explore Solution"
+        },
+        {
+          "title": "Business productivity tools",
+          "description": "Improve workflows, communication, and team coordination with smart mobile tools and task management.",
+          "cta": "See in Action"
+        },
+        {
+          "title": "E-commerce & marketplace apps",
+          "description": "Give your customers a smooth shopping experience, from browsing to checkout, with secure payment integration.",
+          "cta": "See How It Works"
+        },
+        {
+          "title": "Travel and lifestyle",
+          "description": "Create engaging mobile experiences that support users on the go from planning trips to finding local recommendations. Perfect for tourism, events, and local guides.",
+          "cta": "Explore Solution"
+        },
+        {
+          "title": "Social networking apps",
+          "description": "Launch platforms for community, messaging, and real-time interaction with strong backend performance and modern UI.",
+          "cta": "Discover More"
+        }
+      ],
+      "feature_section": [
+        {
+          "title": "Fast Development",
+          "description": "Quick turnaround with quality code"
+        },
+        {
+          "title": "Clean Code",
+          "description": "Maintainable & scalable architecture"
+        },
+        {
+          "title": "Robust Backend",
+          "description": "Secure & scalable infrastructure"
+        }
+      ],
+      "cta": {
+        "badge": "SPECIAL OFFER",
+        "title": "App Launch Package: Everything You Need to Go Live",
+        "description": "Ready to take your idea from concept to app store? Want to launch fast, without cutting corners? Our App Launch Package covers everything you need to go live with confidence.",
+        "whats_included": "What's Included",
+        "included_items": [
+          "Custom mobile app development",
+          "UI/UX design built for real users",
+          "Backend setup and third-party integration"
+        ],
+        "what_you_get": "What You Get",
+        "get_items": [
+          "Free Consultation",
+          "Fast development timeline to reach the market faster",
+          "Conversion-focused design that encourages user action",
+          "User-first experience that keeps users engaged"
+        ],
+        "ideal_for": "Ideal for startups and growing businesses ready to scale.",
+        "button": "Book Your Free Consultation!"
+      }
+    }
   }
-  
 }

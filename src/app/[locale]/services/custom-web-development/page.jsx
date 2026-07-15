@@ -2,140 +2,54 @@ import CtaButton from '@/components/CtaButton';
 import Hero from '@/components/Service/Hero'
 import Projects from '@/components/Service/Projects';
 import TestimonialsSection from '@/components/Service/Testimonial';
-import { ArrowRight, Building, Check, CheckCircle2, Gauge, Globe, Layout, Link, Rocket, Target, TrendingUp, Users, Wrench } from 'lucide-react';
-import Image from 'next/image';
-import React from 'react'
+import {
+  Building,
+  Check,
+  CheckCircle2,
+  Gauge,
+  Globe,
+  Layout,
+  Link,
+  Rocket,
+  TrendingUp,
+  Users,
+  Wrench,
+} from "lucide-react";
+import Image from "next/image";
+import React from "react";
+import { getMessages } from "@/i18n/request";
 
-function page() {
-    const checklist = [
-      "Mobile-First Design: Responsive layouts that work on every device",
-      "Custom Code: Clean, scalable and built for long-term growth",
-      "SEO-Ready Structure: Fast load times, clean code and smart structure for search engines",
-      "Third-Party Integration: Connect your site with CRMs, APIs, payment gateways and more",
-      "CMS Options: WordPress or other systems if you want full content control",
-    ];
-    const resources = [
-      {
-        id: 1,
-        title: "Frameworks & Languages",
-        description:
-          "We use proven frameworks and backend languages for fast and flexible development.",
-        features: [
-          "React, Next.js, Vue.js",
-          "Node.js, PHP, Laravel",
-          "Python (Django, FastAPI)",
-        ],
-      },
-      {
-        id: 2,
-        title: "Styling & UI Libraries",
-        description:
-          "For clean, responsive interfaces that look good on any device.",
-        features: ["Tailwind CSS", "Bootstrap", "Styled Components"],
-      },
-      {
-        id: 3,
-        title: "CMS & Headless Platforms",
-        description:
-          "Manage content your way with flexible CMS and headless systems.",
-        features: [
-          "WordPress (Classic & Headless)",
-          "Sanity, Strapi, Contentful",
-        ],
-      },
-      {
-        id: 4,
-        title: "Databases & Backend Tools",
-        description:
-          "Secure, scalable databases and backend support for all types of web applications.",
-        features: ["MongoDB, PostgreSQL, MySQL", "Firebase, Supabase"],
-      },
-      {
-        id: 5,
-        title: "DevOps & Deployment",
-        description:
-          "We use trusted tools for deployment, performance and updates.",
-        features: [
-          "Docker, Vercel, Netlify",
-          "GitHub Actions",
-          "Cloudflare for security and speed",
-        ],
-      },
-    ];
-      const features = [
-        {
-          id: 1,
-          icon: Rocket,
-          title: "Startups launching MVPs or building new web platforms",
-        },
-        {
-          id: 2,
-          icon: Building,
-          title: "Small businesses looking to grow their online presence",
-        },
-        {
-          id: 3,
-          icon: Building,
-          title: "Enterprises modernizing outdated systems and workflows",
-        },
-        {
-          id: 4,
-          icon: Globe,
-          title:
-            "Creative professionals and personal brands needing a strong web presence",
-        },
-        {
-          id: 5,
-          icon: Users,
-          title:
-            "Agencies that need reliable frontend or backend development support",
-        },
-        {
-          id: 6,
-          icon: Wrench,
-          title:
-            "Internal teams building dashboards, portals or custom business tools",
-        },
-    ];
-     const problems = [
-       {
-         id: 1,
-         icon: Layout,
-         title: "Generic Templates That Don't Fit Your Brand",
-         description:
-           "We build fully custom websites, no cookie-cutter themes.",
-       },
-       {
-         id: 2,
-         icon: Gauge,
-         title: "A Slow Website That Ranks Poorly",
-         description:
-           "Our sites are fast, lightweight, and built with SEO best practices from day one.",
-       },
-       {
-         id: 3,
-         icon: Link,
-         title: "Disconnected Tools and Systems",
-         description:
-           "We integrate your website with CRMs, APIs, booking tools and more, so everything works together.",
-       },
-       {
-         id: 4,
-         icon: TrendingUp,
-         title: "No Clear Strategy for Growth",
-         description:
-           "We help you define a smart, scalable path forward with a website that supports your business goals.",
-       },
-     ];
+async function page({ params }) {
+  const { locale } = await params;
+  const messages = await getMessages(locale);
+  const t = messages.services_pages.custom_web_development;
+
+  const checklist = t.checklist;
+  const resources = t.resources;
+  const features = t.features.map((title, index) => {
+    const icons = [Rocket, Building, Building, Globe, Users, Wrench];
+    return {
+      id: index + 1,
+      icon: icons[index],
+      title,
+    };
+  });
+  const problems = t.problems.map((problem, index) => {
+    const icons = [Layout, Gauge, Link, TrendingUp];
+    return {
+      id: index + 1,
+      icon: icons[index],
+      title: problem.title,
+      description: problem.description,
+    };
+  });
   return (
     <div>
       {/* Hero */}
       <Hero
-        title={"Custom Web Development Built for Your Growth"}
-        description={
-          "From fast-loading landing pages to full-scale web platforms, we build custom websites that are secure, scalable and made to fit your business goals."
-        }
-        cta={"Let's build it right – together"}
+        title={t.hero.title}
+        description={t.hero.description}
+        cta={t.hero.cta}
         image={"/service/hero/web.png"}
       />
       {/* About */}
@@ -144,22 +58,19 @@ function page() {
           {/* Left Content */}
           <div className="order-2 lg:order-1">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
-              {"Custom UI/UX Design Services"}
+              {t.about.title}
             </h2>
 
             <p className="mt-5 text-xl font-medium text-primary-accent">
-              Built Around How People Use Your Product
+              {t.about.subtitle}
             </p>
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-primary/70">
-              We craft layouts that are easy to follow and enjoyable to use,
-              with every detail tuned for clarity and smooth interaction.
-              Whether launching something new or improving an existing product,
-              we focus on making every click count.
+              {t.about.description}
             </p>
 
             <h3 className="mt-10 text-2xl font-semibold text-primary">
-              What We Do
+              {t.about.what_we_do}
             </h3>
 
             <ul className="mt-8 space-y-5">
@@ -197,15 +108,14 @@ function page() {
           {/* Heading */}
 
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="main-heading">What You'll Find Inside</h2>
+            <h2 className="main-heading">{t.tech_section.title}</h2>
 
             <p className="mt-4 text-xl font-semibold text-primary-accent">
-              AI Tools That Make Work Easier
+              {t.tech_section.subtitle}
             </p>
 
             <p className="mt-5 text-lg leading-relaxed text-primary/70 ">
-              We offer tested AI tools and resources that help you save time,
-              stay organized, and run your business more smoothly.
+              {t.tech_section.description}
             </p>
           </div>
 
@@ -213,8 +123,6 @@ function page() {
 
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3 mx-5 lg:mx-10">
             {resources.map((item) => {
-              const Icon = item.icon;
-
               return (
                 <div
                   key={item.title}
@@ -251,10 +159,10 @@ function page() {
       {/* Costumized website */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6 flex flex-col items-center">
-          <h2 className="main-heading">What You'll Find Inside</h2>
+          <h2 className="main-heading">{t.features_section.title}</h2>
 
           <p className="mt-4 text-xl font-semibold text-primary-accent mb-5">
-            AI Tools That Make Work Easier
+            {t.features_section.subtitle}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {features.map((feature, index) => {
@@ -278,19 +186,15 @@ function page() {
       </section>
       {/* Cta */}
       <section className="py-16 md:py-24 bg-background relative overflow-hidden">
-    
-
         <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col items-center">
           {/* Heading - Static Text */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center max-w-4xl mx-auto mb-4">
-            We Solve Real Web Development Problems
+            {t.problems_section.title}
           </h2>
 
           {/* Description - Static Text */}
           <p className="text-primary/70 text-lg md:text-xl text-center max-w-3xl mx-auto mb-12">
-            If your current website is holding you back, we're here to fix it
-            with clean, fast and custom-built solutions that help your business
-            stand out online.
+            {t.problems_section.description}
           </p>
 
           {/* Cards Grid - Using array of objects */}
@@ -321,8 +225,6 @@ function page() {
                       {problem.description}
                     </p>
                   </div>
-
-              
                 </div>
               );
             })}
@@ -330,18 +232,14 @@ function page() {
 
           {/* CTA Button - Static Text */}
           <div className="text-center">
-            <CtaButton
-            >
-              Start Your Project Today
-           
-            </CtaButton>
+            <CtaButton>{t.cta}</CtaButton>
           </div>
         </div>
-          </section>
-          {/* Projects */}
-          <Projects />
-          {/* Testimonials */}
-          <TestimonialsSection />
+      </section>
+      {/* Projects */}
+      <Projects />
+      {/* Testimonials */}
+      <TestimonialsSection />
     </div>
   );
 }

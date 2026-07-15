@@ -373,5 +373,714 @@
     "pillar_2": "BW Digit: Digitale Tools und Automatisierungslösungen für Baustellendokumentation und -management",
     "liability_notice_title": "3. Haftungsausschluss",
     "liability_notice": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir als Betreiber dieser Website keine Haftung für den Inhalt externer Links. Die Betreiber der verlinkten Seiten sind allein für deren Inhalt verantwortlich."
+  },
+  "services_pages": {
+    "common": {
+      "learn_more": "Mehr erfahren"
+    },
+    "custom_web_development": {
+      "hero": {
+        "title": "Maßgeschneiderte Webentwicklung für Ihr Wachstum",
+        "description": "Von schnell ladenden Landing Pages bis hin zu vollständigen Webplattformen – wir erstellen maßgeschneiderte Websites, die sicher, skalierbar und auf Ihre Geschäftsziele abgestimmt sind.",
+        "cta": "Lassen Sie uns richtig bauen – zusammen"
+      },
+      "about": {
+        "title": "Maßgeschneiderte UI/UX-Design-Dienstleistungen",
+        "subtitle": "Entwickelt für die Nutzung durch Menschen",
+        "description": "Wir gestalten Layouts, die einfach zu folgen und angenehm zu verwenden sind, wobei jedes Detail auf Klarheit und reibungslose Interaktion abgestimmt ist. Egal, ob Sie etwas Neues starten oder ein bestehendes Produkt verbessern, wir konzentrieren uns darauf, dass jeder Klick zählt.",
+        "what_we_do": "Was wir tun"
+      },
+      "checklist": [
+        "Mobile-First-Design: Responsive Layouts, die auf jedem Gerät funktionieren",
+        "Benutzerdefinierter Code: Sauber, skalierbar und für langfristiges Wachstum entwickelt",
+        "SEO-optimierte Struktur: Schnelle Ladezeiten, sauberer Code und intelligente Struktur für Suchmaschinen",
+        "Integration von Drittanbietern: Verbinden Sie Ihre Website mit CRMs, APIs, Zahlungs-Gateways und mehr",
+        "CMS-Optionen: WordPress oder andere Systeme, wenn Sie volle Inhaltskontrolle wünschen"
+      ],
+      "tech_section": {
+        "title": "Was Sie drinnen finden",
+        "subtitle": "KI-Tools, die die Arbeit erleichtern",
+        "description": "Wir bieten getestete KI-Tools und Ressourcen, die Ihnen helfen, Zeit zu sparen, organisiert zu bleiben und Ihr Geschäft reibungsloser zu führen."
+      },
+      "resources": [
+        {
+          "title": "Frameworks & Sprachen",
+          "description": "Wir verwenden bewährte Frameworks und Backend-Sprachen für schnelle und flexible Entwicklung.",
+          "features": [
+            "React, Next.js, Vue.js",
+            "Node.js, PHP, Laravel",
+            "Python (Django, FastAPI)"
+          ]
+        },
+        {
+          "title": "Styling & UI-Bibliotheken",
+          "description": "Für saubere, responsive Schnittstellen, die auf jedem Gerät gut aussehen.",
+          "features": ["Tailwind CSS", "Bootstrap", "Styled Components"]
+        },
+        {
+          "title": "CMS & Headless-Plattformen",
+          "description": "Verwalten Sie Inhalte auf Ihre Weise mit flexiblen CMS- und Headless-Systemen.",
+          "features": [
+            "WordPress (Klassisch & Headless)",
+            "Sanity, Strapi, Contentful"
+          ]
+        },
+        {
+          "title": "Datenbanken & Backend-Tools",
+          "description": "Sichere, skalierbare Datenbanken und Backend-Support für alle Arten von Webanwendungen.",
+          "features": ["MongoDB, PostgreSQL, MySQL", "Firebase, Supabase"]
+        },
+        {
+          "title": "DevOps & Bereitstellung",
+          "description": "Wir verwenden vertrauenswürdige Tools für Bereitstellung, Leistung und Updates.",
+          "features": [
+            "Docker, Vercel, Netlify",
+            "GitHub Actions",
+            "Cloudflare für Sicherheit und Geschwindigkeit"
+          ]
+        }
+      ],
+      "features_section": {
+        "title": "Was Sie drinnen finden",
+        "subtitle": "KI-Tools, die die Arbeit erleichtern"
+      },
+      "features": [
+        "Startups, die MVPs starten oder neue Webplattformen aufbauen",
+        "Kleine Unternehmen, die ihre Online-Präsenz ausbauen möchten",
+        "Unternehmen, die veraltete Systeme und Workflows modernisieren",
+        "Kreative Profis und persönliche Marken, die eine starke Web-Präsenz benötigen",
+        "Agenturen, die zuverlässige Frontend- oder Backend-Entwicklungsunterstützung benötigen",
+        "Interne Teams, die Dashboards, Portale oder benutzerdefinierte Business-Tools erstellen"
+      ],
+      "problems_section": {
+        "title": "Wir lösen echte Webentwicklungsprobleme",
+        "description": "Wenn Ihre aktuelle Website Sie zurückhält, sind wir hier, um sie mit sauberen, schnellen und maßgeschneiderten Lösungen zu beheben, die Ihrem Unternehmen helfen, online hervorzustechen."
+      },
+      "problems": [
+        {
+          "title": "Generische Vorlagen, die nicht zu Ihrer Marke passen",
+          "description": "Wir erstellen vollständig maßgeschneiderte Websites, keine Cookie-Cutter-Themes."
+        },
+        {
+          "title": "Eine langsame Website, die schlecht rankt",
+          "description": "Unsere Websites sind schnell, leichtgewichtig und von Tag eins an mit SEO-Best-Practices entwickelt."
+        },
+        {
+          "title": "Getrennte Tools und Systeme",
+          "description": "Wir integrieren Ihre Website mit CRMs, APIs, Buchungstools und mehr, damit alles zusammenarbeitet."
+        },
+        {
+          "title": "Keine klare Strategie für Wachstum",
+          "description": "Wir helfen Ihnen, einen klugen, skalierbaren Weg vorwärts zu definieren mit einer Website, die Ihre Geschäftsziele unterstützt."
+        }
+      ],
+      "cta": "Starten Sie noch heute Ihr Projekt"
+    },
+    "ai_automation": {
+      "hero": {
+        "title": "KI- und Automatisierungslösungen",
+        "description": "Wir entwickeln intelligente KI-Tools, um Aufgaben zu automatisieren, Zeit zu sparen und Ihr Geschäftswachstum zu unterstützen, egal ob Sie ein Startup, einen Online-Shop oder ein Freelance-Geschäft betreiben.",
+        "cta": "Jetzt starten"
+      },
+      "what_you_find": {
+        "title": "Was Sie drinnen finden",
+        "subtitle": "KI-Tools, die die Arbeit erleichtern",
+        "description": "Wir bieten getestete KI-Tools und Ressourcen, die Ihnen helfen, Zeit zu sparen, organisiert zu bleiben und Ihr Geschäft reibungsloser zu führen."
+      },
+      "resources": [
+        {
+          "title": "Intelligente KI-Tools & Integrationen",
+          "description": "Tools für Schreiben, Planung und Automatisierung mit Anleitungen für einen schnellen Start.",
+          "features": [
+            "ChatGPT-Integrationseinrichtungen",
+            "KI-Schreibtools für schnellere Inhalte",
+            "Planungs- und Zeitmanagement-Apps",
+            "Datenanalyse powered by KI"
+          ]
+        },
+        {
+          "title": "Schritt-für-Schritt-Anleitungen",
+          "description": "Einfache Tutorials, die Ihnen helfen, alltägliche Aufgaben wie Inhaltsplanung, Onboarding und E-Mails zu automatisieren.",
+          "features": [
+            "How-to-Videos und schriftliche Walkthroughs",
+            "Einrichtungstipps und Best-Practices",
+            "Einfache Workflows, die Sie heute verwenden können"
+          ]
+        },
+        {
+          "title": "Alltägliche KI in Aktion",
+          "description": "Sehen Sie, wie KI in Ihre tägliche Geschäftsroutine passt, ohne zusätzlichen Technik-Stress.",
+          "features": [
+            "Schreiben Sie schnellere, bessere E-Mails",
+            "Priorisieren Sie Aufgaben mit KI-Tools",
+            "Erhalten Sie Meeting-Zusammenfassungen und intelligente Vorschläge"
+          ]
+        },
+        {
+          "title": "Bereit-zu-verwenden-Vorlagen",
+          "description": "Sparen Sie Zeit mit Plug-and-Play-Vorlagen für Notion, Airtable und Canva, die Ihren Arbeitstag vereinfachen.",
+          "features": [
+            "Projektmanagement-Vorlagen",
+            "Workflow-Automatisierungen",
+            "Standard operating procedures",
+            "Einfach zu verbinden mit Ihren Tools"
+          ]
+        },
+        {
+          "title": "Kurse & Lernressourcen",
+          "description": "Lernen Sie, KI für echte Geschäftsaufgaben mit kurzen, praktischen Inhalten zu verwenden.",
+          "features": [
+            "Kurze Videokurse",
+            "Echte Fallstudien",
+            "Interviews mit Experten",
+            "Praktische Implementierungsleitfäden"
+          ]
+        }
+      ],
+      "who_can_use": {
+        "title": "Wer kann unsere KI- & Automatisierungstools verwenden?",
+        "description": "Unsere Lösungen sind für jeden entwickelt, der Zeit sparen, manuelle Aufgaben reduzieren und intelligenter arbeiten möchte."
+      },
+      "audience": [
+        "Freelancer & Solopreneure",
+        "Content-Ersteller & Blogger",
+        "Online-Unternehmer",
+        "Remote-Mitarbeiter & digitale Nomaden",
+        "Kleine Geschäftsinhaber"
+      ],
+      "highlight": "Wenn Ihre Aufgabenliste ständig wächst, helfen wir Ihnen, sie mit Automatisierung, die wirklich funktioniert, zu verkleinern.",
+      "about_service": {
+        "title": "Maßgeschneiderte UI/UX-Design-Dienstleistungen",
+        "subtitle": "Entwickelt für die Nutzung durch Menschen",
+        "description": "Wir gestalten Layouts, die einfach zu folgen und angenehm zu verwenden sind, wobei jedes Detail auf Klarheit und reibungslose Interaktion abgestimmt ist. Egal, ob Sie etwas Neues starten oder ein bestehendes Produkt verbessern, wir konzentrieren uns darauf, dass jeder Klick zählt.",
+        "what_we_do": "Was wir tun"
+      },
+      "checklist": [
+        "Kostenlose und Premium-KI-Tools",
+        "1-zu-1-Beratung",
+        "Fertige Vorlagen & Toolkits",
+        "Benutzerdefinierte KI-Lösungen"
+      ],
+      "popular_resources": {
+        "title": "Beliebte KI- & Automatisierungsressourcen",
+        "description": "Verwenden Sie unsere beliebtesten Tools und Anleitungen, um Zeit zu sparen und die Produktivität zu steigern."
+      },
+      "popular_items": [
+        {
+          "badge": "KI-Schreibleitfaden",
+          "title": "ChatGPT für Freelance-Schreiben verwenden",
+          "description": "Ein vollständiger Walkthrough für die Erstellung von KI-unterstützten Inhalten mit fertigen Prompts, Schreib-Workflows und praktischen Tipps."
+        },
+        {
+          "badge": "Geschäftsplan-Vorlage",
+          "title": "KI-gestützter Geschäftsplan-Generator (Notion)",
+          "description": "Erstellen Sie professionelle Geschäftspläne in Minuten mit unserer KI-gestützten Notion-Vorlage mit integrierten Prompts."
+        },
+        {
+          "badge": "Workflow-Automatisierungs-Tutorial",
+          "title": "Zeit sparen mit Notion + Zapier",
+          "description": "Lernen Sie, wie Sie Ihren täglichen Workflow über Notion, Gmail, Slack und andere Produktivitäts-Tools automatisieren."
+        }
+      ],
+      "cta_section": {
+        "title": "Starten Sie mit KI-Automatisierung ohne Überforderung",
+        "description": "Reduzieren Sie sich wiederholende Aufgaben und konzentrieren Sie sich auf Arbeit, die Ihr Geschäft tatsächlich voranbringt."
+      },
+      "cta_features": [
+        {
+          "title": "Ressourcen erkunden",
+          "description": "Tools, Vorlagen und Anleitungen, die Ihnen beim Start helfen."
+        },
+        {
+          "title": "1:1-Sitzung buchen",
+          "description": "Personalisierte Unterstützung zum Aufbau Ihres Automatisierungsplans."
+        },
+        {
+          "title": "Intelligenter arbeiten",
+          "description": "Verwenden Sie KI, um sich wiederholende Arbeit zu erledigen und Ihre Zeit freizugeben."
+        },
+        {
+          "title": "Schneller skalieren",
+          "description": "Erstellen Sie Systeme, die Ihr Geschäft mit weniger Aufwand wachsen lassen."
+        }
+      ],
+      "explore_tools": "Tools jetzt erkunden",
+      "book_call": "Buchen Sie Ihr kostenloses Gespräch"
+    },
+    "ui_ux_design": {
+      "hero": {
+        "title": "Intelligentes UI/UX-Design, das Benutzer zum Handeln bewegt",
+        "description": "Bei BW Digit erstellen wir Websites und Apps, die sich vom ersten Klick an einfach anfühlen, entwickelt, um zu leiten, zu reagieren und mit minimalem Aufwand zu konvertieren.",
+        "cta": "Schneller. Klar. Einfach zu verwenden."
+      },
+      "about": {
+        "title": "Maßgeschneiderte UI/UX-Design-Dienstleistungen",
+        "subtitle": "Entwickelt für die Nutzung durch Menschen",
+        "description": "Wir gestalten Layouts, die einfach zu folgen und angenehm zu verwenden sind, wobei jedes Detail auf Klarheit und reibungslose Interaktion abgestimmt ist. Egal, ob Sie etwas Neues starten oder ein bestehendes Produkt verbessern, wir konzentrieren uns darauf, dass jeder Klick zählt.",
+        "what_we_do": "Was wir tun"
+      },
+      "checklist": [
+        "UI, die auf Ihre Marke abgestimmt ist, um Vertrauen aufzubauen",
+        "UX-Forschung basierend auf Heatmaps, A/B-Tests & Analytics",
+        "Wireframes und klickbare Prototypen",
+        "Einfach zu verwendende Mobile- und Desktop-Layouts",
+        "Vollständige Überarbeitungen oder kleine Updates, die Ergebnisse verbessern",
+        "Barrierefreies Design für bessere Reichweite und Inklusivität"
+      ],
+      "target_note": "Alles, was wir entwerfen, hilft Benutzern, schneller zu finden, was sie brauchen, und mit Vertrauen zu handeln.",
+      "what_you_get": {
+        "title": "Was Sie erhalten",
+        "subtitle": "Unser kollaborativer Designprozess von Idee zum klickbaren Prototyp",
+        "description": "Sie arbeiten direkt mit unseren Designern zusammen, um Designs zu formen, die auf Ihre Marke abgestimmt sind und am besten für Ihre Benutzer funktionieren."
+      },
+      "get_cards": [
+        {
+          "title": "User Flows & Personas",
+          "description": "Wir kartieren, wie echte Benutzer durch Ihre Website oder App navigieren, was uns hilft, mit Zweck und Klarheit zu entwerfen."
+        },
+        {
+          "title": "High-Fidelity-Mockups",
+          "description": "Klare, detaillierte visuelle Darstellungen, die genau zeigen, wie Ihr Produkt vor der Entwicklung aussehen wird."
+        },
+        {
+          "title": "Klickbare Prototypen",
+          "description": "Interaktive Demos zum Testen vor dem Launch. Erleben Sie Ihr Produkt wie ein echter Benutzer!"
+        },
+        {
+          "title": "Design-Workshops",
+          "description": "Wir führen praktische Sitzungen durch, um Ihre Ideen zu formen und auf Ihre Marke und Geschäftsziele abzustimmen."
+        }
+      ],
+      "benefits": {
+        "title": "Wer profitiert von UI/UX-Design?",
+        "description": "Unsere UI/UX-Design-Dienstleistungen helfen wachsenden Teams, Startups, SaaS-Tools und E-Commerce-Marken, wichtige Benutzererfahrungsprobleme zu lösen, um Engagement und Konversionsraten zu steigern."
+      },
+      "audience_cards": [
+        "Startups, die MVPs starten, die einfache, klare User-Flows benötigen.",
+        "Unternehmen, die alte Websites oder Apps aktualisieren, die sich nicht mehr modern anfühlen und eine frische Struktur benötigen.",
+        "SaaS-Plattformen, die die Benutzerbindung und Benutzerfreundlichkeit verbessern möchten.",
+        "E-Commerce-Shops, die den Umsatz steigern und Warenkorbabbrüche reduzieren möchten."
+      ],
+      "benefit_note": "Wenn Benutzer stecken bleiben oder zu früh gehen, gestalten wir die Erfahrung neu, um sie engagiert zu halten.",
+      "tools": {
+        "title": "Design-Tools, die in Ihren Workflow passen",
+        "description": "Wir verwenden Design-Tools, die die Zusammenarbeit einfach machen, damit Reviews und Feedback schneller stattfinden. Entwickler kennen und Kunden lieben Plattformen wie Figma, Adobe XD und InVision."
+      },
+      "tool_names": [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "InVision",
+        "Miro",
+        "Webflow"
+      ],
+      "special_offer": {
+        "badge": "Sonderangebot",
+        "title": "Hochkonvertierende Landing-Page UI/UX-Redesign-Dienstleistungen",
+        "description": "Brauchen Sie bessere Ergebnisse von Ihrer Landing-Page? Haben Sie Probleme mit niedrigen Konversionen? Lassen Sie uns das beheben.",
+        "get_started": "Jetzt starten",
+        "view_examples": "🔍 Beispiele ansehen",
+        "ideal_for": "Ideal für Produktstarts, Service-Seiten und Lead-Generierungskampagnen.",
+        "results": "Ergebnisse: Schnellere Ladezeiten, besseres Engagement, mehr Anmeldungen.",
+        "included_title": "Es wird visuell auf Ihre Marke abgestimmt, lädt schnell und erhält mehr Klicks. Hier ist, was enthalten ist:",
+        "included_items": [
+          "UX-Strategie basierend auf Benutzerverhalten",
+          "Wireframes und interaktive Prototypen",
+          "Saubere, moderne UI, die zu Ihrer Marke passt",
+          "Bis zu 2 Überarbeitungsrunden zur Feinabstimmung des Designs",
+          "1-Stunden-Strategiegespräch mit unserem Designteam",
+          "Schneller Umsatz für schnelle Launches",
+          "Layouts, die konvertieren",
+          "Fokus auf Benutzerfreundlichkeit und klare Botschaften"
+        ],
+        "guarantee": "Wir gestalten unterdurchschnittliche Landing-Pages in schnelle, mobile-first-Layouts um, die für Geschwindigkeit optimiert sind, mit einem klaren Call-to-Action. Alle Designs sind für Core Web Vitals optimiert und entwickelt, um Googles UX-Standards zu erfüllen."
+      },
+      "cta": {
+        "title": "Wollen Sie eine Landing-Page, die mehr Leads bringt und besser konvertiert?",
+        "description": "Setteln Sie sich nicht für ein Layout, das nur gut aussieht. Lassen Sie uns eines entwerfen, das schnellere Ladezeiten, bessere UX und mehr Konversionen über Geräte hinweg liefert.",
+        "primary": "Buchen Sie eine kostenlose Beratung",
+        "secondary": "Fordern Sie ein kostenloses Angebot an"
+      }
+    },
+    "ecommerce_solutions": {
+      "hero": {
+        "title": "E-Commerce-Lösungen, die Ihnen helfen, mehr zu verkaufen",
+        "description": "Von neuen Online-Shops bis zu schnell wachsenden Marken entwickelt BW Digit E-Commerce-Websites, die sicher, mobilbereit und darauf ausgelegt sind, Besucher auf jedem Gerät in Käufer zu verwandeln.",
+        "cta": "Buchen Sie ein kostenloses Strategiegespräch"
+      },
+      "what_we_offer": {
+        "title": "Was Sie drinnen finden",
+        "subtitle": "KI-Tools, die die Arbeit erleichtern",
+        "description": "Wir bieten getestete KI-Tools und Ressourcen, die Ihnen helfen, Zeit zu sparen, organisiert zu bleiben und Ihr Geschäft reibungsloser zu führen."
+      },
+      "resources": [
+        {
+          "title": "Maßgeschneiderte Shop-Entwicklung",
+          "description": "Bauen Sie Ihren Online-Shop mit den richtigen Tools Shopify, WooCommerce oder benutzerdefinierten CMS-Lösungen.",
+          "features": [
+            "Benutzerdefinierte Themes, die zu Ihrer Marke passen",
+            "Plugin- und App-Integrationen",
+            "Einrichtung von Zahlungs-Gateways",
+            "Shop-Geschwindigkeit und Strukturoptimierung"
+          ]
+        },
+        {
+          "title": "Mobile-First-Design",
+          "description": "Ihr Shop wird auf jeder Bildschirmgröße großartig aussehen und funktionieren, insbesondere auf mobilen Geräten.",
+          "features": [
+            "Responsive Layouts für Telefone und Tablets",
+            "Einfache Navigation mit touchfreundlichem Design",
+            "Schnelle mobile Ladezeiten",
+            "App-ähnliche Benutzererfahrung"
+          ]
+        },
+        {
+          "title": "Zahlungen & Sicherheit",
+          "description": "Wir richten sichere Systeme ein, um Kundendaten zu schützen und Vertrauen aufzubauen.",
+          "features": [
+            "SSL-Zertifikat und Datenverschlüsselung",
+            "Integration von Zahlungs-Gateways (Stripe, PayPal und mehr)",
+            "Integrierte Betrugpräventionstools"
+          ]
+        },
+        {
+          "title": "Mehrsprachige & Währungsunterstützung",
+          "description": "Verkaufen Sie global mit Shops, die die Sprache Ihrer Kunden sprechen und ihre lokale Währung entsprechen.",
+          "features": [
+            "Sprachen und Regionen basierend auf Benutzerstandort wechseln",
+            "Automatische Währungsumrechnung",
+            "Lokale Preise und Zahlungsoptionen"
+          ]
+        },
+        {
+          "title": "Backend-Automatisierung",
+          "description": "Sparen Sie Zeit mit Systemen, die Inventar, Bestellungen und Abrechnung im Hintergrund verarbeiten.",
+          "features": [
+            "Echtzeit-Bestandsaktualisierungen und Warnungen",
+            "Automatisierte Bestellverarbeitung",
+            "Rechnungsstellung und Verkaufsberichterstattung"
+          ]
+        }
+      ],
+      "industries": {
+        "title": "Branchen, die wir bedienen",
+        "description": "Wir erstellen moderne digitale Erlebnisse, die für Unternehmen in mehreren Branchen und Märkten maßgeschneidert sind."
+      },
+      "industry_names": [
+        "Mode & Bekleidung",
+        "Gesundheit & Wellness",
+        "Bildung",
+        "Essen & Getränke",
+        "Digitale Produkte",
+        "Handwerk & Kunst",
+        "SaaS",
+        "Abonnementdienste"
+      ],
+      "platforms": {
+        "title": "Design-Tools, die in Ihren Workflow passen",
+        "description": "Wir verwenden Design-Tools, die die Zusammenarbeit einfach machen, damit Reviews und Feedback schneller stattfinden. Entwickler kennen und Kunden lieben Plattformen wie Figma, Adobe XD und InVision."
+      },
+      "platform_names": [
+        "Shopify",
+        "WooCommerce",
+        "Next.js",
+        "React",
+        "Laravel",
+        "Stripe",
+        "PayPal",
+        "Klarna"
+      ],
+      "why_us": {
+        "title": "Warum mit BW Digit für E-Commerce arbeiten?",
+        "description": "Wir helfen Unternehmen, Online-Shops zu starten und zu entwickeln, die schnell, sicher und darauf ausgelegt sind zu konvertieren."
+      },
+      "why_features": [
+        {
+          "title": "Skalierbare E-Commerce-Entwicklung",
+          "description": "Entwickelt, um mit Ihrem Unternehmen zu wachsen, egal Größe oder Produktpalette."
+        },
+        {
+          "title": "Benutzerdefiniertes Shop-Design, das konvertiert",
+          "description": "Saubere, benutzerfreundliche Layouts, die Besucher vom Produkt zur Kasse führen."
+        },
+        {
+          "title": "Laufende Unterstützung & Shop-Optimierung",
+          "description": "Wir helfen Ihnen, alles reibungslos zu halten und die Leistung im Laufe der Zeit zu verbessern."
+        },
+        {
+          "title": "Laufende Unterstützung & Shop-Optimierung",
+          "description": "Wir helfen Ihnen, alles reibungslos zu halten und die Leistung im Laufe der Zeit zu verbessern."
+        }
+      ],
+      "offer": {
+        "title": "Zeitlich begrenztes Angebot: E-Commerce-Starter-Paket",
+        "description": "Starten Sie Ihren Online-Shop mit einer einfachen und professionellen Einrichtung, ideal für kleine Unternehmen oder Produkttests.",
+        "whats_included": "Was enthalten ist:",
+        "features": [
+          {
+            "title": "1-Seiten benutzerdefinierte E-Commerce-Website",
+            "description": "Eine saubere, leistungsstarke Landing-Page, entwickelt für schnelle Einrichtung und einfachen Verkauf.",
+            "badge": "SONDERANGEBOT"
+          },
+          {
+            "title": "Vollständig responsives Design",
+            "description": "Sieht großartig aus und funktioniert perfekt auf Desktop, Tablet und Mobile.",
+            "badge": "ENTHALTEN"
+          },
+          {
+            "title": "Bonus: Kostenloses Strategiegespräch",
+            "description": "Erhalten Sie ein 1-zu-1-Gespräch, um Ihr Produkt, Ziele und Launch-Strategie zu planen.",
+            "badge": "BONUS"
+          }
+        ],
+        "book_call": "Buchen Sie ein kostenloses Strategiegespräch",
+        "request_quote": "Fordern Sie ein benutzerdefiniertes Angebot an"
+      }
+    },
+    "marketing_seo": {
+      "hero": {
+        "title": "Marketing- und SEO-Dienstleistungen, die tatsächlich liefern",
+        "description": "Möchten Sie mehr Besucher anziehen und sie in echte Kunden verwandeln? Bei BW Digit entwickeln wir intelligente, ergebnisorientierte SEO- und Marketingstrategien, die Ihr Unternehmen vor die richtigen Leute bringen. Lassen Sie uns Suchen in Verkäufe verwandeln!",
+        "cta": "Buchen Sie ein kostenloses Strategiegespräch"
+      },
+      "features": {
+        "title": "Was Sie drinnen finden",
+        "subtitle": "KI-Tools, die die Arbeit erleichtern",
+        "description": "Wir bieten getestete KI-Tools und Ressourcen, die Ihnen helfen, Zeit zu sparen, organisiert zu bleiben und Ihr Geschäft reibungsloser zu führen."
+      },
+      "resources": [
+        {
+          "title": "SEO, das alles abdeckt",
+          "description": "Wir kümmern uns um jeden Teil von SEO, damit Ihre Website besser funktioniert und höher rankt:",
+          "features": [
+            "Vollständige On-Page, Off-Page und technische SEO",
+            "Detaillierte SEO-Audits und Keyword-Recherche",
+            "Site-Geschwindigkeit, Mobile-Struktur & Indexing-Fixes",
+            "SEO-Inhaltsstrategie basierend auf echter Benutzerabsicht"
+          ]
+        },
+        {
+          "title": "Paid Ads, die das richtige Publikum erreichen",
+          "description": "Wir führen Anzeigenkampagnen, die Traffic und Konversionen bringen, ohne Budget zu verschwenden. Wir konzentrieren uns auf Daten, nicht auf Vermutungen:",
+          "features": [
+            "Google Ads Einrichtung und Management",
+            "Facebook- und Instagram-Anzeigenkampagnen",
+            "TikTok, LinkedIn Ads und mehr",
+            "Retargeting für warme Leads",
+            "Anzeigenleistungs-Tracking und Berichterstattung"
+          ]
+        },
+        {
+          "title": "Lokales SEO für nahegelegene Kunden",
+          "description": "Wir helfen lokalen Unternehmen, in ihrer Umgebung gefunden zu werden:",
+          "features": [
+            "Google Business Profile Einrichtung und Optimierung",
+            "Lokale Keywords, die Suchgewohnheiten entsprechen",
+            "Verwaltung von Reviews und Aufbau von Zitaten"
+          ]
+        },
+        {
+          "title": "Inhalte, die Leads bringen",
+          "description": "Wir erstellen Inhalte, die einfach zu finden und lesenswert sind:",
+          "features": [
+            "SEO-Blogposts und Service-Seiten",
+            "E-Mail-Kampagnen, die Benutzer engagiert halten",
+            "Lead-Magneten und Funnel-Inhalte, die Aktionen antreiben"
+          ]
+        }
+      ],
+      "offer": {
+        "title": "Was wir bieten: Alles an einem Ort",
+        "description": "Vom Ranking bei Google bis zu bezahltem Marketing und E-Mails, die konvertieren, kümmern wir uns unter einem Dach um alle Ihre Bedürfnisse."
+      },
+      "offers": [
+        {
+          "title": "Vollständige SEO-Dienstleistungen",
+          "description": "Wir helfen Ihrer Website, vom richtigen Publikum gesehen zu werden und in der Suche besser zu performen:",
+          "features": [
+            "Keyword-Recherche & Wettbewerbsanalyse",
+            "On-Page-SEO (Titel, Struktur, Metadaten)",
+            "Technische Fixes (Geschwindigkeit, Mobile, Indexing)",
+            "Backlink-Aufbau für langfristiges Wachstum",
+            "Google Business Profile Optimierung"
+          ]
+        },
+        {
+          "title": "Bezahlte Werbung",
+          "description": "Wir erstellen und verwalten Anzeigenkampagnen, die echten Traffic und Leads treiben.",
+          "features": [
+            "Google Ads: Suche, Display & Video",
+            "Facebook- und Instagram-Anzeigen",
+            "LinkedIn-Kampagnen für B2B",
+            "Retargeting und Funnel-Strategie"
+          ]
+        },
+        {
+          "title": "Content- & E-Mail-Marketing",
+          "description": "Wir schreiben Inhalte, die ranken, und E-Mails, die Antworten erhalten:",
+          "features": [
+            "Blogposts, die für SEO optimiert sind",
+            "E-Mail-Sequenzen, die Vertrauen aufbauen und Konversionen antreiben",
+            "Lead-Magnete und Newsletter, um Ihre Liste zu wachsen"
+          ]
+        }
+      ],
+      "tools": {
+        "title": "Design-Tools, die in Ihren Workflow passen",
+        "description": "Wir verwenden Design-Tools, die die Zusammenarbeit einfach machen, damit Reviews und Feedback schneller stattfinden. Entwickler kennen und Kunden lieben Plattformen wie Figma, Adobe XD und InVision."
+      },
+      "tool_names": [
+        "Google Analytics",
+        "SEMrush",
+        "Ahrefs",
+        "Search Console",
+        "Hotjar",
+        "Meta Ads Manager",
+        "Mailchimp"
+      ],
+      "cta": {
+        "badge": "ZEITLICH BEGRENZTES ANGEBOT",
+        "title": "Kostenloses SEO-Audit + Strategiegespräch",
+        "description": "Wenn Sie ein Marketingpaket bei BW Digit buchen, erhalten Sie ein vollständiges SEO-Audit und Beratung ohne zusätzliche Kosten.",
+        "cards": [
+          {
+            "title": "SEO-Audit-Übersicht",
+            "description": "Wir führen eine vollständige Überprüfung der SEO Ihrer Website durch, von technischen Problemen bis zu Inhaltslücken."
+          },
+          {
+            "title": "Personalisiertes Strategiegespräch",
+            "description": "Wir führen eine vollständige Überprüfung der SEO Ihrer Website durch, von technischen Problemen bis zu Inhaltslücken."
+          },
+          {
+            "title": "Klarer Schritt-für-Schritt-Aktionsplan",
+            "description": "Wir führen eine vollständige Überprüfung der SEO Ihrer Website durch, von technischen Problemen bis zu Inhaltslücken."
+          }
+        ],
+        "book_call": "Buchen Sie ein kostenloses Strategiegespräch",
+        "request_quote": "Fordern Sie ein benutzerdefiniertes Angebot an"
+      }
+    },
+    "mobile_app_development": {
+      "hero": {
+        "title": "Maßgeschneiderte Mobile-App-Entwicklung",
+        "description": "Wir entwickeln mobile Apps, die schnell, zuverlässig und einfach zu verwenden sind, egal ob Sie ein neues Projekt starten oder ein bestehendes verbessern. Bei BW Digit verwandeln wir Ihre App-Idee in ein funktionales Produkt mit sauberem Design und intelligenter, skalierbarer Technologie.",
+        "cta": "Starten Sie Ihr Projekt"
+      },
+      "features": {
+        "title": "Was Sie drinnen finden",
+        "subtitle": "KI-Tools, die die Arbeit erleichtern",
+        "description": "Wir bieten getestete KI-Tools und Ressourcen, die Ihnen helfen, Zeit zu sparen, organisiert zu bleiben und Ihr Geschäft reibungsloser zu führen."
+      },
+      "resources": [
+        {
+          "title": "iOS & Android Native App-Entwicklung",
+          "description": "Wir entwickeln leistungsstarke native Apps, die auf jede Plattform zugeschnitten sind:",
+          "features": [
+            "Swift-Entwicklung für iOS",
+            "Kotlin-Entwicklung für Android",
+            "Schnelle, stabile Apps mit nativen Features",
+            "UI-Designs, die auf Apple- und Google-Richtlinien abgestimmt sind"
+          ]
+        },
+        {
+          "title": "Cross-Platform-App-Lösungen",
+          "description": "Einmal entwickeln, überall ausführen:",
+          "features": [
+            "Flutter-App-Entwicklung",
+            "React Native für iOS & Android",
+            "Einheitliche Codebase = konsistente Erfahrung",
+            "Reduzierte Entwicklungszeit und -kosten"
+          ]
+        },
+        {
+          "title": "End-to-End Mobile-App-Dienstleistungen",
+          "description": "Wir kümmern uns um den gesamten Entwicklungsprozess, damit Sie es nicht müssen:",
+          "features": [
+            "Benutzerzentriertes UI/UX-Design & Prototyping",
+            "Skalierbare Backend-Systeme und API-Integrationen",
+            "QA-Testing, App-Optimierung und Veröffentlichung",
+            "Volle Unterstützung für App Store und Google Play Einreichung"
+          ]
+        }
+      ],
+      "tools": {
+        "title": "Design-Tools, die in Ihren Workflow passen",
+        "description": "Wir verwenden Design-Tools, die die Zusammenarbeit einfach machen, damit Reviews und Feedback schneller stattfinden. Entwickler kennen und Kunden lieben Plattformen wie Figma, Adobe XD und InVision."
+      },
+      "tool_names": [
+        "Flutter",
+        "React Native",
+        "Swift",
+        "Kotlin",
+        "Firebase",
+        "Node.js",
+        "Laravel"
+      ],
+      "difference": {
+        "title": "Wo mobile Apps einen echten Unterschied machen",
+        "description": "Unsere mobile App-Lösungen sind darauf ausgelegt, die Bedürfnisse Ihres Unternehmens und Ihrer Branche zu erfüllen. So helfen wir Unternehmen durch intelligente, effektive Apps zu wachsen:"
+      },
+      "solutions": [
+        {
+          "title": "On-Demand-Service-Apps",
+          "description": "Lieferung, Gesundheitswesen oder Hausreparatur – geben Sie Ihren Benutzern sofortigen Zugang und reibungslose Buchungserlebnisse!",
+          "cta": "Lösung erkunden"
+        },
+        {
+          "title": "Business-Produktivitäts-Tools",
+          "description": "Verbessern Sie Workflows, Kommunikation und Teamkoordination mit intelligenten mobilen Tools und Aufgabenmanagement.",
+          "cta": "In Aktion sehen"
+        },
+        {
+          "title": "E-Commerce & Marketplace-Apps",
+          "description": "Geben Sie Ihren Kunden ein reibungsloses Einkaufserlebnis, vom Browsen bis zur Kasse, mit sicherer Zahlungsintegration.",
+          "cta": "Sehen Sie, wie es funktioniert"
+        },
+        {
+          "title": "Reisen & Lebensstil",
+          "description": "Erstellen Sie ansprechende mobile Erlebnisse, die Benutzer unterwegs unterstützen, von der Reiseplanung bis zum Finden lokaler Empfehlungen. Perfekt für Tourismus, Events und lokale Guides.",
+          "cta": "Lösung erkunden"
+        },
+        {
+          "title": "Social-Networking-Apps",
+          "description": "Starten Sie Plattformen für Community, Messaging und Echtzeit-Interaktion mit starkem Backend und moderner UI.",
+          "cta": "Mehr entdecken"
+        }
+      ],
+      "feature_section": [
+        {
+          "title": "Schnelle Entwicklung",
+          "description": "Schneller Umsatz mit qualitativem Code"
+        },
+        {
+          "title": "Sauberer Code",
+          "description": "Wartbare & skalierbare Architektur"
+        },
+        {
+          "title": "Robustes Backend",
+          "description": "Sichere & skalierbare Infrastruktur"
+        }
+      ],
+      "cta": {
+        "badge": "SONDERANGEBOT",
+        "title": "App-Launch-Paket: Alles, was Sie zum Live-Gehen brauchen",
+        "description": "Bereit, Ihre Idee vom Konzept zum App Store zu bringen? Wollen Sie schnell starten, ohne Abstriche zu machen? Unser App-Launch-Paket deckt alles ab, was Sie brauchen, um selbstbewusst live zu gehen.",
+        "whats_included": "Was enthalten ist",
+        "included_items": [
+          "Maßgeschneiderte Mobile-App-Entwicklung",
+          "UI/UX-Design, entwickelt für echte Benutzer",
+          "Backend-Einrichtung und Drittanbieter-Integration"
+        ],
+        "what_you_get": "Was Sie erhalten",
+        "get_items": [
+          "Kostenlose Beratung",
+          "Schnelle Entwicklungszeitlinie, um schneller den Markt zu erreichen",
+          "Konversionsorientiertes Design, das Benutzeraktionen fördert",
+          "Benutzerfirst-Erfahrung, die Benutzer engagiert hält"
+        ],
+        "ideal_for": "Ideal für Startups und wachsende Unternehmen, die bereit sind zu skalieren.",
+        "button": "Buchen Sie Ihre kostenlose Beratung!"
+      }
+    }
   }
 }

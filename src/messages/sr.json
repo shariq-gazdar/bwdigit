@@ -373,5 +373,714 @@
     "pillar_2": "BW Digit: Digitalni alati i rešenja za automatizaciju za dokumentaciju i upravljanje gradilišta",
     "liability_notice_title": "3. Obaveštenje o odgovornosti",
     "liability_notice": "Uprkos pažljivom praćenju sadržaja, mi kao operatori ovog veb sajta ne preuzimamo odgovornost za sadržaj eksternih linkova. Operatori povezanih stranica su isključivo odgovorni za njihov sadržaj."
+  },
+  "services_pages": {
+    "common": {
+      "learn_more": "Saznajte više"
+    },
+    "custom_web_development": {
+      "hero": {
+        "title": "Prilagođeni razvoj veb aplikacija za vaš rast",
+        "description": "Od brzo učitavajućih landing stranica do potpuno skalabilnih veb platformi, gradimo prilagođene veb sajtove koji su sigurni, skalabilni i napravljeni da podrže vaše poslovne ciljeve.",
+        "cta": "Napravimo to pravilno – zajedno"
+      },
+      "about": {
+        "title": "Prilagođene UI/UX dizajn usluge",
+        "subtitle": "Izgrađeno oko toga kako ljudi koriste vaš proizvod",
+        "description": "Kreiramo layoute koji su laki za praćenje i ugodni za korišćenje, pri čemu je svaki detalj podešen za jasnoću i glatku interakciju. Bilo da pokrećete nešto novo ili poboljšavate postojeći proizvod, fokusiramo se na to da svaki klik znači.",
+        "what_we_do": "Šta radimo"
+      },
+      "checklist": [
+        "Mobile-First dizajn: Responsive layouti koji rade na svakom uređaju",
+        "Prilagođeni kod: Čist, skalabilan i izgrađen za dugoročni rast",
+        "SEO-spremna struktura: Brza vreme učitavanja, čist kod i pametna struktura za pretraživače",
+        "Integracija trećih strana: Povežite svoj sajt sa CRM-ovima, API-jima, payment gateway-ima i više",
+        "CMS opcije: WordPress ili drugi sistemi ako želite punu kontrolu sadržaja"
+      ],
+      "tech_section": {
+        "title": "Šta ćete naći unutra",
+        "subtitle": "AI alati koji olakšavaju rad",
+        "description": "Nudimo testirane AI alate i resurse koji vam pomažu da uštedite vreme, ostajete organizovani i efikasnije vodite svoj posao."
+      },
+      "resources": [
+        {
+          "title": "Framework-i & jezici",
+          "description": "Koristimo dokazane framework-e i backend jezike za brzu i fleksibilnu razvoj.",
+          "features": [
+            "React, Next.js, Vue.js",
+            "Node.js, PHP, Laravel",
+            "Python (Django, FastAPI)"
+          ]
+        },
+        {
+          "title": "Stiliranje & UI biblioteke",
+          "description": "Za čiste, responsive interfejse koji dobro izgledaju na svakom uređaju.",
+          "features": ["Tailwind CSS", "Bootstrap", "Styled Components"]
+        },
+        {
+          "title": "CMS & Headless platforme",
+          "description": "Upravljajte sadržajem na svoj način sa fleksibilnim CMS i headless sistemima.",
+          "features": [
+            "WordPress (Klasični & Headless)",
+            "Sanity, Strapi, Contentful"
+          ]
+        },
+        {
+          "title": "Baze podataka & Backend alati",
+          "description": "Sigurne, skalabilne baze podataka i backend podrška za sve vrste veb aplikacija.",
+          "features": ["MongoDB, PostgreSQL, MySQL", "Firebase, Supabase"]
+        },
+        {
+          "title": "DevOps & deployment",
+          "description": "Koristimo pouzdane alate za deployment, performanse i ažuriranja.",
+          "features": [
+            "Docker, Vercel, Netlify",
+            "GitHub Actions",
+            "Cloudflare za bezbednost i brzinu"
+          ]
+        }
+      ],
+      "features_section": {
+        "title": "Šta ćete naći unutra",
+        "subtitle": "AI alati koji olakšavaju rad"
+      },
+      "features": [
+        "Startupi koji pokreću MVP-ove ili grade nove veb platforme",
+        "Mali poslovi koji žele da prošire svoju online prisutnost",
+        "Preduzeća koja modernizuju zastarele sisteme i workflow-e",
+        "Kreativni profesionalci i lični brendovi koji trebaju snažnu veb prisutnost",
+        "Agencije koje trebaju pouzdanu frontend ili backend razvojnu podršku",
+        "Interni timovi koji grade dashboard-e, portale ili prilagođene poslovne alate"
+      ],
+      "problems_section": {
+        "title": "Rešavamo prave probleme razvoja veb aplikacija",
+        "description": "Ako vas trenutni veb sajt sprečava, mi smo ovde da to rešimo sa čistim, brzim i prilagođenim rešenjima koja pomažu vašem poslu da istakne online."
+      },
+      "problems": [
+        {
+          "title": "Generički šabloni koji ne odgovaraju vašem brendu",
+          "description": "Gradimo potpuno prilagođene veb sajtove, bez cookie-cutter tema."
+        },
+        {
+          "title": "Spor veb sajt koji se loše rangira",
+          "description": "Naši sajtovi su brzi, lagani i izgrađeni sa SEO najboljim praksama od prvog dana."
+        },
+        {
+          "title": "Odvojeni alati i sistemi",
+          "description": "Integrišemo vaš veb sajt sa CRM-ovima, API-jima, alatima za rezervaciju i više, tako da sve radi zajedno."
+        },
+        {
+          "title": "Nema jasne strategije za rast",
+          "description": "Pomažemo vam da definišete pametan, skalabilan put napred sa veb sajtom koji podržava vaše poslovne ciljeve."
+        }
+      ],
+      "cta": "Pokrenite svoj projekat danas"
+    },
+    "ai_automation": {
+      "hero": {
+        "title": "AI i automatizaciona rešenja",
+        "description": "Gradimo pametne AI alate za automatizaciju zadataka, uštedu vremena i podršku rasta vašeg posla, bilo da vodite startup, online prodavnicu ili freelance posao.",
+        "cta": "Počnite sada"
+      },
+      "what_you_find": {
+        "title": "Šta ćete naći unutra",
+        "subtitle": "AI alati koji olakšavaju rad",
+        "description": "Nudimo testirane AI alate i resurse koji vam pomažu da uštedite vreme, ostajete organizovani i efikasnije vodite svoj posao."
+      },
+      "resources": [
+        {
+          "title": "Pametni AI alati & integracije",
+          "description": "Alati za pisanje, planiranje i automatizaciju sa vodičima za brzi početak.",
+          "features": [
+            "ChatGPT integraciona podešavanja",
+            "AI alati za pisanje za brži sadržaj",
+            "Aplikacije za planiranje i upravljanje vremenom",
+            "Analiza podataka powered by AI"
+          ]
+        },
+        {
+          "title": "Korak-po-korak vodiči",
+          "description": "Jednostavni tutorijali koji vam pomažu da automatizujete svakodnevne zadatke kao što su planiranje sadržaja, onboarding i e-pošta.",
+          "features": [
+            "How-to videozapisi i pisani walkthrough-i",
+            "Podešavanje saveti i najbolje prakse",
+            "Laki workflow-i koje možete koristiti danas"
+          ]
+        },
+        {
+          "title": "Svakodnevni AI u akciji",
+          "description": "Vidite kako AI staje u vašu svakodnevnu poslovnu rutinu bez dodatnog tehničkog stresa.",
+          "features": [
+            "Pišite bolje e-pošte brže",
+            "Prioritizujte zadatke sa AI alatima",
+            "Dobijajte sažetke sastanaka i pametne predloge"
+          ]
+        },
+        {
+          "title": "Spremni-za-korišćenje šabloni",
+          "description": "Uštedite vreme sa plug-and-play šablonima za Notion, Airtable i Canva izgrađenim da pojednostave vaš radni dan.",
+          "features": [
+            "Šabloni za upravljanje projektima",
+            "Workflow automatizacije",
+            "Standard operating procedure",
+            "Lako za povezivanje sa vašim alatima"
+          ]
+        },
+        {
+          "title": "Kursevi & obrazovni resursi",
+          "description": "Naučite da koristite AI za prave poslovne zadatke sa kratkim, praktičnim sadržajem.",
+          "features": [
+            "Kratki video kursevi",
+            "Pravi case studiji",
+            "Intervjui sa ekspertima",
+            "Praktični implementacioni vodiči"
+          ]
+        }
+      ],
+      "who_can_use": {
+        "title": "Ko može koristiti naše AI & automatizacione alate?",
+        "description": "Naša rešenja su izgrađena za svakoga ko želi da uštedi vreme, smanji ručne zadatke i radi pametnije."
+      },
+      "audience": [
+        "Freelanceri & Solopreneurs",
+        "Kreatori sadržaja & Bloggeri",
+        "Online preduzetnici",
+        "Remote radnici & digitalni nomadi",
+        "Mali vlasnici poslova"
+      ],
+      "highlight": "Ako se vaša lista zadataka stalno povećava, pomoći ćemo vam da je smanjite sa automatizacijom koja zaista radi.",
+      "about_service": {
+        "title": "Prilagođene UI/UX dizajn usluge",
+        "subtitle": "Izgrađeno oko toga kako ljudi koriste vaš proizvod",
+        "description": "Kreiramo layoute koji su laki za praćenje i ugodni za korišćenje, pri čemu je svaki detalj podešen za jasnoću i glatku interakciju. Bilo da pokrećete nešto novo ili poboljšavate postojeći proizvod, fokusiramo se na to da svaki klik znači.",
+        "what_we_do": "Šta radimo"
+      },
+      "checklist": [
+        "Besplatni i Premium AI alati",
+        "1-na-1 konsalting",
+        "Spremni šabloni & toolkit-i",
+        "Prilagođena AI rešenja"
+      ],
+      "popular_resources": {
+        "title": "Popularni AI & automatizacioni resursi",
+        "description": "Koristite naše najpopularnije alate i vodiče da uštedite vreme i povećate produktivnost."
+      },
+      "popular_items": [
+        {
+          "badge": "AI vodič za pisanje",
+          "title": "Kako koristiti ChatGPT za freelance pisanje",
+          "description": "Kompletan walkthrough za kreiranje AI-podržanog sadržaja sa spremnim prompt-ima, pisačkim workflow-ima i praktičnim savetima."
+        },
+        {
+          "badge": "Šablon poslovnog plana",
+          "title": "AI-powered generator poslovnog plana (Notion)",
+          "description": "Kreirajte profesionalne poslovne planove u minutama koristeći naš AI-powered Notion šablon sa ugrađenim prompt-ima."
+        },
+        {
+          "badge": "Tutorial za workflow automatizaciju",
+          "title": "Uštedite vreme sa Notion + Zapier",
+          "description": "Naučite kako da automatizujete svoj svakodnevni workflow preko Notion, Gmail, Slack i drugih alata za produktivnost."
+        }
+      ],
+      "cta_section": {
+        "title": "Počnite sa AI automatizacijom bez preopterećenja",
+        "description": "Smanjite sekvencijalne zadatke i fokusirajte se na rad koji zaista pomera vaš posao napred."
+      },
+      "cta_features": [
+        {
+          "title": "Istražite resurse",
+          "description": "Alati, šabloni i vodiči koji vam pomažu da počnete."
+        },
+        {
+          "title": "Rezervišite 1:1 sesiju",
+          "description": "Personalizovana podrška za izgradnju vašeg automatizacionog plana."
+        },
+        {
+          "title": "Radite pametnije",
+          "description": "Koristite AI da rukuje sekvencijalnim radom i oslobodite vaše vreme."
+        },
+        {
+          "title": "Skalirajte brže",
+          "description": "Izgradite sisteme koji pomažu vašem poslu da raste sa manje truda."
+        }
+      ],
+      "explore_tools": "Istražite alate sada",
+      "book_call": "Rezervišite svoj besplatan poziv"
+    },
+    "ui_ux_design": {
+      "hero": {
+        "title": "Pametan UI/UX dizajn koji pomaže korisnicima da deluju",
+        "description": "U BW Digit-u, kreiramo veb sajtove i aplikacije koje se osećaju jednostavno od prvog klika, dizajnirane da vode, odgovaraju i konvertuju sa minimalnim naporom.",
+        "cta": "Brže. Jasno. Lako za korišćenje."
+      },
+      "about": {
+        "title": "Prilagođene UI/UX dizajn usluge",
+        "subtitle": "Izgrađeno oko toga kako ljudi koriste vaš proizvod",
+        "description": "Kreiramo layoute koji su laki za praćenje i ugodni za korišćenje, pri čemu je svaki detalj podešen za jasnoću i glatku interakciju. Bilo da pokrećete nešto novo ili poboljšavate postojeći proizvod, fokusiramo se na to da svaki klik znači.",
+        "what_we_do": "Šta radimo"
+      },
+      "checklist": [
+        "UI usklađen sa vašim brendom za izgradnju poverenja",
+        "UX istraživanje zasnovano na heatmaps, A/B testovima & analytics",
+        "Wireframe-i i klikabilni prototipovi",
+        "Laki-za-korišćenje mobile i desktop layout-i",
+        "Potpune revizije ili mala ažuriranja koja poboljšavaju rezultate",
+        "Dizajn prilagođen pristupačnosti za bolji doseg i inkluzivnost"
+      ],
+      "target_note": "Sve što dizajniramo pomaže korisnicima da brže pronađu ono što im treba i deluju sa poverenjem.",
+      "what_you_get": {
+        "title": "Šta dobijate",
+        "subtitle": "Naš kolaborativni dizajn proces od ideje do klikabilnog prototipa",
+        "description": "Radićete direktno sa našim dizajnerima da oblikujete dizajne koji su usklađeni sa vašim brendom i najbolje rade za vaše korisnike."
+      },
+      "get_cards": [
+        {
+          "title": "User Flows & Personas",
+          "description": "Mapiramo kako pravi korisnici prolaze kroz vaš sajt ili aplikaciju, što nam pomaže da dizajniramo sa svrhom i jasnoćom."
+        },
+        {
+          "title": "High-Fidelity Mockup-i",
+          "description": "Jasne, detaljne vizuelne reprezentacije koje tačno pokazuju kako će vaš proizvod izgledati pre početka razvoja."
+        },
+        {
+          "title": "Klikabilni prototipovi",
+          "description": "Interaktivne demo-e za testiranje pre lansiranja. Doživite vaš proizvod kao pravi korisnik bi!"
+        },
+        {
+          "title": "Dizajn radionice",
+          "description": "Vodimo praktične sesije da oblikujemo vaše ideje i uskladimo ih sa vašim brendom i poslovnim ciljevima."
+        }
+      ],
+      "benefits": {
+        "title": "Ko koristi od UI/UX dizajna?",
+        "description": "Naše UI/UX dizajn usluge pomažu rastućim timovima, startup-ima, SaaS alatima i E-commerce brendovima da reše ključne probleme korisničkog iskustva da podignu angažovanje i konversion rate."
+      },
+      "audience_cards": [
+        "Startupi koji pokreću MVP-ove koji trebaju jednostavne, jasne user flow-e.",
+        "Poslovi koji ažuriraju stare veb sajtove ili aplikacije koje se više ne osećaju modernim i trebaju svežu strukturu.",
+        "SaaS platforme koje žele da poboljšaju zadržavanje korisnika i lakoću korišćenja.",
+        "ECommerce prodavnice koje žele da povećaju prodaju i smanje napuštanje korpe."
+      ],
+      "benefit_note": "Ako se korisnici zakupe ili prerano odu, redizajniramo iskustvo da ih zadržimo angažovanim.",
+      "tools": {
+        "title": "Dizajn alati koji se uklapaju u vaš workflow",
+        "description": "Koristimo dizajn alate koji olakšavaju saradnju, omogućavajući da reviews i feedback dešavaju brže. Programeri znaju i klijenti vole platforme kao što su Figma, Adobe XD i InVision."
+      },
+      "tool_names": [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "InVision",
+        "Miro",
+        "Webflow"
+      ],
+      "special_offer": {
+        "badge": "Specijalna ponuda",
+        "title": "Visoko-konvertujući Landing Page UI/UX redizajn usluge",
+        "description": "Treba vam bolji rezultati sa vaše landing page? Imate problema sa niskim konversion-ima? Popravimo to.",
+        "get_started": "Počnite sada",
+        "view_examples": "🔍 Pogledajte primere",
+        "ideal_for": "Idealno za lansiranje proizvoda, service stranice i kampanje generisanja leadova.",
+        "results": "Rezultati: Brža vreme učitavanja, bolje angažovanje, više prijava.",
+        "included_title": "Biće vizuelno usklađeno sa vašim brendom, brzo se učitava i dobija više klikova. Evo šta je uključeno:",
+        "included_items": [
+          "UX strategija zasnovana na ponašanju korisnika",
+          "Wireframe-i i interaktivni prototipovi",
+          "Čist, moderan UI koji odgovara vašem brendu",
+          "Do 2 runde revizija za fino podešavanje dizajna",
+          "1-satni strategijski poziv sa našim dizajn timom",
+          "Brz turnover za brze lansiranje",
+          "Layout-i izgrađeni da konvertuju",
+          "Fokus na lakoću korišćenja i jasne poruke"
+        ],
+        "guarantee": "Redizajniramo podprosečne landing page-e u brze, mobile-first layout-e optimisane za brzinu, sa jasnim call-to-action. Svi dizajn-i su optimisani za Core Web Vitals i izgrađeni da zadovolje Google UX standarde."
+      },
+      "cta": {
+        "title": "Želite Landing Page koji donosi više leadova i bolje konvertuje?",
+        "description": "Nastanite se za layout koji samo dobro izgleda. Dizajnirajmo jedan koji isporučuje brža vreme učitavanja, bolji UX i više konversion-a preko uređaja.",
+        "primary": "Rezervišite besplatnu konsultaciju",
+        "secondary": "Zatražite besplatan kvote"
+      }
+    },
+    "ecommerce_solutions": {
+      "hero": {
+        "title": "E-trgovinska rešenja koja vam pomažu da prodajete više",
+        "description": "Od novih online prodavnica do brzo rastućih brendova, BW Digit gradi e-commerce veb sajtove koji su sigurni, mobilno-spremni i dizajnirani da pretvore posetioce u kupce na svakom uređaju.",
+        "cta": "Rezervišite besplatnu strategijsku konsultaciju"
+      },
+      "what_we_offer": {
+        "title": "Šta ćete naći unutra",
+        "subtitle": "AI alati koji olakšavaju rad",
+        "description": "Nudimo testirane AI alate i resurse koji vam pomažu da uštedite vreme, ostajete organizovani i efikasnije vodite svoj posao."
+      },
+      "resources": [
+        {
+          "title": "Prilagođeni razvoj prodavnice",
+          "description": "Izgradite svoju online prodavnicu sa pravim alatima Shopify, WooCommerce ili prilagođenim CMS rešenjima.",
+          "features": [
+            "Prilagođene teme koje odgovaraju vašem brendu",
+            "Plugin i app integracije",
+            "Podešavanje payment gateway-a",
+            "Brzina i struktura prodavnice optimizacija"
+          ]
+        },
+        {
+          "title": "Mobile-First dizajn",
+          "description": "Vaša prodavnica će izgledati i funkcionisati odlično na svakoj veličini ekrana, posebno na mobilnim uređajima.",
+          "features": [
+            "Responsive layout-i za telefone i tablete",
+            "Laka navigacija sa touch-friendly dizajnom",
+            "Brza mobilna vreme učitavanja",
+            "App-slično korisničko iskustvo"
+          ]
+        },
+        {
+          "title": "Plaćanja & bezbednost",
+          "description": "Podešavamo sigurne sisteme da zaštitimo podatke kupaca i izgradimo poverenje.",
+          "features": [
+            "SSL sertifikat i enkripcija podataka",
+            "Integracija payment gateway-a (Stripe, PayPal i više)",
+            "Ugrađeni alati za prevenciju prevare"
+          ]
+        },
+        {
+          "title": "Višejezična & valutna podrška",
+          "description": "Prodajte globalno sa prodavnicama koje govore jezik vaših kupaca i odgovaraju njihovoj lokalnoj valuti.",
+          "features": [
+            "Promena jezika i regija na osnovu lokacije korisnika",
+            "Automatska konverzija valute",
+            "Lokalne cene i opcije plaćanja"
+          ]
+        },
+        {
+          "title": "Backend automatizacija",
+          "description": "Uštedite vreme sa sistemima koji rukuju inventarom, narudžbinama i naplatom u pozadini.",
+          "features": [
+            "Real-time ažuriranja zaliha i upozorenja",
+            "Automatska obrada narudžbina",
+            "Fakturisanje i izveštavanje o prodaji"
+          ]
+        }
+      ],
+      "industries": {
+        "title": "Industrije koje opslužujemo",
+        "description": "Kreiramo moderna digitalna iskustva prilagođena za poslove u više industrija i tržišta."
+      },
+      "industry_names": [
+        "Moda & Odeća",
+        "Zdravlje & Wellness",
+        "Obrazovanje",
+        "Hrana & Piće",
+        "Digitalni proizvodi",
+        "Ručni rad & Umetnost",
+        "SaaS",
+        "Pretplatne usluge"
+      ],
+      "platforms": {
+        "title": "Dizajn alati koji se uklapaju u vaš workflow",
+        "description": "Koristimo dizajn alate koji olakšavaju saradnju, omogućavajući da reviews i feedback dešavaju brže. Programeri znaju i klijenti vole platforme kao što su Figma, Adobe XD i InVision."
+      },
+      "platform_names": [
+        "Shopify",
+        "WooCommerce",
+        "Next.js",
+        "React",
+        "Laravel",
+        "Stripe",
+        "PayPal",
+        "Klarna"
+      ],
+      "why_us": {
+        "title": "Zašto raditi sa BW Digit-om za E-commerce?",
+        "description": "Pomažemo poslovima da pokrenu i razviju online prodavnice koje su brze, sigurne i izgrađene da konvertuju."
+      },
+      "why_features": [
+        {
+          "title": "Skalabilan E-commerce razvoj",
+          "description": "Izgrađen da raste sa vašim poslom, bez obzira na veličinu ili asortiman proizvoda."
+        },
+        {
+          "title": "Prilagođeni dizajn prodavnice koji konvertuje",
+          "description": "Čisti, user-friendly layout-i koji vode posetioce od proizvoda do kase."
+        },
+        {
+          "title": "Nastavna podrška & optimizacija prodavnice",
+          "description": "Pomažemo vam da sve teče glatko i poboljšavate performanse tokom vremena."
+        },
+        {
+          "title": "Nastavna podrška & optimizacija prodavnice",
+          "description": "Pomažemo vam da sve teče glatko i poboljšavate performanse tokom vremena."
+        }
+      ],
+      "offer": {
+        "title": "Vremenski ograničena ponuda: E-commerce starter paket",
+        "description": "Pokrenite svoju online prodavnicu sa jednostavnom i profesionalnom podešavanjem, idealno za male poslove ili testiranje proizvoda.",
+        "whats_included": "Šta je uključeno:",
+        "features": [
+          {
+            "title": "1-stranica prilagođena E-commerce veb stranica",
+            "description": "Čist, visoko-performantan landing page, izgrađen za brzo podešavanje i laku prodaju.",
+            "badge": "SPECIJALNA PONUDA"
+          },
+          {
+            "title": "Potpuno responsive dizajn",
+            "description": "Izgleda odlično i radi savršeno na desktop-u, tablet-u i mobilnom.",
+            "badge": "UKLJUČENO"
+          },
+          {
+            "title": "Bonus: Besplatna strategijska sesija",
+            "description": "Dobijte 1-na-1 poziv da planirate svoj proizvod, ciljeve i lansir strategiju.",
+            "badge": "BONUS"
+          }
+        ],
+        "book_call": "Rezervišite besplatnu strategijsku konsultaciju",
+        "request_quote": "Zatražite prilagođeni kvote"
+      }
+    },
+    "marketing_seo": {
+      "hero": {
+        "title": "Marketing i SEO usluge koje zaista isporučuju",
+        "description": "Želite da privučete više posetilaca i pretvorite ih u prave kupce? U BW Digit-u, gradimo pametne, rezultat-orijentisane SEO i marketing strategije koje stavljaju vaš posao pred prave ljude. Pretvorimo pretrage u prodaju!",
+        "cta": "Rezervišite besplatnu strategijsku konsultaciju"
+      },
+      "features": {
+        "title": "Šta ćete naći unutra",
+        "subtitle": "AI alati koji olakšavaju rad",
+        "description": "Nudimo testirane AI alate i resurse koji vam pomažu da uštedite vreme, ostajete organizovani i efikasnije vodite svoj posao."
+      },
+      "resources": [
+        {
+          "title": "SEO koje pokriva sve",
+          "description": "Rukujemo svakim delom SEO-a, tako da vaš sajt radi bolje i rangira više:",
+          "features": [
+            "Potpuni on-page, off-page i tehnički SEO",
+            "Detaljni SEO audit-i i keyword istraživanje",
+            "Brzina sajta, mobile struktura & indexing popravke",
+            "SEO strategija sadržaja zasnovana na pravoj nameri korisnika"
+          ]
+        },
+        {
+          "title": "Paid Ads koji dosežu pravu publiku",
+          "description": "Vodimo kampanje oglasa koje donose traffic i konversion-e bez gubljenja budžeta. Fokusiramo se na podatke, ne na nagađanje:",
+          "features": [
+            "Google Ads podešavanje i upravljanje",
+            "Facebook i Instagram kampanje oglasa",
+            "TikTok, LinkedIn Ads i više",
+            "Retargeting za tople leadove",
+            "Praćenje i izveštavanje performansi oglasa"
+          ]
+        },
+        {
+          "title": "Lokalni SEO za obližnje kupce",
+          "description": "Pomažemo lokalnim poslovima da se pronađu u svojoj oblasti:",
+          "features": [
+            "Google Business Profile podešavanje i optimizacija",
+            "Lokalni keyword-i koji odgovaraju navikama pretrage",
+            "Upravljanje review-a i izgradnja citata"
+          ]
+        },
+        {
+          "title": "Sadržaj koji donosi leadove",
+          "description": "Kreiramo sadržaj koji je lako pronaći i vredan čitanja:",
+          "features": [
+            "SEO blog postovi i service stranice",
+            "Email kampanje koje drže korisnike angažovanim",
+            "Lead magnet-i i funnel sadržaj koji pokreću akcije"
+          ]
+        }
+      ],
+      "offer": {
+        "title": "Šta nudimo: Sve na jednom mestu",
+        "description": "Od rangiranja na Google-u do plaćenog Marketinga i E-pošte koje konvertuju, rukujemo svim vašim potrebama pod jednim krovom."
+      },
+      "offers": [
+        {
+          "title": "Potpune SEO usluge",
+          "description": "Pomažemo vašem veb sajtu da bude viđen od prave publike i bolje performa u pretrazi:",
+          "features": [
+            "Keyword istraživanje & konkurentska analiza",
+            "On-page SEO (naslovi, struktura, metapodaci)",
+            "Tehnički popravci (brzina, mobile, indexing)",
+            "Izgradnja backlink-a za dugoročni rast",
+            "Google Business Profile optimizacija"
+          ]
+        },
+        {
+          "title": "Plaćena reklama",
+          "description": "Kreiramo i upravljamo kampanjama oglasa koje voze pravi traffic i leadove.",
+          "features": [
+            "Google Ads: pretraga, display & video",
+            "Facebook i Instagram oglasi",
+            "LinkedIn kampanje za B2B",
+            "Retargeting i funnel strategija"
+          ]
+        },
+        {
+          "title": "Sadržaj & Email marketing",
+          "description": "Pišemo sadržaj koji rangira i e-pošte koje dobijaju odgovore:",
+          "features": [
+            "Blog postovi optimisani za SEO",
+            "Email sekvence koje grade poverenje i pokućaju konversion-e",
+            "Lead magnet-i i newsletter-i da rastu vašu listu"
+          ]
+        }
+      ],
+      "tools": {
+        "title": "Dizajn alati koji se uklapaju u vaš workflow",
+        "description": "Koristimo dizajn alate koji olakšavaju saradnju, omogućavajući da reviews i feedback dešavaju brže. Programeri znaju i klijenti vole platforme kao što su Figma, Adobe XD i InVision."
+      },
+      "tool_names": [
+        "Google Analytics",
+        "SEMrush",
+        "Ahrefs",
+        "Search Console",
+        "Hotjar",
+        "Meta Ads Manager",
+        "Mailchimp"
+      ],
+      "cta": {
+        "badge": "VREMENSKI OGRANIČENA PONUDA",
+        "title": "Besplatan SEO audit + strategijska sesija",
+        "description": "Kada rezervišete bilo koji marketing paket sa BW Digit-om, dobićete potpun SEO audit i konsultaciju bez dodatnih troškova.",
+        "cards": [
+          {
+            "title": "Pregled SEO audit-a",
+            "description": "Izvršićemo potpunu proveru SEO vašeg veb sajta, od tehničkih problema do praznina u sadržaju."
+          },
+          {
+            "title": "Personalizovana strategijska konsultacija",
+            "description": "Izvršićemo potpunu proveru SEO vašeg veb sajta, od tehničkih problema do praznina u sadržaju."
+          },
+          {
+            "title": "Jasan korak-po-korak akcioni plan",
+            "description": "Izvršićemo potpunu proveru SEO vašeg veb sajta, od tehničkih problema do praznina u sadržaju."
+          }
+        ],
+        "book_call": "Rezervišite besplatnu strategijsku konsultaciju",
+        "request_quote": "Zatražite prilagođeni kvote"
+      }
+    },
+    "mobile_app_development": {
+      "hero": {
+        "title": "Prilagođeni razvoj mobilnih aplikacija",
+        "description": "Gradimo mobilne aplikacije koje su brze, pouzdane i lako za korišćenje bilo da pokrećete novi projekat ili poboljšavate postojeći. U BW Digit-u, pretvaramo vašu ideju aplikacije u funkcionalni proizvod sa čistim dizajnom i pametnom, skalabilnom tehnologijom.",
+        "cta": "Pokrenite svoj projekat"
+      },
+      "features": {
+        "title": "Šta ćete naći unutra",
+        "subtitle": "AI alati koji olakšavaju rad",
+        "description": "Nudimo testirane AI alate i resurse koji vam pomažu da uštedite vreme, ostajete organizovani i efikasnije vodite svoj posao."
+      },
+      "resources": [
+        {
+          "title": "iOS & Android Native App razvoj",
+          "description": "Kreiramo visoko-performantne native aplikacije prilagođene za svaku platformu:",
+          "features": [
+            "Swift razvoj za iOS",
+            "Kotlin razvoj za Android",
+            "Brze, stabilne aplikacije sa native funkcijama",
+            "UI dizajn-i usklađeni sa Apple i Google smernicama"
+          ]
+        },
+        {
+          "title": "Cross-Platform App rešenja",
+          "description": "Napravite jednom, pokrenite svuda:",
+          "features": [
+            "Flutter app razvoj",
+            "React Native za iOS & Android",
+            "Jedinstvena codebase = konzistentno iskustvo",
+            "Smanjeno razvojno vreme i troškovi"
+          ]
+        },
+        {
+          "title": "End-to-End Mobile App usluge",
+          "description": "Rukujemo celim procesom razvoja tako da vi ne morate:",
+          "features": [
+            "User-fokusirani UI/UX dizajn & prototipovanje",
+            "Skalabilni backend sistemi i API integracije",
+            "QA testiranje, app optimizacija i objavljivanje",
+            "Potpuna podrška za App Store i Google Play podnošenje"
+          ]
+        }
+      ],
+      "tools": {
+        "title": "Dizajn alati koji se uklapaju u vaš workflow",
+        "description": "Koristimo dizajn alate koji olakšavaju saradnju, omogućavajući da reviews i feedback dešavaju brže. Programeri znaju i klijenti vole platforme kao što su Figma, Adobe XD i InVision."
+      },
+      "tool_names": [
+        "Flutter",
+        "React Native",
+        "Swift",
+        "Kotlin",
+        "Firebase",
+        "Node.js",
+        "Laravel"
+      ],
+      "difference": {
+        "title": "Gde mobilne aplikacije prave pravu razliku",
+        "description": "Naša mobilna app rešenja su izgrađena da odgovaraju potrebama vašeg posla i industrije. Evo kako pomažemo kompanijama da rastu kroz pametne, efektivne aplikacije:"
+      },
+      "solutions": [
+        {
+          "title": "On-demand servis aplikacije",
+          "description": "Dostava, zdravstvo ili kućne popravke – dajte svojim korisnicima trenutni pristup i glatke iskustvo rezervacije!",
+          "cta": "Istražite rešenje"
+        },
+        {
+          "title": "Business produktivitet alati",
+          "description": "Poboljšajte workflow-e, komunikaciju i timsku koordinaciju sa pametnim mobilnim alatima i upravljanjem zadataka.",
+          "cta": "Vidite u akciji"
+        },
+        {
+          "title": "E-commerce & marketplace aplikacije",
+          "description": "Dajte svojim kupcima glatko iskustvo kupovine, od pretraživanja do kase, sa sigurnom integracijom plaćanja.",
+          "cta": "Vidite kako radi"
+        },
+        {
+          "title": "Putovanje & životni stil",
+          "description": "Kreirajte angažujuća mobilna iskustva koja podržavaju korisnike u pokretu od planiranja putovanja do pronalaženja lokalnih preporuka. Savršeno za turizam, događaje i lokalne vodiče.",
+          "cta": "Istražite rešenje"
+        },
+        {
+          "title": "Social networking aplikacije",
+          "description": "Pokrenite platforme za zajednicu, poruke i real-time interakciju sa jakim backend-om i moderan UI.",
+          "cta": "Otkrijte više"
+        }
+      ],
+      "feature_section": [
+        {
+          "title": "Brz razvoj",
+          "description": "Brz turnover sa kvalitetnim kodom"
+        },
+        {
+          "title": "Čist kod",
+          "description": "Održiva & skalabilna arhitektura"
+        },
+        {
+          "title": "Robust backend",
+          "description": "Sigurna & skalabilna infrastruktura"
+        }
+      ],
+      "cta": {
+        "badge": "SPECIJALNA PONUDA",
+        "title": "App lansir paket: Sve što vam treba da živite",
+        "description": "Spremni da pretvorite svoju ideju od koncepta do app store-a? Želite da lansirate brzo, bez skraćivanja? Naš App lansir paket pokriva sve što vam treba da sa samopouzdanjem živite.",
+        "whats_included": "Šta je uključeno",
+        "included_items": [
+          "Prilagođeni razvoj mobilnih aplikacija",
+          "UI/UX dizajn izgrađen za prave korisnike",
+          "Backend podešavanje i integracija trećih strana"
+        ],
+        "what_you_get": "Šta dobijate",
+        "get_items": [
+          "Besplatna konsultacija",
+          "Brza razvojna vremenska linija da brže dođete na tržište",
+          "Konversion-orijentisani dizajn koji podstiče korisničke akcije",
+          "User-first iskustvo koje drži korisnike angažovanim"
+        ],
+        "ideal_for": "Idealno za startup-e i rastuće poslove spremne da skaliraju.",
+        "button": "Rezervišite svoju besplatnu konsultaciju!"
+      }
+    }
   }
 }
