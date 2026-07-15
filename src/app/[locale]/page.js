@@ -178,7 +178,7 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-      ;{/* The Platform */}
+      {/* The Platform */}
       <section
         className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-0 gap-y-5"
         id="about"
@@ -217,8 +217,8 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-      ;{/* Service Section */}
-      <section
+      {/* Service Section */}
+      {/* <section
         className="flex flex-col items-center gap-y-5 mx-5 lg:mx-0"
         id="service"
       >
@@ -262,8 +262,8 @@ export default async function Home({ params }) {
             </div>
           ))}
         </div>
-      </section>
-      ;{/* Bussines Value Outcome*/}
+      </section> */}
+      {/* Bussines Value Outcome*/}
       <section className="flex flex-col items-center lg:my-20 my-10 lg:gap-y-5 gap-y-3 mx-5 lg:mx-0">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
         <div className="items-stretch  grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-5 lg:gap-y-0 lg:mx-10">
