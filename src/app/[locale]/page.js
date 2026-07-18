@@ -13,7 +13,7 @@ export default async function Home({ params }) {
   const t = messages.home;
 
   return (
-    <div className="pt-20 bg-background font-body w-screen overflow-x-hidden ">
+    <div className="pt-20 bg-background font-body overflow-x-hidden ">
       {/* Hero Section */}
       <section className="relative grid grid-cols-1 lg:grid-cols-2 py-10 gap-y-10 lg:gap-y-0 lg:mb-0 ">
         {/* Mobile Gradient Overlay */}
@@ -23,7 +23,7 @@ export default async function Home({ params }) {
           <h1 className="hero-gradient text-5xl text-center lg:text-start lg:text-6xl font-heading">
             {t.hero.title}
           </h1>
-          <p className="text-primary text-lg text-center lg:text-start">
+          <p className="text-primary/70 text-lg text-center lg:text-start">
             {t.hero.description}
           </p>
           <div className="mt-5 flex flex-col lg:flex-row gap-x-2 gap-y-5 lg:gap-y-0">
@@ -102,7 +102,7 @@ export default async function Home({ params }) {
           <h1 className="main-heading text-center lg:text-start">
             {t.engineering_section.title}
           </h1>
-          <p className="text-primary/90 text-lg text-center lg:text-start">
+          <p className="text-primary/70 text-lg text-center lg:text-start">
             {t.engineering_section.description}
           </p>
           {/* {t.engineering_section.points.map((point, index) => (
@@ -154,7 +154,7 @@ export default async function Home({ params }) {
           <h1 className="main-heading text-center lg:text-start">
             {t.heritage_section.title}
           </h1>
-          <p className="text-primary/70 text-lg pt-2 text-center lg:text-start">
+          <p className="text-primary/70 text-lg text-center lg:text-start">
             {t.heritage_section.description}
           </p>
         </div>
@@ -180,11 +180,11 @@ export default async function Home({ params }) {
       </section>
       {/* The Platform */}
       <section
-        className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-0 gap-y-5"
+        className="flex flex-col items-center lg:my-20 my-10 mx-5 lg:mx-10 gap-y-5"
         id="about"
       >
         <h1 className="main-heading text-center">{t.platform_section.title}</h1>
-        <p className="text-primary/70 text-center text-lg">
+        <p className="text-primary/70 text-lg text-center">
           {t.platform_section.description}
         </p>
         <div className="w-[90vw] h-[300px] lg:h-[800px]  relative">
@@ -223,7 +223,7 @@ export default async function Home({ params }) {
         id="service"
       >
         <h1 className="main-heading text-center">{t.services_section.title}</h1>
-        <p className="text-primary/90 w-full lg:w-1/2 font-body text-center text-lg">
+        <p className="text-primary/70 text-lg text-center">
           {t.services_section.description}
         </p>
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-5 lg:mx-10 mx-2">
@@ -264,9 +264,9 @@ export default async function Home({ params }) {
         </div>
       </section> */}
       {/* Bussines Value Outcome*/}
-      <section className="flex flex-col items-center lg:my-20 my-10 lg:gap-y-5 gap-y-3 mx-5 lg:mx-0">
+      <section className="flex flex-col items-center lg:my-20 my-10 lg:gap-y-5 gap-y-3 mx-5 lg:mx-10">
         <h1 className="main-heading text-center">{t.outcomes_section.title}</h1>
-        <div className="items-stretch  grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-5 lg:gap-y-0 lg:mx-10">
+        <div className="items-stretch  grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-5 lg:gap-y-0">
           {t.outcomes.map((outcome, index) => {
             const Icon = outcomes[index].icon;
             return (
@@ -296,21 +296,21 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-      ;{/* Case Study Colored Cards */}
+      {/* Case Study Colored Cards */}
       <section
-        className="flex flex-col items-center mx-2 lg:my-20 my-10 gap-y-5  lg:mx-0"
+        className="flex flex-col items-center mx-5 lg:my-20 my-10 gap-y-5  lg:mx-10"
         id="blog"
       >
         <h1 className="main-heading text-center">{t.studies_section.title}</h1>
-        <p className="text-primary/70 text-center ">
+        <p className="text-primary/70 text-lg text-center">
           {t.studies_section.description}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 mx-5 lg:mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 ">
           {t.studies.map((study, index) => {
             return (
               <AnimateIn key={index} delay={index * 0.1}>
                 <div
-                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all  border-primary/30 h-auto lg:h-86 ${
+                  className={`text-primary p-10 flex flex-col gap-x-5 gap-y-6 lg:my-10 my-5 rounded-2xl border-[0.5px] transition-all  border-primary/30 h-auto lg:h-[80%] justify-between ${
                     studies[index].hoverColor === "orange"
                       ? "bg-linear-to-b from-orange/30 to-card"
                       : studies[index].hoverColor === "blue"
@@ -321,7 +321,7 @@ export default async function Home({ params }) {
                   <h3 className="text-xl font-heading text-primary font-bold">
                     {study.tagline}
                   </h3>
-                  <h1 className="text-base font-heading -mt-4 text-primary">
+                  <h1 className="text-sm font-heading -mt-4 text-primary/80">
                     {study.title}
                   </h1>
                   <p className="font-body text-base text-primary/70">
@@ -333,7 +333,7 @@ export default async function Home({ params }) {
           })}
         </div>
       </section>
-      ;{/* Contact Form */}
+      {/* Contact Form */}
       <section
         className="bg-linear-to-br from-background to-primary-accent/10 flex flex-col  px-10 lg:py-10 gap-x-20 gap-y-10 lg:gap-y-5 -mt-10 pb-10 lg:mt-0 lg:pb-10 items-center justify-center w-full "
         id="contact"
